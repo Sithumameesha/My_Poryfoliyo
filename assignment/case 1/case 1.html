@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="style sheet" href="normalize.css">
+  <style>
+main{
+
+  /*height: 100vh;*/
+  width: 100vw;
+  position: absolute;
+}
+main>section{
+ height: 50vh;
+  width: 50vw;
+
+}
+main>section:nth-child(1){
+  background-color: red;
+}
+main>section:nth-child(2){
+background-color: green;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+main>section:nth-child(3){
+background-color: yellow;
+}
+main>section:nth-child(4){
+background-color: deeppink;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+main>section{
+  position: relative;
+}
+
+.div1{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  background-color: white;
+  border-bottom-left-radius: 100px;
+ border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+
+}
+.small_div{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  background-color: red;
+}
+.small_div2{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  background-color: green;
+}
+.small_div3{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  background-color: yellow;
+
+}
+.small_div4 {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  background-color: deeppink;
+
+}
+.side_div_1{
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border-bottom-right-radius: 100px;
+}
+.side_div_3{
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  position: absolute;
+  bottom: 25px;
+  border-top-right-radius:100px ;
+
+}
+.side_div_2{
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  position: absolute;
+  right: 25px;
+border-bottom-left-radius: 100px;
+
+}
+.side_div_4{
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  border-top-left-radius: 100px;
+}
+
+.main_div{
+  height: 100px;
+  width: 100px;
+  background-color: white;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+
+<main>
+
+
+  <section>
+    <div class="side_div_1">
+
+    </div>
+    <div class="div1">
+<div class="small_div"></div>
+    </div>
+  </section>
+  <section>
+    <div class="side_div_2">
+
+    </div>
+    <div  class="div1">
+      <div class="small_div2"></div>
+    </div>
+  </section>
+  <section>
+    <div class="side_div_3">
+
+    </div>
+    <div  class="div1">
+      <div class="small_div3"></div>
+    </div>
+  </section>
+  <section>
+    <div class="side_div_4">
+
+    </div>
+    <div  class="div1">
+      <div class="small_div4"></div>
+    </div>
+  </section>
+  <div class="main_div"></div>
+</main>
+</body>
+</html>
