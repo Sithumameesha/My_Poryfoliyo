@@ -42,5 +42,12 @@ main>section>aside>div>p:last-child{
     font-size: 32px;
     margin-top: 10px;
 }
+.fbImg{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 400px;
+    left: 60px;
+}
 
 
