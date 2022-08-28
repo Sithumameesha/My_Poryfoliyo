@@ -2,6 +2,7 @@
 body{
    margin: 0px;
     background-color: black;
+    color: white;
 }
 main>nav>ol>li{
     display: inline-block;
@@ -21,4 +22,25 @@ main>nav>ol:last-child>li{
     color: white;
     font-weight: bold;
 }
+main>section>aside>div{
+position: absolute;
+    top: 150px;
+    left: 60px;
+}
+main>section>aside>div>p:first-child{
+    font-size: 32px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+main>section>aside>div>p:nth-child(2){
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+main>section>aside>div>p:last-child{
+    font-size: 32px;
+    margin-top: 0px;
+}
+
 
