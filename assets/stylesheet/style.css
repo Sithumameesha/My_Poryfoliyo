@@ -1,6 +1,24 @@
-body>h1{
-    color: aqua;
-}
+
 body{
+   margin: 0px;
     background-color: black;
 }
+main>nav>ol>li{
+    display: inline-block;
+  padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+main>nav>ol{
+    margin-left: 480px;
+    margin-top: 0px;
+    display: inline;
+    position: absolute;
+}
+main>nav>ol:last-child>li{
+   position: absolute;
+    right: 450px;
+    color: white;
+    font-weight: bold;
+}
+
