@@ -15,6 +15,10 @@ main>nav>ol{
     margin-top: 0px;
     display: inline;
     position: absolute;
+    cursor: pointer;
+}
+.name_part{
+    color: #FEA609;
 }
 main>nav>ol:last-child>li{
    position: absolute;
@@ -76,6 +80,31 @@ main>hr{
     position: relative;
     top: 600px;
     width: 950px;
+}
+.typing{
+    position: relative;
+}
+.typing::after{
+    content: '|';
+    position: absolute;
+    right: 0;
+    color: #FEA609;
+    background-color: black;
+    width: 100%;
+    animation: typing 4s steps(14) alternate infinite,
+    line 1s infinite;
+}
+@keyframes typing {
+    to{
+        width: 0%;
+    }
+
+}
+@keyframes line {
+    50%{
+        color: black;
+    }
+
 }
 
 
