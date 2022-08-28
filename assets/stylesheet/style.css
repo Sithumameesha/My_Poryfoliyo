@@ -10,7 +10,7 @@ main>nav>ol>li{
     color: white;
     font-weight: bold;
 }
-main>nav>ol{
+main>nav>ol:first-child{
     margin-left: 450px;
     margin-top: 0px;
     display: inline;
@@ -21,10 +21,10 @@ main>nav>ol{
     color: #FEA609;
 }
 main>nav>ol:last-child>li{
-   position: absolute;
-    right: 450px;
-    color: white;
-    font-weight: bold;
+    padding-left: -10px;
+}
+main>nav>ol:last-child {
+    padding-left:0px;
 }
 main>section>aside>div{
 position: absolute;
@@ -71,14 +71,14 @@ main>section>aside>div>p:last-child{
     position: absolute;
     width: 350px;
     height: 350px;
-    left:620px;
+    left:580px;
     top :120px;
     border-radius: 230px;
     border: 10px solid #FEA609;
 }
 main>hr{
     position: relative;
-    top: 600px;
+    top: 500px;
     width: 950px;
 }
 .typing{
@@ -106,9 +106,37 @@ main>hr{
     }
 
 }
-main:nth-child(2){
-    position: relative;
-    top: 610px;
-    left: 400px;
+.h1{
+    padding-left: 400px;
+    padding-top: 520px;
+    font-weight: bold;
+    font-size: 32px;
+}
+.h1_Style{
+    color: #FEA609;
+}
+.about_pra{
+    margin-left: 50px;
+    font-size: 20px;
+}
+.about_li{
+    color: #FEA609;
+
+}
+.about_ol{
+    margin-left: 70px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.about_lis{
+    padding: 10px;
+}
+.btn{
+    background-color: #FEA609;
+    font-weight: bold;
+    width: 130px;
+    height: 35px;
+    margin-left: 200px;
+    border-radius: 10px;
 }
 
