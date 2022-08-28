@@ -63,5 +63,14 @@ main>section>aside>div>p:last-child{
     top: 400px;
     left:350px;
 }
+.profile_pic{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    left:620px;
+    top :120px;
+    border-radius: 230px;
+    border: 10px solid #FEA609;
+}
 
 
