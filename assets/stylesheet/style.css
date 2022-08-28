@@ -11,7 +11,7 @@ main>nav>ol>li{
     font-weight: bold;
 }
 main>nav>ol{
-    margin-left: 480px;
+    margin-left: 450px;
     margin-top: 0px;
     display: inline;
     position: absolute;
@@ -106,5 +106,9 @@ main>hr{
     }
 
 }
-
+main:nth-child(2){
+    position: relative;
+    top: 610px;
+    left: 400px;
+}
 
