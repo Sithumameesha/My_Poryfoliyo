@@ -49,5 +49,12 @@ main>section>aside>div>p:last-child{
     top: 400px;
     left: 60px;
 }
+.InsterImg{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 400px;
+    left: 200px;
+}
 
 
