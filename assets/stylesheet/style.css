@@ -3,15 +3,17 @@ body{
    margin: 0px;
     background-color: black;
     color: white;
+    width: 100%;
+    height: 100%;
 }
 main>nav>ol>li{
     display: inline-block;
   padding: 10px;
     color: white;
-    font-weight: bold;
+    font-size: 20px;
 }
 main>nav>ol:first-child{
-    margin-left: 450px;
+    margin-left: 720px;
     margin-top: 0px;
     display: inline;
     position: absolute;
@@ -24,12 +26,12 @@ main>nav>ol:last-child>li{
     padding-left: -10px;
 }
 main>nav>ol:last-child {
-    padding-left:0px;
+    padding-left:20px;
 }
 main>section>aside>div{
 position: absolute;
     top: 150px;
-    left: 60px;
+    left: 100px;
 }
 main>section>aside>div>p:first-child{
     font-size: 32px;
@@ -48,30 +50,30 @@ main>section>aside>div>p:last-child{
 }
 .fbImg{
     position: absolute;
-    width: 75px;
-    height: 75px;
+    width: 5vw;
+    height: 12vh;
     top: 400px;
-    left: 60px;
+    left: 100px;
 }
 .InsterImg{
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 5vw;
+    height: 12vh;
     top: 400px;
-    left: 200px;
+    left: 250px;
 }
 .LinkidnImg{
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 5vw;
+    height: 12vh;
     top: 400px;
-    left:350px;
+    left:400px;
 }
 .profile_pic{
     position: absolute;
-    width: 350px;
-    height: 350px;
-    left:580px;
+    width: 30vw;
+    height: 64vh;
+    left:800px;
     top :120px;
     border-radius: 230px;
     border: 10px solid #FEA609;
@@ -79,7 +81,7 @@ main>section>aside>div>p:last-child{
 main>hr{
     position: relative;
     top: 500px;
-    width: 950px;
+    width: 1200px;
 }
 .typing{
     position: relative;
@@ -107,7 +109,7 @@ main>hr{
 
 }
 .h1{
-    padding-left: 400px;
+    padding-left: 540px;
     padding-top: 520px;
     font-weight: bold;
     font-size: 32px;
