@@ -72,5 +72,10 @@ main>section>aside>div>p:last-child{
     border-radius: 230px;
     border: 10px solid #FEA609;
 }
+main>hr{
+    position: relative;
+    top: 600px;
+    width: 950px;
+}
 
 
