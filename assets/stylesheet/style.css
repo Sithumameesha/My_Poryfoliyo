@@ -308,12 +308,15 @@ main>hr{
     letter-spacing: 0.05em;
     color: white;
     font-weight: bold;
+
 }
 .h2{
    position: relative;
     width: 1200px;
     top: 100px;
 }
+
+/*About My Journey....................................*/
 .h2_style{
     color: white;
     margin-left: 540px;
@@ -324,3 +327,36 @@ main>hr{
 .spa_2{
     color: #FEA609;
 }
+.Style_Div{
+    height: 550px;
+    width: 8px;
+    background-color: white;
+    position: relative;
+    left: 50vw;
+    top: 150px;
+}
+.Style_Div_1{
+    height: 8px;
+    width: 200px;
+    background-color: #FEA609;
+    position: relative;
+    left: 690px;
+    top: 50px;
+}
+.Style_Div_2{
+    height: 8px;
+    width: 200px;
+    background-color: #FEA609;
+    position: relative;
+    left: 690px;
+    bottom: 300px;
+}
+.Style_Div_3{
+    height: 8px;
+    width: 200px;
+    background-color: #FEA609;
+    position: relative;
+    left: 484px;
+    top: -143px;
+}
+
