@@ -99,13 +99,13 @@ main>section>aside>div>p:last-child{
     cursor: pointer;
 }
 .profile_pic{
-    position: absolute;
+    /*position: absolute;*/
     width: 30vw;
     height: 64vh;
     left:800px;
     top :120px;
     border-radius: 230px;
-    border: 10px solid #FEA609;
+    /*border: 10px solid #FEA609;*/
 }
 main>hr{
     position: relative;
@@ -149,6 +149,7 @@ main>hr{
 .about_pra{
     margin-left: 60px;
     font-size: 20px;
+    font-weight: bold;
 }
 .about_li{
     color: #FEA609;
@@ -171,9 +172,140 @@ main>hr{
     border-radius: 10px;
 }
 .nav{
-    position: fixed;
     width: 100%;
     box-shadow: -2px 2px 5px 2px #1c1717e8;
     margin: 0px;
 }
 
+/*Profile Border Aination*/
+
+.box {
+    position: absolute;
+    left: 750px;
+    bottom: 50px;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.box::before {
+    content: '';
+    position: absolute;
+    inset: -10px 140px;
+    background: linear-gradient(315deg,white,#FEA609);
+    transition: 0.4s;
+    animation: animate 3s linear infinite;
+}
+.box:hover::before {
+    inset: -20px 0px;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box::after {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: black;
+    border-radius: 50%;
+    z-index: 1;
+}
+.content {
+    position: absolute;
+    inset: 30px;
+    /*border: 3px solid #0a83ec;*/
+    z-index: 3;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 3;
+}
+.box:hover .content img {
+    opacity: 0;
+}
+.content h2 {
+    position: relative;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+.content h2 span {
+    font-weight: 300;
+    font-size: 0.75em;
+}
+.content a {
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: white;
+    color: #FEA609;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.content a:hover {
+    letter-spacing: 0.3em;
+}
+.btn_1{
+    position: relative;
+    left: 200px;
+    top: 20px;
+    padding: 10px 20px;
+    background: #FEA609;
+    border-radius: 25px;
+    color: black;
+    font-weight: 500;
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.btn_1:hover{
+    letter-spacing: 0.05em;
+   color: white;
+    font-weight: bold;
+}
+.btn_2{
+    position: relative;
+    left: 300px;
+    top: 21px;
+    padding: 11px 20px;
+    background: #FEA609;
+    border-radius: 25px;
+    color: black;
+    font-weight: 500;
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.btn_2:hover{
+    letter-spacing: 0.05em;
+    color: white;
+    font-weight: bold;
+}
