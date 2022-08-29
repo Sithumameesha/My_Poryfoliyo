@@ -8,31 +8,37 @@ body{
 }
 main>nav>ol>li{
     display: inline-block;
-  padding: 10px;
+  padding: 15px;
     color: white;
     font-size: 20px;
     cursor: pointer;
 }
-main>nav>ol>li:hover{
+main>nav>ol:first-child>li:hover{
     color: #FEA609;
 
 }
-main>nav>ol>li:active{
+main>nav>ol:first-child>li:active{
     color: #FEA609;
 }
 
 main>nav>ol:first-child{
-    margin-left: 720px;
+   left: 580px;
     margin-top: 0px;
     display: inline;
     position: absolute;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 .name_part{
     color: #FEA609;
 }
 main>nav>ol:last-child>li{
     padding-left: -10px;
+    font-size: 32px;
+    padding-top: 7px;
+
+}
+.spa_1{
+    color: #FEA609;
 }
 main>nav>ol:last-child {
     padding-left:20px;
