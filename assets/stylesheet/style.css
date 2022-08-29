@@ -11,7 +11,16 @@ main>nav>ol>li{
   padding: 10px;
     color: white;
     font-size: 20px;
+    cursor: pointer;
 }
+main>nav>ol>li:hover{
+    color: #FEA609;
+
+}
+main>nav>ol>li:active{
+    color: #FEA609;
+}
+
 main>nav>ol:first-child{
     margin-left: 720px;
     margin-top: 0px;
@@ -27,6 +36,7 @@ main>nav>ol:last-child>li{
 }
 main>nav>ol:last-child {
     padding-left:20px;
+    margin: 0px;
 }
 main>section>aside>div{
 position: absolute;
@@ -54,6 +64,17 @@ main>section>aside>div>p:last-child{
     height: 12vh;
     top: 400px;
     left: 100px;
+    cursor: pointer;
+}
+.fbImg:hover{
+    box-shadow: -2px 2px 5px 2px white;
+
+}
+.InsterImg:hover{
+    box-shadow: -2px 2px 5px 2px white;
+}
+.LinkidnImg:hover{
+    box-shadow: -2px 2px 5px 2px white;
 }
 .InsterImg{
     position: absolute;
@@ -61,6 +82,7 @@ main>section>aside>div>p:last-child{
     height: 12vh;
     top: 400px;
     left: 250px;
+    cursor: pointer;
 }
 .LinkidnImg{
     position: absolute;
@@ -68,6 +90,7 @@ main>section>aside>div>p:last-child{
     height: 12vh;
     top: 400px;
     left:400px;
+    cursor: pointer;
 }
 .profile_pic{
     position: absolute;
@@ -80,7 +103,7 @@ main>section>aside>div>p:last-child{
 }
 main>hr{
     position: relative;
-    top: 500px;
+    top: 600px;
     width: 1200px;
 }
 .typing{
@@ -110,7 +133,7 @@ main>hr{
 }
 .h1{
     padding-left: 540px;
-    padding-top: 520px;
+    padding-top: 600px;
     font-weight: bold;
     font-size: 32px;
 }
@@ -118,7 +141,7 @@ main>hr{
     color: #FEA609;
 }
 .about_pra{
-    margin-left: 50px;
+    margin-left: 60px;
     font-size: 20px;
 }
 .about_li{
@@ -140,5 +163,11 @@ main>hr{
     height: 35px;
     margin-left: 200px;
     border-radius: 10px;
+}
+.nav{
+    position: fixed;
+    width: 100%;
+    box-shadow: -2px 2px 5px 2px #1c1717e8;
+    margin: 0px;
 }
 
