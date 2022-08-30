@@ -465,7 +465,7 @@ main>hr{
     position: relative;
     left: 130px;
     bottom: 700px;
-    box-shadow: ;
+    cursor: pointer;
 
 }
 .Style_Div_11>p:first-child{
@@ -484,5 +484,23 @@ main>hr{
     font-weight: bold;
     position: relative;
     left: 94px;
+
+}
+.Style_Div_11:hover{
+    box-shadow: -2px 2px 5px 2px white;
+    border: 3px solid #FEA609;
+
+
+}
+.Style_Div_10:hover{
+    box-shadow: -2px 2px 5px 2px white;
+    border: 3px solid #FEA609;
+
+
+}
+.Style_Div_9:hover{
+    box-shadow: -2px 2px 5px 2px white;
+    border: 3px solid #FEA609;
+
 
 }
