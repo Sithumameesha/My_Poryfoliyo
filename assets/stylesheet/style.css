@@ -528,27 +528,46 @@ position: relative;
 .mysql_img{
     height: 100px;
 }
+.interlij_img {
+    width: 100px;
+    height: 100px;
+}
+.slack_img{
+    width: 100px;
+    height: 100px;
+}
+.github_img{
+    width: 100px;
+    height: 100px;
+}
 
 .box_1{
     display: inline;
     position: relative;
     bottom: 250px;
-    left: 100px;
+    left: 75px;
 
 }
 .box_2{
     display: inline;
     position: relative;
     bottom: 300px;
-    left: 190px;
+    left: 155px;
 }
 .box_3{
 position: relative;
-    left: 750px;
-    bottom: 400px;
+    left: 730px;
+    bottom: 390px;
+
 }
 .box_4{
     position: relative;
-    left:970px;
-    bottom: 530px;
+    left:940px;
+    bottom: 500px;
+
+}
+.box_5{
+    position: relative;
+    left: 1140px;
+    bottom: 605px;
 }
