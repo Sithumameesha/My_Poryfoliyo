@@ -3,8 +3,8 @@ body{
    margin: 0px;
     background-color: black;
     color: white;
-    width: 100%;
-    height: 3000px;
+    /*width: 100%;*/
+    /*height: 100%;*/
 }
 main>nav>ol>li{
     display: inline-block;
@@ -509,14 +509,16 @@ main>hr{
     width: 1200px;
    bottom: 372px;
 }
+.main_4{
+    height: 159px;
+}
 /*What can I do*/
 .h3_style{
+    margin-left: 100px;
     color: white;
-position: relative;
-    bottom: 340px;
-    left: 560px;
     font-weight: bold;
     font-size: 32px;
+    display: inline-block;
 }
 .h3_style>span{
     color: #FEA609;
@@ -542,57 +544,67 @@ position: relative;
 }
 
 .box_1{
-    display: inline;
-    position: relative;
-    bottom: 250px;
+
+    position: absolute;
     left: 75px;
 
 }
 .box_2{
-    display: inline;
-    position: relative;
-    bottom: 300px;
-    left: 155px;
+
+    position: absolute;
+
+    left: 546px;
 }
 .box_3{
-position: relative;
-    left: 730px;
-    bottom: 390px;
+position: absolute;
+    left: 400px;
 
 }
 .box_4{
-    position: relative;
-    left:940px;
-    bottom: 500px;
+    position: absolute;
+    left:740px;
+
 
 }
 .box_5{
-    position: relative;
+    position: absolute;
     left: 1140px;
-    bottom: 605px;
 }
 .box_6{
-    position: relative;
-   bottom: 450px;
-    left: 80px;
+    position: absolute;
+   top: 259px;
+    left: 908px;
 }
 .box_7{
-    position: relative;
-    left: 300px;
-    bottom: 605px;
+    position: absolute;
+    left: 100px;
+    top: 255px;
+
 }
 .box_8{
-    position: relative;
-    left: 540px;
-    bottom: 740px;
+    position: absolute;
+    left: 346px;
+    top: 255px;
 }
 .box_9{
-    position: relative;
-    bottom: 870px;
-    left: 765px;
+    position: absolute;
+    left: 558px;
+    top: 255px;
 }
 .box_10{
+    position: absolute;
+    left: 720px;
+    top: 255px;
+
+}
+.h5{
     position: relative;
-    bottom: 1000px;
-    left: 1000px;
+    background-color: white;
+  top: 0px;
+}
+
+.sec1{
+    position: relative;
+    top: -373px;
+    height: 524px;
 }
