@@ -511,14 +511,17 @@ main>hr{
 }
 .main_4{
     height: 159px;
+    position: relative;
 }
 /*What can I do*/
 .h3_style{
-    margin-left: 100px;
+  bottom: 431px;
     color: white;
     font-weight: bold;
     font-size: 32px;
-    display: inline-block;
+    position: absolute;
+    right: 550px;
+
 }
 .h3_style>span{
     color: #FEA609;
@@ -605,6 +608,17 @@ position: absolute;
 
 .sec1{
     position: relative;
-    top: -373px;
-    height: 524px;
+    top: -233px;
+    height: 450px;
+    width: 1250px;
+    margin: 50px;
+    border: 3px solid red;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(5,1fr);
+    gap: 19px;
+}
+.sec1>div{
+    border: 3px solid green;
+   ;
 }
