@@ -545,61 +545,6 @@ main>hr{
     width: 100px;
     height: 100px;
 }
-
-.box_1{
-
-    position: absolute;
-    left: 75px;
-
-}
-.box_2{
-
-    position: absolute;
-
-    left: 546px;
-}
-.box_3{
-position: absolute;
-    left: 400px;
-
-}
-.box_4{
-    position: absolute;
-    left:740px;
-
-
-}
-.box_5{
-    position: absolute;
-    left: 1140px;
-}
-.box_6{
-    position: absolute;
-   top: 259px;
-    left: 908px;
-}
-.box_7{
-    position: absolute;
-    left: 100px;
-    top: 255px;
-
-}
-.box_8{
-    position: absolute;
-    left: 346px;
-    top: 255px;
-}
-.box_9{
-    position: absolute;
-    left: 558px;
-    top: 255px;
-}
-.box_10{
-    position: absolute;
-    left: 720px;
-    top: 255px;
-
-}
 .h5{
     position: relative;
     background-color: white;
@@ -626,19 +571,20 @@ position: absolute;
     overflow: hidden;
     display: flex;
 }
-.sec1>div:nth-child(2)::before{
+/*..................................................*/
+.sec1>div:nth-child(1)::before{
     content: "";
     background-image: conic-gradient(
             #FEA609 20deg,
             transparent 120deg
     );
-    width: 150%;
+    width:150%;
     height: 150%;
     position: absolute;
-    animation: rotate 2s linear infinite;
+    animation: rotate 5s linear infinite;
 }
-.sec1>div:nth-child(2)::after{
-    content: url("/assets/img/img_13.png");
+.sec1>div:nth-child(1)::after{
+    content: url("/assets/img/img_12.png");
     width: 220px;
     height: 200px;
     background: #101010;
@@ -662,11 +608,345 @@ position: absolute;
         transform: rotate(-360deg);
     }
 }
-.sec1>div:nth-child(2){
 
+
+/*..................................*/
+.sec1>div:nth-child(2)::before{
+    content: "";
+    background-image: conic-gradient(
+            #FEA609 20deg,
+            transparent 120deg
+    );
+    width:150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 5s linear infinite;
+}
+.sec1>div:nth-child(2)::after{
+    content: url("/assets/img/img_13.png");
+    width: 220px;
+    height: 200px;
+    background: #101010;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0052;
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px #0000008c;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+/*..................................*/
+.sec1>div:nth-child(3)::before{
+    content: "";
+    background-image: conic-gradient(
+            #FEA609 20deg,
+            transparent 120deg
+    );
+    width:150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 5s linear infinite;
+}
+.sec1>div:nth-child(3)::after{
+    content: url("/assets/img/img_4.png");
+    width: 220px;
+    height: 200px;
+    background: #101010;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0052;
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px #0000008c;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+/*..................................*/
+.sec1>div:nth-child(4)::before{
+    content: "";
+    background-image: conic-gradient(
+            #FEA609 20deg,
+            transparent 120deg
+    );
+    width:150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 5s linear infinite;
+}
+.sec1>div:nth-child(4)::after{
+    content: url("/assets/img/img_5.png");
+    width: 220px;
+    height: 200px;
+    background: #101010;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0052;
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px #0000008c;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
 }
 
+/*..................................*/
+.sec1>div:nth-child(5)::before{
+    content: "";
+    background-image: conic-gradient(
+            #FEA609 20deg,
+            transparent 120deg
+    );
+    width:150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 5s linear infinite;
+}
+.sec1>div:nth-child(5)::after{
+    content: url("/assets/img/img_6.png");
+    width: 220px;
+    height: 200px;
+    background: #101010;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0052;
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px #0000008c;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+/*...................................*/
+.sec1>div:nth-child(6)::before{
+    content: "";
+    background-image: conic-gradient(
+            #FEA609 20deg,
+            transparent 120deg
+    );
+    width:150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 5s linear infinite;
+}
+.sec1>div:nth-child(6)::after{
+    content: url("/assets/img/img_7.png");
+    width: 220px;
+    height: 200px;
+    background: #101010;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0052;
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px #0000008c;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 
+/*....................................*/
+.sec1>div:nth-child(7)::before{
+    content: "";
+    background-image: conic-gradient(
+            #FEA609 20deg,
+            transparent 120deg
+    );
+    width:150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 5s linear infinite;
+}
+.sec1>div:nth-child(7)::after{
+    content: url("/assets/img/img_8.png");
+    width: 220px;
+    height: 200px;
+    background: #101010;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0052;
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px #0000008c;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+/*.....................................*/
+.sec1>div:nth-child(8)::before{
+    content: "";
+    background-image: conic-gradient(
+            #FEA609 20deg,
+            transparent 120deg
+    );
+    width:150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 5s linear infinite;
+}
+.sec1>div:nth-child(8)::after{
+    content: url("/assets/img/img_9.png");
+    width: 220px;
+    height: 200px;
+    background: #101010;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0052;
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px #0000008c;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+/*......................................*/
+.sec1>div:nth-child(9)::before{
+    content: "";
+    background-image: conic-gradient(
+            #FEA609 20deg,
+            transparent 120deg
+    );
+    width:150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 5s linear infinite;
+}
+.sec1>div:nth-child(9)::after{
+    content: url("/assets/img/img_10.png");
+    width: 220px;
+    height: 200px;
+    background: #101010;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0052;
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px #0000008c;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+/*......................................*/
+.sec1>div:nth-child(10)::before{
+    content: "";
+    background-image: conic-gradient(
+            #FEA609 20deg,
+            transparent 120deg
+    );
+    width:150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 5s linear infinite;
+}
+.sec1>div:nth-child(10)::after{
+    content: url("/assets/img/img_10.png");
+    width: 220px;
+    height: 200px;
+    background: #101010;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0052;
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px #0000008c;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+/*.......................................*/
 .hibernate_img{
     position: relative;
 top: 37px;
