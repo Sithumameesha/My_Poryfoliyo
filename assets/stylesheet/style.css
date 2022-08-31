@@ -619,5 +619,101 @@ position: absolute;
     gap: 19px;
 }
 .sec1>div{
-    box-shadow: -8px -9px 14px 0px rgba(255, 255, 255, 0.68);
+    /*box-shadow: -8px -9px 14px 0px rgba(255, 255, 255, 0.68);*/
+    box-shadow: 16px 14px 20px #0000008c;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+.sec1>div:nth-child(2)::before{
+    content: "";
+    background-image: conic-gradient(
+            #FEA609 20deg,
+            transparent 120deg
+    );
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+}
+.sec1>div:nth-child(2)::after{
+    content: url("/assets/img/img_13.png");
+    width: 220px;
+    height: 200px;
+    background: #101010;
+    position: absolute;
+     left: 5px;
+    top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0052;
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px #0000008c;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+.sec1>div:nth-child(2){
+
+}
+
+
+.hibernate_img{
+    position: relative;
+top: 37px;
+}
+.mysql_img{
+    position: relative;
+    top: 37px;
+    left: 25px;
+}
+.interlij_img{
+    position: relative;
+    top: 45px;
+    left: 45px;
+
+}
+.slack_img{
+    position: relative;
+    top: 40px;
+    left: 50px;
+}
+.github_img{
+    position: relative;
+    top: 40px;
+    left: 50px;
+}
+.figma_img{
+    position: relative;
+    top: 40px;
+    left: 80px;
+}
+.java_img{
+    position: relative;
+    top: 25px;
+    left: 35px;
+}
+.scene_img{
+    position: relative;
+    top: 40px;
+    left: 50px;
+}
+.visual_img{
+    position: relative;
+    top: 40px;
+    left: 50px;
+}
+.js_img{
+    position: relative;
+    top: 35px;
+    left: 35px;
 }
