@@ -522,6 +522,12 @@ position: relative;
     color: #FEA609;
 
 }
+.hibernate_img{
+    width: 300px;
+}
+.mysql_img{
+    height: 100px;
+}
 
 .box_1{
     display: inline;
@@ -535,4 +541,9 @@ position: relative;
     position: relative;
     bottom: 300px;
     left: 190px;
+}
+.box_3{
+position: relative;
+    left: 750px;
+    bottom: 400px;
 }
