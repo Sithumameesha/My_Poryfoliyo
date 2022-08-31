@@ -513,5 +513,20 @@ main>hr{
 .h3_style{
     color: white;
 position: relative;
-    bottom: 100px;
+    bottom: 340px;
+    left: 560px;
+    font-weight: bold;
+    font-size: 32px;
 }
+.h3_style>span{
+    color: #FEA609;
+
+}
+.hibernate_img{
+position: relative;
+    bottom: 250px;
+    left: 100px;
+
+}
+.content_1{}
+.box_1{}
