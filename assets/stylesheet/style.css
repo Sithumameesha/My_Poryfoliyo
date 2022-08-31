@@ -522,11 +522,17 @@ position: relative;
     color: #FEA609;
 
 }
-.hibernate_img{
-position: relative;
+
+.box_1{
+    display: inline;
+    position: relative;
     bottom: 250px;
     left: 100px;
 
 }
-.content_1{}
-.box_1{}
+.box_2{
+    display: inline;
+    position: relative;
+    bottom: 300px;
+    left: 190px;
+}
