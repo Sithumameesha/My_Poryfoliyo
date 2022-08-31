@@ -527,29 +527,7 @@ main>hr{
     color: #FEA609;
 
 }
-.hibernate_img{
-    width: 300px;
-}
-.mysql_img{
-    height: 100px;
-}
-.interlij_img {
-    width: 100px;
-    height: 100px;
-}
-.slack_img{
-    width: 100px;
-    height: 100px;
-}
-.github_img{
-    width: 100px;
-    height: 100px;
-}
-.h5{
-    position: relative;
-    background-color: white;
-  top: 0px;
-}
+
 
 .sec1{
     position: relative;
