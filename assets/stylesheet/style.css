@@ -941,52 +941,26 @@ main>hr{
    top: 280px;
 }
 .sec_2{
-
+border: 2px solid red;
     position: relative;
     top: 30px;
-    height: 1440px;
+    height: 1100px;
+    display: grid;
+    grid-template-rows: repeat(2,2fr);
+    grid-template-columns: repeat(2,2fr);
+
 
 
     /*height: 1400px;*/
 }
-.sec_2>div:nth-child(1){
-    /*border: 2px solid green;*/
-    width: 450px;
-    height: 450px;
+.sec_2>div{
     position: relative;
+    background-color: black;
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
     left: 150px;
-    top: 140px;
-    border-radius: 50%;
-
-    /*box-shadow: -20px -18px 20px 11px white;*/
-
-}
-.sec_2>div:nth-child(2){
-
-    width: 450px;
-    height: 450px;
-    position: relative;
-    left: 750px;
-    bottom: 324px;
-    border-radius: 50%;
-}
-.sec_2>div:nth-child(3){
-
-    width: 450px;
-    height: 450px;
-    position: relative;
-    left: 750px;
-    bottom: 110px;
-    border-radius: 50%;
-}
-.sec_2>div:nth-child(4){
-
-    width: 450px;
-    height: 450px;
-    position: relative;
-    left: 153px;
-    bottom: 555px;
-    border-radius: 50%;
+    top: 100px;
 }
 .sec_2>div::before{
     content: " ";
@@ -998,9 +972,10 @@ main>hr{
     margin: auto;
     border-radius: 50%;
     border: 10px solid black;
-    border-top: 10px solid #FEA609;
-    border-bottom: 10px solid #FEA609;
-    z-index: 2;
+    border: 10px solid #FEA609;
+    /*border-top: 10px solid #FEA609;*/
+    /*border-bottom: 10px solid #FEA609;*/
+
     animation: my_animation 70s linear infinite;
 }
 @keyframes my_animation {
@@ -1018,8 +993,8 @@ main>hr{
     bottom: 0px;
     top: 0px;
     margin: auto;
-    width: 410px;
-    height: 410px;
+   width: 360px;
+    height: 360px;
     border-radius: 50%;
     border: 10px solid black;
     border-top: 10px solid white;
