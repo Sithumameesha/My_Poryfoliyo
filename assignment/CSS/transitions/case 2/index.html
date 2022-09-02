@@ -4,38 +4,49 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-div{
-    width: 200px;
-    height: 200px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    top: 0px;
-    margin: auto;
-    position: absolute;
-    background-color: gray;
-    border: 15px solid red;
-    border-top: 15px solid green;
-    border-radius: 100%;
-    cursor: pointer;
-}
-div>h1 {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    top: 0px;
-    margin: auto;
-    width: max-content;
-    height: max-content;
-}
-div:hover{
-    transform: rotate(360deg);
-    transition: all 2s;
-}
-div:hover>h1{
-    transform: rotate(-360deg);
-    transition: all 2s;
+        body{
+            background-color: black;
+        }
+        div{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            cursor: pointer;
+        }
+        div>h1{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: max-content;
+            height: max-content;
+            color: white;
+            font-family: Ubuntu;
+        }
+
+        div::before{
+            content: " ";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: gray;
+            border-radius: 100%;
+            border: 15px solid white;
+            border-top: 15px solid crimson;
+        }
+
+        div:hover::before{
+            transform: rotate(360deg);
+            transition: all 2s;
 }
     </style>
 </head>
