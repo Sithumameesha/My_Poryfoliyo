@@ -939,3 +939,44 @@ main>hr{
     position: relative;
    top: 280px;
 }
+.sec_2{
+    border: 2px solid red;
+    position: relative;
+    top: 30px;
+    height: 900px;
+}
+.sec_2>div:nth-child(1){
+    /*border: 2px solid green;*/
+    width: 400px;
+    height: 300px;
+    position: relative;
+    left: 150px;
+    top: 100px;
+    box-shadow: -20px -18px 20px 11px white;
+    border-radius: 30px;
+    background-color: ;
+}
+.sec_2>div:nth-child(2){
+    border: 2px solid green;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    left: 830px;
+    bottom: 202px;
+}
+.sec_2>div:nth-child(3){
+    border: 2px solid green;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    left: 830px;
+    bottom: 68px;
+}
+.sec_2>div:nth-child(4){
+    border: 2px solid green;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    left: 153px;
+    bottom: 372px;
+}
