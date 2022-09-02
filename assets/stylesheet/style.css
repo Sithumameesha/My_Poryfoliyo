@@ -1069,3 +1069,21 @@ position: absolute;
     left: 60px;
     top: 210px;
 }
+.sec_2>div:nth-child(4)>img{
+    position: absolute;
+    left: 150px;
+    top: 70px;
+}
+.sec_2>div:nth-child(4)>p:nth-child(2){
+    font-size: 30px;
+    font-weight: bolder;
+    position: absolute;
+    left: 70px;
+    top: 160px;
+}
+.sec_2>div:nth-child(4)>p:nth-child(3){
+    position: absolute;
+    font-size: 18px;
+    left: 80px;
+    top: 230px;
+}
