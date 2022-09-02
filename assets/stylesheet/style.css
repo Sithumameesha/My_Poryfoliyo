@@ -997,10 +997,41 @@ main>hr{
     border: 5px solid black;
     border-top: 5px solid #FEA609;
     border-bottom: 5px solid #FEA609;
-
+    animation: my_animation 10s linear infinite;
+}
+@keyframes my_animation {
+    0%{
+        transform: rotate(0deg);
+    }100%{
+    transform: rotate(360deg);
+         }
+}
+/*.sec_2>div:hover::before{*/
+/*    transform: rotate(360deg);*/
+/*    transition: all 10s;*/
+/*}*/
+.sec_2>div::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 460px;
+    height: 460px;
+    border-radius: 50%;
+    border: 15px solid black;
+    /*border-top: 15px solid white;*/
+    /*border-bottom: 15px solid white;*/
+    border: 15px solid white;
+    animation: animation 10s linear infinite;
 
 }
-.sec_2>div:hover::before{
-    transform: rotate(360deg);
-    transition: all 10s;
+@keyframes animation {
+    0%{
+        transform: rotate(0deg);
+    }100%{
+         transform: rotate(-360deg);
+     }
 }
