@@ -1055,5 +1055,17 @@ position: absolute;
     top: 70px;
 }
 .sec_2>div:nth-child(3)>p:nth-child(2){
+    position: absolute;
+    font-size: 30px;
+    font-weight: bolder;
+    left: 130px;
+    top: 150px;
 
+}
+.sec_2>div:nth-child(3)>p:nth-child(3){
+position: absolute;
+    font-weight: normal;
+    font-size: 18px;
+    left: 60px;
+    top: 210px;
 }
