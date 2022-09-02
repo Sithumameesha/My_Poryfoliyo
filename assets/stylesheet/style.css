@@ -1031,3 +1031,21 @@ main>hr{
     left: 130px;
     top: 50px;
 }
+.sec_2>div:nth-child(2)>img{
+    position: absolute;
+    left: 150px;
+    top: 60px;
+}
+.sec_2>div:nth-child(2)>p:nth-child(2){
+    position: absolute;
+    font-size: 30px;
+    font-weight: bolder;
+    left: 80px;
+    top: 150px;
+}
+.sec_2>div:nth-child(2)>p:nth-child(3){
+position: absolute;
+    font-size: 18px;
+     top: 220px;
+    left: 40px;
+}
