@@ -1049,3 +1049,11 @@ position: absolute;
      top: 220px;
     left: 40px;
 }
+.sec_2>div:nth-child(3)>img{
+    position: absolute;
+    left: 150px;
+    top: 70px;
+}
+.sec_2>div:nth-child(3)>p:nth-child(2){
+
+}
