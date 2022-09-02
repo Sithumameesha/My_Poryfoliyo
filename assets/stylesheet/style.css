@@ -515,12 +515,12 @@ main>hr{
 }
 /*What can I do*/
 .h3_style{
-  bottom: 431px;
+  bottom: 460px;
     color: white;
     font-weight: bold;
     font-size: 32px;
     position: absolute;
-    right: 550px;
+    right: 590px;
 
 }
 .h3_style>span{
