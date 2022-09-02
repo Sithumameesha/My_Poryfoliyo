@@ -4,7 +4,7 @@ body{
     background-color: black;
     color: white;
     /*width: 100%;*/
-    /*height: 100%;*/
+    height: 4000px;
 }
 main>nav>ol>li{
     display: inline-block;
@@ -924,3 +924,18 @@ main>hr{
     }
 }
 /*.......................................*/
+
+
+/* Our Service*/
+.h6_style{
+  margin-top: 200px;
+    margin-left: 550px;
+    font-size: 34px;
+}
+.h6_style>span{
+    color: #FEA609;
+}
+.hr_style{
+    position: relative;
+   top: 280px;
+}
