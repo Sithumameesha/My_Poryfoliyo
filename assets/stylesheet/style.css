@@ -928,9 +928,10 @@ main>hr{
 
 /* Our Service*/
 .h6_style{
-  margin-top: 200px;
+  margin-top: 322px;
     margin-left: 550px;
     font-size: 34px;
+    margin-bottom: 100px;
 }
 .h6_style>span{
     color: #FEA609;
@@ -940,43 +941,42 @@ main>hr{
    top: 280px;
 }
 .sec_2{
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     position: relative;
     top: 30px;
     height: 900px;
 }
 .sec_2>div:nth-child(1){
-    /*border: 2px solid green;*/
+    border: 2px solid green;
     width: 400px;
     height: 400px;
     position: relative;
     left: 150px;
-    top: 100px;
-    box-shadow: -20px -18px 20px 11px white;
-    border-radius: 100%;
-    background-color:#1e1d1d8c ;
+    top: 74px;
+    /*box-shadow: -20px -18px 20px 11px white;*/
+
 }
 .sec_2>div:nth-child(2){
     border: 2px solid green;
     width: 400px;
-    height: 350px;
+    height: 400px;
     position: relative;
     left: 830px;
-    bottom: 202px;
+    bottom: 324px;
 }
 .sec_2>div:nth-child(3){
     border: 2px solid green;
     width: 400px;
-    height: 300px;
+    height: 400px;
     position: relative;
     left: 830px;
-    bottom: 68px;
+    bottom: 110px;
 }
 .sec_2>div:nth-child(4){
     border: 2px solid green;
     width: 400px;
-    height: 300px;
+    height: 400px;
     position: relative;
     left: 153px;
-    bottom: 372px;
+    bottom: 512px;
 }
