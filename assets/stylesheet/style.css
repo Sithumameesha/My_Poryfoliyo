@@ -947,36 +947,60 @@ main>hr{
     height: 900px;
 }
 .sec_2>div:nth-child(1){
-    border: 2px solid green;
-    width: 400px;
-    height: 400px;
+    /*border: 2px solid green;*/
+    width: 450px;
+    height: 450px;
     position: relative;
     left: 150px;
     top: 74px;
+    border-radius: 50%;
+
     /*box-shadow: -20px -18px 20px 11px white;*/
 
 }
 .sec_2>div:nth-child(2){
     border: 2px solid green;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     position: relative;
     left: 830px;
     bottom: 324px;
+    border-radius: 50%;
 }
 .sec_2>div:nth-child(3){
     border: 2px solid green;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     position: relative;
     left: 830px;
     bottom: 110px;
+    border-radius: 50%;
 }
 .sec_2>div:nth-child(4){
     border: 2px solid green;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     position: relative;
     left: 153px;
     bottom: 512px;
+    border-radius: 50%;
+}
+.sec_2>div::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+    border: 5px solid black;
+    border-top: 5px solid #FEA609;
+    border-bottom: 5px solid #FEA609;
+
+
+}
+.sec_2>div:hover::before{
+    transform: rotate(360deg);
+    transition: all 10s;
 }
