@@ -967,9 +967,9 @@ main>hr{
     margin: auto;
     border-radius: 50%;
     border: 10px solid black;
-    border: 10px solid #FEA609;
-    /*border-top: 10px solid #FEA609;*/
-    /*border-bottom: 10px solid #FEA609;*/
+
+    border-top: 10px solid #FEA609;
+    border-bottom: 10px solid #FEA609;
 
     animation: my_animation 70s linear infinite;
 }
@@ -1011,4 +1011,23 @@ main>hr{
 }
 .sec_2>div:hover::after{
     border: 10px solid white;
+}
+.sec_2>div:nth-child(1)>p:nth-child(3){
+    position: relative;
+    left: 80px;
+    bottom: -210px;
+    font-size: 18px;
+    font-weight: normal;
+}
+.sec_2>div:nth-child(1)>p:nth-child(2){
+    position: absolute;
+    left: 90px;
+    bottom: 160px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.sec_2>div:nth-child(1)>img{
+    position: absolute;
+    left: 130px;
+    top: 50px;
 }
