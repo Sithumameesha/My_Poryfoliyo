@@ -941,7 +941,7 @@ main>hr{
    top: 280px;
 }
 .sec_2{
-    border: 2px solid red;
+
     position: relative;
     top: 30px;
     height: 1440px;
@@ -951,11 +951,11 @@ main>hr{
 }
 .sec_2>div:nth-child(1){
     /*border: 2px solid green;*/
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     position: relative;
     left: 150px;
-    top: 74px;
+    top: 140px;
     border-radius: 50%;
 
     /*box-shadow: -20px -18px 20px 11px white;*/
@@ -963,38 +963,34 @@ main>hr{
 }
 .sec_2>div:nth-child(2){
 
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     position: relative;
-    left: 830px;
+    left: 750px;
     bottom: 324px;
     border-radius: 50%;
 }
 .sec_2>div:nth-child(3){
 
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     position: relative;
-    left: 700px;
+    left: 750px;
     bottom: 110px;
     border-radius: 50%;
 }
 .sec_2>div:nth-child(4){
 
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     position: relative;
     left: 153px;
-    bottom: 512px;
+    bottom: 555px;
     border-radius: 50%;
 }
 .sec_2>div::before{
     content: " ";
     position: absolute;
-    /*left: -4px;*/
-    /*right: 1px;*/
-    /*top: -24px;*/
-    /*bottom: 1px;*/
     left: 0px;
     right: 0px;
     bottom: 0px;
@@ -1005,8 +1001,7 @@ main>hr{
     border-top: 10px solid #FEA609;
     border-bottom: 10px solid #FEA609;
     z-index: 2;
-/*border: 10px solid #FEA609;*/
-    animation: my_animation 5s linear infinite;
+    animation: my_animation 70s linear infinite;
 }
 @keyframes my_animation {
     0%{
@@ -1023,15 +1018,15 @@ main>hr{
     bottom: 0px;
     top: 0px;
     margin: auto;
-    width: 357px;
-    height: 357px;
+    width: 410px;
+    height: 410px;
     border-radius: 50%;
     border: 10px solid black;
     border-top: 10px solid white;
     border-bottom: 10px solid white;
     /*border: 10px solid white;*/
    ;
-    animation: animation 30s linear infinite;
+    animation: animation 50s linear infinite;
 
 }
 @keyframes animation {
