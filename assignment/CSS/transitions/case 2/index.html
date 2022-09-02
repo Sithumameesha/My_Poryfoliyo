@@ -14,9 +14,10 @@ div{
     margin: auto;
     position: absolute;
     background-color: gray;
-    border: 10px solid red;
+    border: 15px solid red;
     border-top: 15px solid green;
     border-radius: 100%;
+    cursor: pointer;
 }
 div>h1 {
     position: absolute;
@@ -27,6 +28,14 @@ div>h1 {
     margin: auto;
     width: max-content;
     height: max-content;
+}
+div:hover{
+    transform: rotate(360deg);
+    transition: all 2s;
+}
+div:hover>h1{
+    transform: rotate(-360deg);
+    transition: all 2s;
 }
     </style>
 </head>
