@@ -966,7 +966,7 @@ main>hr{
     width: 400px;
     height: 400px;
     position: relative;
-    left: 700px;
+    left: 830px;
     bottom: 324px;
     border-radius: 50%;
 }
@@ -991,16 +991,21 @@ main>hr{
 .sec_2>div::before{
     content: " ";
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    /*left: -4px;*/
+    /*right: 1px;*/
+    /*top: -24px;*/
+    /*bottom: 1px;*/
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
     margin: auto;
     border-radius: 50%;
     border: 10px solid black;
     border-top: 10px solid #FEA609;
     border-bottom: 10px solid #FEA609;
-
+    z-index: 2;
+/*border: 10px solid #FEA609;*/
     animation: my_animation 5s linear infinite;
 }
 @keyframes my_animation {
@@ -1013,17 +1018,18 @@ main>hr{
 .sec_2>div::after{
     content: " ";
     position: absolute;
-    left: -38px;
-    right: 1px;
-    top: -32px;
-    bottom: 1px;
-    /*margin: auto;*/
-    width: 440px;
-    height: 440px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin: auto;
+    width: 357px;
+    height: 357px;
     border-radius: 50%;
     border: 10px solid black;
     border-top: 10px solid white;
     border-bottom: 10px solid white;
+    /*border: 10px solid white;*/
    ;
     animation: animation 30s linear infinite;
 
@@ -1034,4 +1040,10 @@ main>hr{
     }100%{
          transform: rotate(-360deg);
      }
+}
+.sec_2>div:hover::before{
+    border: 10px solid #FEA609;
+}
+.sec_2>div:hover::after{
+    border: 10px solid white;
 }
