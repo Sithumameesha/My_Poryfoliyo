@@ -1106,6 +1106,7 @@ main>hr{
     color: #FEA609;
 }
 .sec_4{
+    position: relative;
     width: 1200px;
     height: 350px;
     border: 2px solid green;
@@ -1115,8 +1116,22 @@ main>hr{
     display: flex;
 }
 .sec_4>div{
-    width: 400px;
+    width: 450px;
     height: 300px;
     border: 2px solid #FEA609;
     margin-top: 25px;
+
+}
+.sec_4>div:hover{
+   width: 500px;
+    box-shadow: -2px -7px 12px 2px white;
+
+}
+.sec_4>div>img:hover{
+    width: 450px;
+}
+.div_11>img{
+    position: relative;
+    width: 400px;
+    height: 300px;
 }
