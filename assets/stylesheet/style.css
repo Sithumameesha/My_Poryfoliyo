@@ -990,9 +990,10 @@ main>hr{
     width: 360px;
     height: 360px;
     border-radius: 50%;
-    border: 10px solid black;
-    border-top: 10px solid white;
-    border-bottom: 10px solid white;
+    /*border: 10px solid black;*/
+    border: 10px solid white;
+    /*border-top: 10px solid white;*/
+    /*border-bottom: 10px solid white;*/
     /*border: 10px solid white;*/
 ;
     animation: animation 50s linear infinite;
