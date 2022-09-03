@@ -1121,8 +1121,8 @@ main>hr{
     position: relative;
     width: 350px;
     height: 240px;
-    border: 5px solid white;
-    left: 10px;
+    /*border: 5px solid white;*/
+    left: 0px;
     margin: 20px;
 top: 35px;
 }
@@ -1133,7 +1133,8 @@ top: 35px;
 
 }
 .sec_4>div>img:hover{
-    width: 450px;
+    position: relative;
+    width: 400px;
 
 }
 .div_11>img{
@@ -1147,3 +1148,26 @@ top: 35px;
 .div_11>h2{
     margin-left: 30px;
 }
+.div_12>img{
+    position: relative;
+    width: 320px;
+    height: 180px;
+    left: 15px;
+    top: 15px;
+    border-radius: 20px;
+}
+.div_12>h2{
+    margin-left: 30px;
+}
+.div_13>img{
+    position: relative;
+    width: 320px;
+    height: 180px;
+    left: 15px;
+    top: 15px;
+    border-radius: 20px;
+}
+.div_13>h2{
+    margin-left: 30px;
+}
+
