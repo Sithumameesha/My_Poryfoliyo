@@ -1242,16 +1242,28 @@ margin-left: 120px;
 .sec_6>div:nth-child(1){
     width: 100px;
     height: 100px;
-    background-color: white;
     position: relative;
     left: 170px;
+}
+.sec_6>div:nth-child(1)>img{
+    position: relative;
+    left: 10px;
+    top: 15px;
+    width: 70px;
+    height: 70px;
 }
 .sec_6>div:nth-child(2){
     width: 100px;
     height: 100px;
-    background-color: white;
+
     position: relative;
     left: 440px;
+}
+.sec_6>div:nth-child(2)>img{
+    width: 70px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .sec_6>div:nth-child(3){
     width: 100px;
@@ -1259,4 +1271,15 @@ margin-left: 120px;
     background-color: white;
     position: relative;
     left: 700px;
+}
+.h10{
+    font-size: 15px;
+    margin-left: 15px;
+}
+.h12{
+    position: relative;
+    bottom: 20px;
+    font-size: 15px;
+    left: 27px;
+
 }
