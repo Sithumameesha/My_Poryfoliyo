@@ -1,15 +1,13 @@
-
 body{
-   margin: 0px;
+    margin: 0px;
     background-color: black;
     color: white;
-    height: 4000px;
     /*width: 100%;*/
-   /*height: 5000px;*/
+    /*height: 5000px;*/
 }
 main>nav>ol>li{
     display: inline-block;
-  padding: 15px;
+    padding: 15px;
     color: white;
     font-size: 20px;
     cursor: pointer;
@@ -23,7 +21,7 @@ main>nav>ol:first-child>li:active{
 }
 
 main>nav>ol:first-child{
-   left: 580px;
+    left: 580px;
     margin-top: 0px;
     display: inline;
     position: absolute;
@@ -46,7 +44,7 @@ main>nav>ol:last-child {
     margin: 0px;
 }
 main>section>aside>div{
-position: absolute;
+    position: absolute;
     top: 150px;
     left: 100px;
 }
@@ -287,7 +285,7 @@ main>hr{
 }
 .btn_1:hover{
     letter-spacing: 0.05em;
-   color: white;
+    color: white;
     font-weight: bold;
 }
 .btn_2{
@@ -312,7 +310,7 @@ main>hr{
 
 }
 .h2{
-   position: relative;
+    position: relative;
     width: 1200px;
     top: 100px;
 }
@@ -412,7 +410,7 @@ main>hr{
     border: 3px solid white;
     position: relative;
     left: 970px;
-   bottom: 220px;
+    bottom: 220px;
 }
 .Style_Div_9>p:first-child{
     color: white;
@@ -508,7 +506,7 @@ main>hr{
 .h3{
     position: relative;
     width: 1200px;
-   bottom: 372px;
+    bottom: 372px;
 }
 .main_4{
     height: 159px;
@@ -516,7 +514,7 @@ main>hr{
 }
 /*What can I do*/
 .h3_style{
-  bottom: 460px;
+    bottom: 460px;
     color: white;
     font-weight: bold;
     font-size: 32px;
@@ -939,12 +937,12 @@ main>hr{
 }
 .hr_style{
     position: relative;
-   top: 280px;
+    top: 280px;
 }
 .sec_2{
     position: relative;
     top: 370px;
-    height: 1100px;
+    height: 1150px;
     display: grid;
     grid-template-rows: repeat(2,2fr);
     grid-template-columns: repeat(2,2fr);
@@ -978,8 +976,8 @@ main>hr{
     0%{
         transform: rotate(0deg);
     }100%{
-    transform: rotate(360deg);
-         }
+         transform: rotate(360deg);
+     }
 }
 .sec_2>div::after{
     content: " ";
@@ -989,14 +987,14 @@ main>hr{
     bottom: 0px;
     top: 0px;
     margin: auto;
-   width: 360px;
+    width: 360px;
     height: 360px;
     border-radius: 50%;
     border: 10px solid black;
     border-top: 10px solid white;
     border-bottom: 10px solid white;
     /*border: 10px solid white;*/
-   ;
+;
     animation: animation 50s linear infinite;
 
 }
@@ -1045,9 +1043,9 @@ main>hr{
     top: 150px;
 }
 .sec_2>div:nth-child(2)>p:nth-child(3){
-position: absolute;
+    position: absolute;
     font-size: 18px;
-     top: 220px;
+    top: 220px;
     left: 40px;
 }
 .sec_2>div:nth-child(3)>img{
@@ -1064,7 +1062,7 @@ position: absolute;
 
 }
 .sec_2>div:nth-child(3)>p:nth-child(3){
-position: absolute;
+    position: absolute;
     font-weight: normal;
     font-size: 18px;
     left: 60px;
@@ -1088,25 +1086,37 @@ position: absolute;
     left: 80px;
     top: 230px;
 }
+.main_5{
+    margin-top: 450px;
+    border: 2px solid red;
+}
 .h7_style{
-    position: relative;
+    position: absolute;
+    bottom: -3770px;
+    width: 1250px;
+    left: 40px;
+    background-color: white;
+}
+.main_5>h1{
+    font-size: 33px;
+    margin-left: 600px;
+    margin-top: 0px;
+}
+.span_3{
     color: #FEA609;
+}
+.sec_4{
     width: 1200px;
-    left: 10px;
-    top: 500px;
+    height: 350px;
+    border: 2px solid green;
+    margin-left: 70px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    display: flex;
 }
-
-/*My Projects*/
-
-.main_4{
-    position: relative;
-top:528px
-}
-.main_4>h1{
-    position: relative;
-    left: 43%;
-}
-.main_4>h1>span{
-    color: #FEA609;
-    font-size: 34px;
+.sec_4>div{
+    width: 400px;
+    height: 300px;
+    border: 2px solid #FEA609;
+    margin-top: 25px;
 }
