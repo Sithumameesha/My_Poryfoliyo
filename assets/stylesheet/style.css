@@ -1184,6 +1184,79 @@ top: 35px;
 }
 .sec_5>p{
     font-size: 20px;
-    margin-left: 100px;
+    margin-left: 220px;
     margin-top: 100px;
+
+}
+.field{
+/*border: 2px solid black;*/
+width: 1000px;
+margin-left: 120px;
+    border-radius: 20px;
+    /*border: 2px solid #FEA609;*/
+    box-shadow:  2px 2px 11px white;
+}
+.field>input{
+    position: relative;
+    display: block;
+    margin: 30px;
+}
+.field>input:nth-child(1){
+    width: 1000px;
+    height: 50px;
+    background-color: black;
+    border: 2px solid #FEA609;
+    color: white;
+}
+.field>input:nth-child(2){
+    width: 1000px;
+    height: 50px;
+    background-color: black;
+    border: 2px solid #FEA609;
+    color: white;
+}
+.field>input:nth-child(3){
+    width: 1000px;
+    height: 100px;
+    background-color: black;
+    border: 2px solid #FEA609;
+    color: white;
+}
+.field>button{
+    width: 130px;
+    height: 35px;
+    border-radius: 20px;
+    margin-left: 30px;
+    background-color: #FEA609;
+}
+.field>button>span{
+    font-size:17px ;
+    font-weight: bold;
+}
+.sec_6{
+
+    margin-top: 30px;
+    display: flex;
+    margin-left: 100px;
+}
+.sec_6>div:nth-child(1){
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: relative;
+    left: 170px;
+}
+.sec_6>div:nth-child(2){
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: relative;
+    left: 440px;
+}
+.sec_6>div:nth-child(3){
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: relative;
+    left: 700px;
 }
