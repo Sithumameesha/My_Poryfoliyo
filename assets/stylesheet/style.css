@@ -1235,7 +1235,7 @@ margin-left: 120px;
 }
 .sec_6{
 
-    margin-top: 30px;
+    margin-top: 60px;
     display: flex;
     margin-left: 100px;
 }
@@ -1268,9 +1268,15 @@ margin-left: 120px;
 .sec_6>div:nth-child(3){
     width: 100px;
     height: 100px;
-    background-color: white;
     position: relative;
     left: 700px;
+}
+.sec_6>div:nth-child(3)>img{
+    width: 90px;
+    height: 80px;
+    position: relative;
+    top: 13px;
+
 }
 .h10{
     font-size: 15px;
@@ -1282,4 +1288,14 @@ margin-left: 120px;
     font-size: 15px;
     left: 27px;
 
+}
+.h13{
+    position: relative;
+    right: 40px;
+    font-size: 15px;
+    bottom: 10px;
+}
+.last_hr{
+    width: 1250px;
+    margin-top: 80px;
 }
