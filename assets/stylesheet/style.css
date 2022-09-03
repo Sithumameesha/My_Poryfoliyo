@@ -1170,4 +1170,20 @@ top: 35px;
 .div_13>h2{
     margin-left: 30px;
 }
-
+.h8_style{
+    position: relative;
+    width: 1250px;
+}
+/*Contact*/
+.sec_5>h1{
+    margin-left: 600px;
+    font-size: 33px;
+}
+.sec_5>h1>span{
+    color: #FEA609;
+}
+.sec_5>p{
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
