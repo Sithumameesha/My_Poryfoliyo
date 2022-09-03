@@ -3,6 +3,7 @@ body{
    margin: 0px;
     background-color: black;
     color: white;
+    height: 4000px;
     /*width: 100%;*/
    /*height: 5000px;*/
 }
@@ -1086,4 +1087,26 @@ position: absolute;
     font-size: 18px;
     left: 80px;
     top: 230px;
+}
+.h7_style{
+    position: relative;
+    color: #FEA609;
+    width: 1200px;
+    left: 10px;
+    top: 500px;
+}
+
+/*My Projects*/
+
+.main_4{
+    position: relative;
+top:528px
+}
+.main_4>h1{
+    position: relative;
+    left: 43%;
+}
+.main_4>h1>span{
+    color: #FEA609;
+    font-size: 34px;
 }
