@@ -1088,7 +1088,7 @@ main>hr{
 }
 .main_5{
     margin-top: 450px;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
 }
 .h7_style{
     position: absolute;
@@ -1118,13 +1118,15 @@ main>hr{
     background: rgba(255,255,255,0.03);
 }
 .sec_4>div{
-    width: 300px;
-    height: 300px;
-    border: 2px solid #FEA609;
-    margin-top: 25px;
+    position: relative;
+    width: 350px;
+    height: 240px;
+    border: 5px solid white;
+    left: 10px;
     margin: 20px;
-
+top: 35px;
 }
+
 .sec_4>div:hover{
     width: 500px;
     box-shadow: -2px -7px 12px 2px white;
@@ -1136,11 +1138,12 @@ main>hr{
 }
 .div_11>img{
     position: relative;
-    width: 400px;
-    height: 300px;
+    width: 320px;
+    height: 180px;
+   left: 15px;
+    top: 15px;
+    border-radius: 20px;
 }
-.div_12>img{
-    position: relative;
-    width: 400px;
-    height: 300px;
+.div_11>h2{
+    margin-left: 30px;
 }
