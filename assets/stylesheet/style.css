@@ -1109,21 +1109,24 @@ main>hr{
     position: relative;
     width: 1200px;
     height: 350px;
-    border: 2px solid green;
+    /*border: 2px solid green;*/
     margin-left: 70px;
     margin-bottom: 60px;
     margin-top: 40px;
     display: flex;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.03);
 }
 .sec_4>div{
-    width: 450px;
+    width: 300px;
     height: 300px;
     border: 2px solid #FEA609;
     margin-top: 25px;
+    margin: 20px;
 
 }
 .sec_4>div:hover{
-   width: 500px;
+    width: 500px;
     box-shadow: -2px -7px 12px 2px white;
 
 }
