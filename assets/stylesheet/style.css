@@ -59,15 +59,21 @@ main>section>aside>div>p:nth-child(2){
     margin-top: 10px;
     margin-bottom: 0px;
 }
-main>section>aside>div>p:last-child{
+main>section>aside>div>p:nth-child(3){
     font-size: 32px;
     margin-top: 10px;
+}
+main>section>aside>div>p:nth-child(4){
+    font-size: 32px;
+    margin-top: 100px;
+
+
 }
 .fbImg{
     position: absolute;
     width: 5vw;
     height: 12vh;
-    top: 400px;
+    top: 500px;
     left: 100px;
     cursor: pointer;
 }
@@ -85,7 +91,7 @@ main>section>aside>div>p:last-child{
     position: absolute;
     width: 5vw;
     height: 12vh;
-    top: 400px;
+    top: 500px;
     left: 250px;
     cursor: pointer;
 }
@@ -93,7 +99,7 @@ main>section>aside>div>p:last-child{
     position: absolute;
     width: 5vw;
     height: 12vh;
-    top: 400px;
+    top: 500px;
     left:400px;
     cursor: pointer;
 }
@@ -1116,7 +1122,8 @@ main>hr{
     margin-top: 40px;
     display: flex;
     border-radius: 30px;
-    background: rgba(255,255,255,0.03);
+    /*background: rgba(255,255,255,0.03);*/
+    background: #323840;
 }
 .sec_4>div{
     position: relative;
@@ -1185,8 +1192,9 @@ top: 35px;
 }
 .sec_5>p{
     font-size: 20px;
-    margin-left: 220px;
+    margin-left: 80px;
     margin-top: 100px;
+    letter-spacing: 3px;
 
 }
 .field{
@@ -1339,3 +1347,40 @@ margin-left: 120px;
     width: 50px;
     left: 0px;
 }
+.animation_sec{
+
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    overflow: hidden;
+}
+.bubles{
+    position: absolute;
+    display: flex;
+}
+.bubles>span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: #ff9700;
+    margin: 0 6px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px #FEA6;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(155s / var(--i));
+}
+.bubles>span:nth-child(even){
+    background-color: white;
+    box-shadow: 0 0 0 8px #FEA6;
+}
+@keyframes animate {
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+
