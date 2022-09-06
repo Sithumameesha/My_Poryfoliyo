@@ -347,15 +347,19 @@ main>hr{
     left: 3px;
 }
 .photo_frame{
+    display: flex;
     position: absolute;
     width: 350px;
     height: 350px;
     left: 900px;
     bottom: 30px;
-    border: 5px solid #FEA609;
+    border: 5px Dashed #FEA609;
     border-bottom-left-radius: 40px;
 
+
+
 }
+
 .btn_2:hover{
     letter-spacing: 0.05em;
     color: white;
@@ -375,9 +379,31 @@ main>hr{
     font-weight: bold;
     font-size: 32px;
     margin-top: 150px;
+    font-family: "Agency FB";
 }
 .spa_2{
     color: #FEA609;
+}
+.gif_sec>img{
+    width: 650px;
+    height: 650px;
+}
+.edu_sec{
+    display:grid;
+    position: absolute;
+    width: 400px;
+    height: 450px;
+    border: 2px solid red;
+    left: 900px;
+    top: 160px;
+
+    grid-template-rows: repeat(3,1fr);
+    /*grid-template-columns: repeat(4,1fr);*/
+    gap: 60px;
+    gap: 60px;
+}
+.edu_sec>div{
+    border: 2px solid green;
 }
 .Style_Div{
     height: 550px;
@@ -559,11 +585,12 @@ main>hr{
 .h3{
     position: relative;
     width: 1200px;
-    bottom: 372px;
+    bottom: 9px;
 }
 .main_4{
     height: 159px;
-    position: relative;
+    margin-top: 400px;
+
 }
 /*What can I do*/
 .h3_style{
