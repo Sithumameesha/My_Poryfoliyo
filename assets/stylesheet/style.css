@@ -452,9 +452,19 @@ main>hr{
     background: #2d2d2d;
 }
 .ver_line{
+    position: absolute;
     border-left: 6px solid white;
-    height: 200px;
-    left: 200px;
+    height: 69px;
+    left: 830px;
+    top: 270px;
+
+}
+.ver_line_1{
+    position: absolute;
+    border-left: 6px solid white;
+    height: 69px;
+    left: 830px;
+    top: 440px;
 
 }
 .circle{
