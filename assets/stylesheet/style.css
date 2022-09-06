@@ -5,15 +5,17 @@ body{
     margin: 0px;
     background-color: black;
     color: white;
+    font-family: "Arial Unicode MS";
     /*width: 100%;*/
     /*height: 5000px;*/
 }
 main>nav>ol>li{
     display: inline-block;
-    padding: 15px;
+    padding: 16px;
     color: white;
     font-size: 20px;
     cursor: pointer;
+    font-family: "Arial Narrow";
 
 }
 main>nav>ol:first-child>li:hover{
@@ -33,6 +35,7 @@ main>nav>ol:first-child{
 }
 .name_part{
     color: #FEA609;
+    letter-spacing: 2px;
 }
 main>nav>ol:last-child>li{
     padding-left: -10px;
