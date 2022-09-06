@@ -403,6 +403,49 @@ main>hr{
     gap: 60px;
 
 }
+.edu_sec>div:first-child>p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: "Arial Narrow";
+
+}
+.edu_sec>div:nth-child(2)>p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: "Arial Narrow";
+
+}
+.edu_sec>div:nth-child(3)>p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: "Arial Narrow";
+
+}
+.edu_sec>div:nth-child(3)>p:last-child{
+    font-weight: bolder;
+    font-size: 22px;
+
+    color: #FEA6;
+
+}
+.edu_sec>div:nth-child(2)>p:last-child{
+    font-weight: bolder;
+    font-size: 22px;
+
+    color: #FEA6;
+}
+.edu_sec>div:first-child>p:last-child{
+    font-weight: bolder;
+    font-size: 22px;
+
+    color: #FEA6;
+}
 .edu_sec>div{
 
     background: rgba(255 ,255,255,0.07);
@@ -412,7 +455,7 @@ main>hr{
 }
 .arrow{
     width: 78px;
-    height: 78px;
+    height: 80px;
     /*transition: 0.5s;*/
     float: right;
     /*box-shadow: -2px -2px 0 #FEA609;*/
@@ -431,7 +474,7 @@ main>hr{
     /*box-shadow: -2px -2px 0 white;*/
     position: absolute;
     left: 860px;
-    top: 346px;
+    top: 350px;
     background: #FEA609;
     transform: rotate(315deg);
     background: rgba(255 ,255,255,0.07);
@@ -439,13 +482,13 @@ main>hr{
 }
 .arrow_2{
     width: 78px;
-    height: 78px;
+    height: 83px;
     /*transition: 0.5s;*/
     float: left;
     /*box-shadow: -2px -2px 0 white;*/
     position: absolute;
     left: 862px;
-    top: 516px;
+    top: 522px;
     background: #FEA609;
     transform: rotate(315deg);
     background: rgba(255 ,255,255,0.07);
