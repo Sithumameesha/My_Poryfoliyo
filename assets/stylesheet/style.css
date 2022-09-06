@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body{
     margin: 0px;
     background-color: black;
@@ -11,6 +14,7 @@ main>nav>ol>li{
     color: white;
     font-size: 20px;
     cursor: pointer;
+
 }
 main>nav>ol:first-child>li:hover{
     color: #FEA609;
@@ -32,9 +36,10 @@ main>nav>ol:first-child{
 }
 main>nav>ol:last-child>li{
     padding-left: -10px;
-    font-size: 32px;
+    font-size: 34px;
     padding-top: 7px;
-
+    font-family: "Agency FB";
+letter-spacing: 3px;
 }
 .spa_1{
     color: #FEA609;
@@ -143,27 +148,40 @@ main>hr{
 
 }
 .h1{
-    padding-left: 540px;
-    padding-top: 600px;
+  position: absolute;
+    left: 600px;
     font-weight: bold;
     font-size: 32px;
+    font-family: "Agency FB";
+    top: 663px;
+}
+.main3{
+    margin-top:  701px;
+   border:  2px solid red;
 }
 .h1_Style{
     color: #FEA609;
 }
 .about_pra{
-    margin-left: 60px;
+    margin-left: 50px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 200;
+    letter-spacing: 3px;
+    font-family: "Arial Narrow";
+    margin-top: -17px;
+
 }
 .about_li{
     color: #FEA609;
+    font-family: "Arial Narrow";
 
 }
 .about_ol{
     margin-left: 70px;
     margin-top: 40px;
     font-size: 20px;
+    font-family: "Arial Narrow";
+    letter-spacing: 2px;
 }
 .about_lis{
     padding: 10px;
@@ -175,6 +193,7 @@ main>hr{
     height: 35px;
     margin-left: 200px;
     border-radius: 10px;
+    font-family: "Arial Narrow";
 }
 .nav{
     width: 100%;
@@ -193,32 +212,9 @@ main>hr{
     border-radius: 50%;
     overflow: hidden;
 }
-.box::before {
-    content: '';
-    position: absolute;
-    inset: -10px 140px;
-    background: linear-gradient(315deg,white,#FEA609);
-    transition: 0.4s;
-    animation: animate 3s linear infinite;
-}
 .box:hover::before {
     inset: -20px 0px;
-}
-@keyframes animate {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-.box::after {
-    content: '';
-    position: absolute;
-    inset: 6px;
-    background: black;
-    border-radius: 50%;
-    z-index: 1;
+    border: 5px solid #FEA609;
 }
 .content {
     position: absolute;
@@ -231,6 +227,10 @@ main>hr{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /*border: 5px solid #FEA609;*/
+}
+.content:hover {
+    border: 5px solid #FEA609;
 }
 .content img {
     position: absolute;
@@ -245,6 +245,8 @@ main>hr{
 }
 .box:hover .content img {
     opacity: 0;
+    border: 5px solid #FEA609;
+
 }
 .content h2 {
     position: relative;
@@ -270,9 +272,11 @@ main>hr{
     letter-spacing: 0.05em;
     text-decoration: none;
     transition: 0.4s;
+
 }
 .content a:hover {
     letter-spacing: 0.3em;
+    border: 5px solid #FEA609;
 }
 .btn_1{
     position: relative;
@@ -288,6 +292,8 @@ main>hr{
     text-decoration: none;
     transition: 0.4s;
     cursor: pointer;
+    font-family: "Arial Narrow";
+    z-index: 2;
 }
 .btn_1:hover{
     letter-spacing: 0.05em;
@@ -308,7 +314,23 @@ main>hr{
     text-decoration: none;
     transition: 0.4s;
     cursor: pointer;
+    font-family: "Arial Narrow";
+    z-index: 2;
 }
+/*.style_sec{*/
+/*    position: absolute;*/
+/*    width:1340px;*/
+/*    height: 519px;*/
+/*    border: 3px solid red;*/
+/*    bottom: -689px;*/
+/*    border-radius: 30px;*/
+/*    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);*/
+/*    background: rgba(255 ,255,255,0.1);*/
+/*    border-top: 1px solid rgba(255,255,255,0.5);*/
+/*    border-left:  1px solid rgba(255,255,255,0.5);*/
+/*    backdrop-filter: blur(3px);*/
+
+/*}*/
 .btn_2:hover{
     letter-spacing: 0.05em;
     color: white;
@@ -1122,8 +1144,8 @@ main>hr{
     margin-top: 40px;
     display: flex;
     border-radius: 30px;
-    /*background: rgba(255,255,255,0.03);*/
-    background: #323840;
+    background: rgba(255,255,255,0.03);
+    /*background: #323840;*/
 }
 .sec_4>div{
     position: relative;
@@ -1363,7 +1385,7 @@ margin-left: 120px;
     width: 30px;
     height: 30px;
     background-color: #ff9700;
-    margin: 0 6px;
+    margin: 20px;
     border-radius: 50%;
     box-shadow: 0 0 0 8px #FEA6;
     animation: animate 15s linear infinite;
