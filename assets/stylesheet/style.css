@@ -5,7 +5,8 @@ body{
     margin: 0px;
     background-color: black;
     color: white;
-    font-family: "Arial Unicode MS";
+    font-family: "Bodoni MT";
+    /*font-family: "Arial Unicode MS";*/
     /*width: 100%;*/
     /*height: 5000px;*/
 }
@@ -521,6 +522,7 @@ main>hr{
     background-color: #FEA609;
     top: 180px;
     left: 794px;
+    box-shadow: 0 0 0 8px #fea6;
 }
 .circle>img {
     position: relative;
@@ -538,7 +540,9 @@ main>hr{
     background-color: #FEA609;
     top: 350px;
     left: 794px;
+    box-shadow: 0 0 0 8px #fea6;
 }
+
 .circle_1>img {
     position: relative;
     top: 10px;
@@ -555,6 +559,7 @@ main>hr{
     background-color: #FEA609;
     top: 515px;
     left: 794px;
+    box-shadow: 0 0 0 8px #fea6;
 }
 .circle_2>img {
     position: relative;
@@ -750,16 +755,20 @@ main>hr{
 .main_4{
     height: 159px;
     margin-top: 400px;
+    position: relative;
 
 }
 /*What can I do*/
 .h3_style{
-    bottom: 460px;
+    position: absolute;
     color: white;
     font-weight: bold;
     font-size: 32px;
     position: absolute;
-    right: 590px;
+    bottom: 450px;
+    left: 600px;
+    font-family: "Agency FB";
+    letter-spacing: 1px;
 
 }
 .h3_style>span{
