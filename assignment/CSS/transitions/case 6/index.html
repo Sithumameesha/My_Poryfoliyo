@@ -17,16 +17,78 @@
     section:last-child>img{
         margin: 0px;
     }
+    .car_div{
+        position: absolute;
+        width: 1004px;
+        height: 394px;
+        top: 263px;
+        left: 163px;
+    }
+    .car_div>img:last-child{
+        position: absolute;
+        top: 80px;
+        left: 100px;
+    }
+    .car_div>img:first-child{
+        position: absolute;
+        width: 500px;
+        left: 250px;
+        bottom: 50px;
+    }
+ .wheel>img:first-child{
+     position: absolute;
+     top: 458px;
+     left: 460px;
+     width: 90px;
+ }
+    .wheel>img:last-child{
+        position: absolute;
+        top: 458px;
+        left: 766px;
+        width: 90px;
+    }
+    .road_div>img:nth-child(2){
+        position: absolute;
+        top: 155px;
+
+    }
+    .road_div>img:nth-child(3){
+        position: absolute;
+        top: 155px;
+        left: 1415px;
+    }
+    .road_div>img:nth-child(4){
+        position: absolute;
+        top: 155px;
+        left: 2830px;
+    }
+    .road_div>img:nth-child(5){
+        position: absolute;
+        top: 155px;
+        left:4246px;
+
+    }
+
 </style>
 <body>
 <section>
     <img src="img/sky.jpg">
 </section>
 <section>
-    <div>
+    <div class="road_div">
         <img src="img/road.jpg">
+        <img src="img/city.png">
+        <img src="img/city.png">
+        <img src="img/city.png">
+        <img src="img/city.png">
     </div>
 </section>
-
+<div class="car_div">
+    <img src="img/car.png">
+</div>
+<div class="wheel">
+<img src="img/wheel.png">
+    <img src="img/wheel.png">
+</div>
 </body>
 </html>
