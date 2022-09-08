@@ -4,7 +4,86 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<style>
+    body{
+        background-color: #cfcfcf;
+    }
+    main {
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    main > section {
+        height: 100%;
+        width: 400%;
+        display: flex;
+        animation-name: slider-animation;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    main > section > div {
+        height: 100%;
+        width: 100%;
+    }
+
+    main > section > div:nth-child(1) {
+        background: url("img/0qLJmXh.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    main > section > div:nth-child(2) {
+        background: url("img/00db8d657ababbdd393c1d1742148700.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    main > section > div:nth-child(3) {
+        background: url("img/1.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    main > section > div:nth-child(4) {
+        background: url("img/5.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    @keyframes slider-animation {
+        0%,20%{
+            transform: translateX(0);
+        }
+        30%,50% {
+            transform: translateX(-25%);
+        }
+        60%,80% {
+            transform: translateX(-50%);
+        }
+        90%,100% {
+            transform: translateX(-75%);
+        }
+    }
+</style>
+</head>
 <body>
+
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
 
 </body>
 </html>
