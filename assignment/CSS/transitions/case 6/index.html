@@ -36,17 +36,45 @@
         left: 250px;
         bottom: 50px;
     }
- .wheel>img:first-child{
-     position: absolute;
-     top: 458px;
-     left: 460px;
-     width: 90px;
- }
-    .wheel>img:last-child{
+    .wheel{
         position: absolute;
-        top: 458px;
-        left: 766px;
-        width: 90px;
+
+        /*border: 2px solid red;*/
+        transform: rotate(360deg);
+        transition: all 2s;
+        animation-name: div_rotate;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        left: 450px;
+        top: 444px;
+
+    }
+    .wheel>img{
+        width: 100px;
+    }
+    @keyframes div_rotate {
+        0%{
+            transform: rotate(-360deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+
+    }
+    .wheel_1{
+        position: absolute;
+
+        /*border: 2px solid red;*/
+        transform: rotate(360deg);
+        transition: all 2s;
+        animation-name: div_rotate;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        left: 760px;
+        top: 444px;
+    }
+    .wheel_1>img{
+        width: 100px;
     }
     .road_div>img:nth-child(2){
         position: absolute;
@@ -111,6 +139,7 @@
     section:nth-child(2)>div:nth-child(2){
         background: url("img/city.png");
     }
+
 </style>
 <body>
 <section>
@@ -122,19 +151,14 @@
     <div></div>
     <div></div>
     <div></div>
-<!--    <div class="road_div">-->
-<!--        <img src="img/road.jpg">-->
-<!--        <img src="img/city.png">-->
-<!--        <img src="img/city.png">-->
-<!--        <img src="img/city.png">-->
-<!--        <img src="img/city.png">-->
-<!--    </div>-->
 </section>
 <div class="car_div">
     <img src="img/car.png">
 </div>
 <div class="wheel">
 <img src="img/wheel.png">
+</div>
+<div class="wheel_1">
     <img src="img/wheel.png">
 </div>
 </body>
