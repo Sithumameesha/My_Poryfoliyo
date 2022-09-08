@@ -14,6 +14,7 @@
         margin: 0px;
         
     }
+
     section:last-child>img{
         margin: 0px;
     }
@@ -68,20 +69,66 @@
         left:4246px;
 
     }
+    section:nth-child(2){
+        position: relative;
+        height: 420px;
+        bottom: 200px;
+        margin: 0px;
+        width: 5139px;
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(4,1fr);
+        animation-name: car-animation;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        /*animation-direction: alternate;*/
 
+    }
+    @keyframes car-animation {
+        0%{
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-70%);
+        }
+    }
+    section:nth-child(2)>div{
+        height: 190px;
+        /*width: 1416px;*/
+    }
+    section:nth-child(2)>div:nth-child(5){
+        width: 5139px;
+        height: 223px;
+        background: url("img/road.jpg");
+    }
+    section:nth-child(2)>div:nth-child(1){
+       background: url("img/city.png");
+    }
+    section:nth-child(2)>div:nth-child(3){
+        background: url("img/city.png");
+    }
+    section:nth-child(2)>div:nth-child(2){
+        background: url("img/city.png");
+    }
 </style>
 <body>
 <section>
     <img src="img/sky.jpg">
 </section>
 <section>
-    <div class="road_div">
-        <img src="img/road.jpg">
-        <img src="img/city.png">
-        <img src="img/city.png">
-        <img src="img/city.png">
-        <img src="img/city.png">
-    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+<!--    <div class="road_div">-->
+<!--        <img src="img/road.jpg">-->
+<!--        <img src="img/city.png">-->
+<!--        <img src="img/city.png">-->
+<!--        <img src="img/city.png">-->
+<!--        <img src="img/city.png">-->
+<!--    </div>-->
 </section>
 <div class="car_div">
     <img src="img/car.png">
