@@ -3,10 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        div{
+            width: 200px;
+            height: 90px;
+            background-color: #F13D29;
+            animation-name: my;
+            animation-iteration-count: infinite;
+            animation-duration: 9s;
+            border-radius: 20px;
+        }
+        @keyframes my {
+          0%{
+              background-color: #F13D29;
+              margin: 0px 0px 0px 0px;
+              transform: rotate(300deg);
+
+          }
+            25%{
+                background-color: yellow;
+                margin: 0px 0px 0px 1100px;
+
+            }
+            50%{
+                background-color: green;
+                margin: 500px 0px 0px 1100px;
+            }
+            75%{
+                background-color: orange;
+                margin: 500px 0px 0px 0px;
+            }
+            100%{}
+
+        }
+
+    </style>
 </head>
 <body>
 <div>
-
 </div>
 </body>
 </html>
