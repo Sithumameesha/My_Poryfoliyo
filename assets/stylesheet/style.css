@@ -1427,15 +1427,16 @@ position: relative;
 }
 .h7_style{
     position: absolute;
-    bottom: -3770px;
+    bottom: -3649px;
     width: 1250px;
     left: 40px;
     background-color: white;
 }
 .main_5>h1{
     font-size: 33px;
-    margin-left: 600px;
-    margin-top: 0px;
+   position: relative;
+    top: 90px;
+    left: 600px;
 }
 .span_3{
     color: #FEA609;
@@ -1446,8 +1447,8 @@ position: relative;
     height: 350px;
     /*border: 2px solid green;*/
     margin-left: 70px;
-    margin-bottom: 60px;
-    margin-top: 40px;
+    margin-bottom: 183px;
+    margin-top: 191px;
     display: flex;
     border-radius: 30px;
     background: rgba(255,255,255,0.03);
