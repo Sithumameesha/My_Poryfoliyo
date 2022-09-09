@@ -1179,7 +1179,8 @@ main>hr{
     font-size: 34px;
     position: absolute;
     left: 600px;
-    bottom: 700px;
+    bottom: 780px;
+    font-family: "Agency FB";
 }
 .h6_style>span{
     color: #FEA609;
@@ -1190,152 +1191,236 @@ main>hr{
 }
 .sec_2{
     position: relative;
-    top: 370px;
-    height: 1150px;
+    top: 390px;
+    left: 50px;
+    height: 1000px;
     display: grid;
-    grid-template-rows: repeat(2,2fr);
-    grid-template-columns: repeat(2,2fr);
+    width: 1250px;
+    grid-template-rows: repeat(3,3fr);
+    grid-template-columns: repeat(3,3fr);
+    grid-gap: 40px;
+    background: rgba(255 ,255,255,0.05);
+    border-radius: 30px;
+
 }
 .sec_2>div{
-    position: relative;
-    background-color: black;
-    border-radius: 100%;
-    width: 400px;
-    height: 400px;
-    left: 150px;
-    top: 100px;
-}
-.sec_2>div::before{
-    content: " ";
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    top: 0px;
-    margin: auto;
-    border-radius: 50%;
-    border: 10px solid black;
-
-    border-top: 10px solid #FEA609;
-    border-bottom: 10px solid #FEA609;
-
-    animation: my_animation 70s linear infinite;
-}
-@keyframes my_animation {
-    0%{
-        transform: rotate(0deg);
-    }100%{
-         transform: rotate(360deg);
-     }
-}
-.sec_2>div::after{
-    content: " ";
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    top: 0px;
-    margin: auto;
-    width: 360px;
-    height: 360px;
-    border-radius: 50%;
-    /*border: 10px solid black;*/
-    border: 10px solid white;
-    /*border-top: 10px solid white;*/
-    /*border-bottom: 10px solid white;*/
-    /*border: 10px solid white;*/
-;
-    animation: animation 50s linear infinite;
-
-}
-@keyframes animation {
-    0%{
-        transform: rotate(0deg);
-    }100%{
-         transform: rotate(-360deg);
-     }
-}
-.sec_2>div:hover::before{
-    border: 10px solid #FEA609;
-}
-.sec_2>div:hover::after{
-    border: 10px solid white;
-}
-.sec_2>div:nth-child(1)>p:nth-child(3){
-    position: relative;
-    left: 80px;
-    bottom: -210px;
-    font-size: 18px;
-    font-weight: normal;
-}
-.sec_2>div:nth-child(1)>p:nth-child(2){
-    position: absolute;
-    left: 90px;
-    bottom: 160px;
-    font-size: 30px;
-    font-weight: bolder;
+position: relative;
+    background: rgba(255 ,255,255,0.03);
+    height: 470px;
+    border-radius: 30px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left:  1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(4px);
 }
 .sec_2>div:nth-child(1)>img{
-    position: absolute;
-    left: 130px;
-    top: 50px;
+    margin-left: 110px;
+    margin-top: 50px;
+}
+.sec_2>div:nth-child(1)>p:nth-child(2){
+    color: #FEA609;
+    font-family: "Agency FB";
+    font-size: 30px;
+    margin-left: 90px;
+    letter-spacing: 2px;
+}
+.sec_2>div:nth-child(1)>p:nth-child(3){
+   font-family: "Arial Narrow";
+    margin-left: 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 .sec_2>div:nth-child(2)>img{
-    position: absolute;
-    left: 150px;
-    top: 60px;
+    margin-left: 150px;
+    margin-top: 60px;
 }
 .sec_2>div:nth-child(2)>p:nth-child(2){
-    position: absolute;
+    color: #FEA609;
+    font-family: "Agency FB";
     font-size: 30px;
-    font-weight: bolder;
-    left: 80px;
-    top: 150px;
+    margin-left: 95px;
+    letter-spacing: 2px;
 }
 .sec_2>div:nth-child(2)>p:nth-child(3){
-    position: absolute;
-    font-size: 18px;
-    top: 220px;
-    left: 40px;
+    font-family: "Arial Narrow";
+    margin-left: 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 .sec_2>div:nth-child(3)>img{
-    position: absolute;
-    left: 150px;
-    top: 70px;
+    margin-left: 150px;
+    margin-top: 60px;
 }
 .sec_2>div:nth-child(3)>p:nth-child(2){
-    position: absolute;
+    color: #FEA609;
+    font-family: "Agency FB";
     font-size: 30px;
-    font-weight: bolder;
-    left: 130px;
-    top: 150px;
-
+    margin-left: 95px;
+    letter-spacing: 2px;
 }
 .sec_2>div:nth-child(3)>p:nth-child(3){
-    position: absolute;
-    font-weight: normal;
-    font-size: 18px;
-    left: 60px;
-    top: 210px;
+    font-family: "Arial Narrow";
+    margin-left: 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 .sec_2>div:nth-child(4)>img{
-    position: absolute;
-    left: 150px;
-    top: 70px;
+    margin-left: 130px;
+    margin-top: 60px;
 }
 .sec_2>div:nth-child(4)>p:nth-child(2){
+    color: #FEA609;
+    font-family: "Agency FB";
     font-size: 30px;
-    font-weight: bolder;
-    position: absolute;
-    left: 70px;
-    top: 160px;
+    margin-left: 95px;
+    letter-spacing: 2px;
 }
 .sec_2>div:nth-child(4)>p:nth-child(3){
-    position: absolute;
-    font-size: 18px;
-    left: 80px;
-    top: 230px;
+    font-family: "Arial Narrow";
+    margin-left: 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
 }
+/*.sec_2>div{*/
+/*    position: relative;*/
+/*    background-color: black;*/
+/*    border-radius: 100%;*/
+/*    width: 400px;*/
+/*    height: 400px;*/
+/*    left: 150px;*/
+/*    top: 100px;*/
+/*}*/
+/*.sec_2>div::before{*/
+/*    content: " ";*/
+/*    position: absolute;*/
+/*    left: 0px;*/
+/*    right: 0px;*/
+/*    bottom: 0px;*/
+/*    top: 0px;*/
+/*    margin: auto;*/
+/*    border-radius: 50%;*/
+/*    border: 10px solid black;*/
+
+/*    border-top: 10px solid #FEA609;*/
+/*    border-bottom: 10px solid #FEA609;*/
+
+/*    animation: my_animation 70s linear infinite;*/
+/*}*/
+/*@keyframes my_animation {*/
+/*    0%{*/
+/*        transform: rotate(0deg);*/
+/*    }100%{*/
+/*         transform: rotate(360deg);*/
+/*     }*/
+/*}*/
+/*.sec_2>div::after{*/
+/*    content: " ";*/
+/*    position: absolute;*/
+/*    left: 0px;*/
+/*    right: 0px;*/
+/*    bottom: 0px;*/
+/*    top: 0px;*/
+/*    margin: auto;*/
+/*    width: 360px;*/
+/*    height: 360px;*/
+/*    border-radius: 50%;*/
+/*    !*border: 10px solid black;*!*/
+/*    border: 10px solid white;*/
+/*    !*border-top: 10px solid white;*!*/
+/*    !*border-bottom: 10px solid white;*!*/
+/*    !*border: 10px solid white;*!*/
+/*;*/
+/*    animation: animation 50s linear infinite;*/
+
+/*}*/
+/*@keyframes animation {*/
+/*    0%{*/
+/*        transform: rotate(0deg);*/
+/*    }100%{*/
+/*         transform: rotate(-360deg);*/
+/*     }*/
+/*}*/
+/*.sec_2>div:hover::before{*/
+/*    border: 10px solid #FEA609;*/
+/*}*/
+/*.sec_2>div:hover::after{*/
+/*    border: 10px solid white;*/
+/*}*/
+/*.sec_2>div:nth-child(1)>p:nth-child(3){*/
+/*    position: relative;*/
+/*    left: 80px;*/
+/*    bottom: -210px;*/
+/*    font-size: 18px;*/
+/*    font-weight: normal;*/
+/*}*/
+/*.sec_2>div:nth-child(1)>p:nth-child(2){*/
+/*    position: absolute;*/
+/*    left: 90px;*/
+/*    bottom: 160px;*/
+/*    font-size: 30px;*/
+/*    font-weight: bolder;*/
+/*}*/
+/*.sec_2>div:nth-child(1)>img{*/
+/*    position: absolute;*/
+/*    left: 130px;*/
+/*    top: 50px;*/
+/*}*/
+/*.sec_2>div:nth-child(2)>img{*/
+/*    position: absolute;*/
+/*    left: 150px;*/
+/*    top: 60px;*/
+/*}*/
+/*.sec_2>div:nth-child(2)>p:nth-child(2){*/
+/*    position: absolute;*/
+/*    font-size: 30px;*/
+/*    font-weight: bolder;*/
+/*    left: 80px;*/
+/*    top: 150px;*/
+/*}*/
+/*.sec_2>div:nth-child(2)>p:nth-child(3){*/
+/*    position: absolute;*/
+/*    font-size: 18px;*/
+/*    top: 220px;*/
+/*    left: 40px;*/
+/*}*/
+/*.sec_2>div:nth-child(3)>img{*/
+/*    position: absolute;*/
+/*    left: 150px;*/
+/*    top: 70px;*/
+/*}*/
+/*.sec_2>div:nth-child(3)>p:nth-child(2){*/
+/*    position: absolute;*/
+/*    font-size: 30px;*/
+/*    font-weight: bolder;*/
+/*    left: 130px;*/
+/*    top: 150px;*/
+
+/*}*/
+/*.sec_2>div:nth-child(3)>p:nth-child(3){*/
+/*    position: absolute;*/
+/*    font-weight: normal;*/
+/*    font-size: 18px;*/
+/*    left: 60px;*/
+/*    top: 210px;*/
+/*}*/
+/*.sec_2>div:nth-child(4)>img{*/
+/*    position: absolute;*/
+/*    left: 150px;*/
+/*    top: 70px;*/
+/*}*/
+/*.sec_2>div:nth-child(4)>p:nth-child(2){*/
+/*    font-size: 30px;*/
+/*    font-weight: bolder;*/
+/*    position: absolute;*/
+/*    left: 70px;*/
+/*    top: 160px;*/
+/*}*/
+/*.sec_2>div:nth-child(4)>p:nth-child(3){*/
+/*    position: absolute;*/
+/*    font-size: 18px;*/
+/*    left: 80px;*/
+/*    top: 230px;*/
+/*}*/
 .main_5{
     margin-top: 450px;
     /*border: 2px solid red;*/
