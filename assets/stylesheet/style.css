@@ -1179,7 +1179,7 @@ main>hr{
     font-size: 34px;
     position: absolute;
     left: 600px;
-    bottom: 780px;
+    bottom: 645px;
     font-family: "Agency FB";
 }
 .h6_style>span{
@@ -1433,6 +1433,7 @@ position: relative;
     background-color: white;
 }
 .main_5>h1{
+    display: inline;
     font-size: 33px;
    position: relative;
     top: 90px;
