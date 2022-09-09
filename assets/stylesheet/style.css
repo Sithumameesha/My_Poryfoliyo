@@ -1250,12 +1250,13 @@ position: relative;
 .sec_2>div:nth-child(3)>img{
     margin-left: 150px;
     margin-top: 60px;
+    margin-bottom: 20px;
 }
 .sec_2>div:nth-child(3)>p:nth-child(2){
     color: #FEA609;
     font-family: "Agency FB";
     font-size: 30px;
-    margin-left: 95px;
+    margin-left: 130px;
     letter-spacing: 2px;
 }
 .sec_2>div:nth-child(3)>p:nth-child(3){
