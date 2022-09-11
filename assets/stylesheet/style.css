@@ -16,6 +16,10 @@ main>nav>ol>li{
     font-family: "Arial Narrow";
 
 }
+.nav{
+    position: fixed;
+    z-index: 4;
+}
 
 main>nav>ol:first-child>li:hover{
     color: #FEA609;
