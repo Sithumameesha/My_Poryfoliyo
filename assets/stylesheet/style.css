@@ -1465,6 +1465,7 @@ top: 17px;
 .sec_5>h1{
     margin-left: 600px;
     font-size: 33px;
+    font-family: "Agency FB";
 }
 .sec_5>h1>span{
     color: #FEA609;
@@ -1473,16 +1474,17 @@ top: 17px;
     font-size: 20px;
     margin-left: 80px;
     margin-top: 100px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    font-family: "Arial Narrow";
 
 }
 .field{
-/*border: 2px solid black;*/
+border: 2px solid black;
 width: 1000px;
-margin-left: 120px;
+margin-left: 0px;
     border-radius: 20px;
-    /*border: 2px solid #FEA609;*/
-    box-shadow:  2px 2px 11px white;
+    position: relative;
+
 }
 .field>input{
     position: relative;
@@ -1490,36 +1492,66 @@ margin-left: 120px;
     margin: 30px;
 }
 .field>input:nth-child(1){
-    width: 1000px;
+    position: relative;
+left: 40px;
+    width: 500px;
     height: 50px;
     background-color: black;
     border: 2px solid #FEA609;
     color: white;
+    font-family: "Arial Narrow";
+    border-radius: 20px;
 }
 .field>input:nth-child(2){
-    width: 1000px;
+    position: relative;
+    border-radius: 20px;
+    left: 640px;
+    bottom: 85px;
+    width: 500px;
     height: 50px;
     background-color: black;
     border: 2px solid #FEA609;
     color: white;
+    font-family: "Arial Narrow";
 }
 .field>input:nth-child(3){
-    width: 1000px;
-    height: 100px;
+    position: relative;
+    left: 40px;
+    border-radius: 20px;
+    width: 1100px;
+    height: 50px;
+    bottom: 60px;
     background-color: black;
     border: 2px solid #FEA609;
     color: white;
+    font-family: "Arial Narrow";
+}
+.field>input:nth-child(4){
+    position: relative;
+    left: 40px;
+    border-radius: 20px;
+    width: 1100px;
+    height: 150px;
+    bottom: 50px;
+    background-color: black;
+    border: 2px solid #FEA609;
+    color: white;
+    font-family: "Arial Narrow";
 }
 .field>button{
-    width: 130px;
+    font-size: 25px;
+    width: 150px;
     height: 35px;
     border-radius: 20px;
-    margin-left: 30px;
+    margin-left: 80px;
     background-color: #FEA609;
+
+    font-family: "Arial Narrow";
 }
 .field>button>span{
     font-size:17px ;
     font-weight: bold;
+    font-family: "Arial Narrow";
 }
 .sec_6{
 
