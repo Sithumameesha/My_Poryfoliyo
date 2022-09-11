@@ -1355,7 +1355,7 @@ position: relative;
 .sec_4>div{
     position: relative;
     width: 350px;
-    height: 357px;
+    height: 365px;
     left: 0px;
     margin: 20px;
 top: 17px;
@@ -1383,10 +1383,19 @@ top: 17px;
     font-weight: bold;
 }
 .div_11>a{
-    margin-left: 80px;
-    font-size: 30px;
+    font-family: "Arial Narrow";
+    margin-left: 125px;
+    font-size: 15px;
     color: #FEA609;
+    border-radius: 20px;
+    padding: 8px;
+    background-color: white;
+    cursor: pointer;
 }
+.div_11>a:hover{
+    letter-spacing: 2px;
+}
+
 
 .div_12>img{
     position: relative;
@@ -1405,9 +1414,17 @@ top: 17px;
     font-weight: bold;
 }
 .div_12>a{
+    font-family: "Arial Narrow";
+    margin-left: 125px;
+    font-size: 15px;
     color: #FEA609;
-    margin-left: 80px;
-    font-size: 30px;
+    border-radius: 20px;
+    padding: 8px;
+    background-color: white;
+    cursor: pointer;
+}
+.div_12>a:hover{
+    letter-spacing: 2px;
 }
 .div_13>img{
     position: relative;
@@ -1425,13 +1442,20 @@ top: 17px;
     margin-top: 20px;
     font-weight: bold;
 }
-div_13:hover{
-    background-color: #FEA609;
+.sec_4>div:hover{
 }
 .div_13>a{
+    font-family: "Arial Narrow";
+    margin-left: 125px;
+    font-size: 15px;
     color: #FEA609;
-    margin-left: 80px;
-    font-size: 30px;
+    border-radius: 20px;
+    padding: 8px;
+    background-color: white;
+    cursor: pointer;
+}
+.div_13>a:hover{
+    letter-spacing: 2px;
 }
 .h8_style{
     position: relative;
