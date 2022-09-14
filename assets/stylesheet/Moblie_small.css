@@ -13,13 +13,11 @@
     }
 
     .box {
-        position: absolute;
-        left: 750px;
-        bottom: 50px;
-        width: 450px;
-        height: 450px;
-        border-radius: 50%;
-        overflow: hidden;
+        left: 10px;
+        bottom: 60px;
+        width: 250px;
+        height: 250px;
+
     }
     main>section>aside>div {
         top: 100px;
@@ -43,7 +41,28 @@
         font-size: 22px;
         /*margin-top: 10px;*/
     }
+    main>section>aside>div>p:nth-child(4) {
+        font-size: 22px;
+        margin-top: 220px
+    }
+    .fbImg {
+        width: 15vw;
+        height: 10vh;
+        left: 20px;
 
+    }
+    .InsterImg {
+        width: 13vw;
+        height: 9vh;
+        left: 120px;
+    }
+    .LinkidnImg {
+        width: 13vw;
+        height: 9vh;
+        left: 220px;
+    }
 }
+
+
 
 
