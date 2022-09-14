@@ -1,30 +1,30 @@
 @media all and (max-width: 320px){
     .nav{
-        width: 100%;
+        height: 60px;
+
     }
     main>nav>ol:first-child{
         display: none;
     }
     main>nav>ol:last-child>li {
         padding-left: 2em;
+        margin: 0px;
     }
     .first_main{
+        /*position: relative;*/
 
     }
 
     .box {
-        left: 10px;
-        bottom: 60px;
+        left: 10vw;
+        bottom: -10px;
         width: 250px;
         height: 250px;
 
     }
     main>section>aside>div {
         top: 100px;
-        /*left: 5vw;*/
-    }
-    main>section>aside>div {
-        left: 10px;
+        left: 5vw;
     }
     main>section>aside>div>p:first-child {
         font-size: 22px;
@@ -61,6 +61,13 @@
         height: 9vh;
         left: 220px;
     }
+    /*main _2*/
+    main>hr {
+        position: relative;
+        top: 600px;
+        width: 250px;
+    }
+
 }
 
 
