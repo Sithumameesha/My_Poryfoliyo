@@ -157,16 +157,48 @@ margin-left: 100px;
     .arrow {
         height: 50px;
         width: 50px;
-        /* transition: 0.5s; */
-        float: right;
-        /* box-shadow: -2px -2px 0 #fea609; */
-        position: absolute;
         left: 74px;
         top: 110px;
-        /* background: #FEA609; */
-        transform: rotate(315deg);
-        background: #2d2d2d;
     }
+    .arrow_1 {
+        height: 50px;
+        width: 50px;
+        left: 74px;
+        top: 263px;
+    }
+    .arrow_2 {
+        height: 50px;
+        width: 50px;
+        left: 74px;
+        top: 417px;
+    }
+    .circle {
+        width: 50px;
+        height:50px;
+        top: 110px;
+        left: 31px;
+    }
+    .circle>img {
+        position: relative;
+        top: 3px;
+        left: 2px;
+        width: 50px;
+        height: 50px;
+    }
+    .circle {
+        width: 50px;
+        height:50px;
+        top: 110px;
+        left: 31px;
+    }
+    .circle>img {
+        position: relative;
+        top: 3px;
+        left: 2px;
+        width: 50px;
+        height: 50px;
+    }
+
 }
 
 
