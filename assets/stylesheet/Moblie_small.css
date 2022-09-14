@@ -154,6 +154,19 @@ margin-left: 100px;
     .edu_sec>div:nth-child(3)>p:last-child {
         font-size: 12px;
     }
+    .arrow {
+        height: 50px;
+        width: 50px;
+        /* transition: 0.5s; */
+        float: right;
+        /* box-shadow: -2px -2px 0 #fea609; */
+        position: absolute;
+        left: 74px;
+        top: 110px;
+        /* background: #FEA609; */
+        transform: rotate(315deg);
+        background: #2d2d2d;
+    }
 }
 
 
