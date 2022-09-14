@@ -475,7 +475,6 @@ margin-left: 100px;
     .sec_2>div:nth-child(5)>p:nth-child(3) {
         margin-left: 40px;
         font-size: 14px;
-        letter-spacing: 2px;
     }
     .sec_2>div:nth-child(6)>img {
         margin-left: 110px;
@@ -492,7 +491,14 @@ margin-left: 100px;
     .sec_2>div:nth-child(6)>p:nth-child(3) {
         margin-left: 40px;
         font-size: 14px;
-        letter-spacing: 2px;
+    }
+    .h7_style {
+
+        bottom: -4099px
+    ;
+        width: 250px;
+
+
     }
 }
 
