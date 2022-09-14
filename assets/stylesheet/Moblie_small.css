@@ -80,7 +80,7 @@
     }
     .about_ol {
         margin-left: 10px;
-        margin-top: 160px;
+        margin-top: 200px;
         font-size: 15px;
         font-family: "Arial Narrow";
         letter-spacing: 2px;
@@ -179,20 +179,32 @@ margin-left: 100px;
         left: 31px;
     }
     .circle>img {
-        position: relative;
+
         top: 3px;
         left: 2px;
         width: 50px;
         height: 50px;
     }
-    .circle {
+    .circle_1 {
         width: 50px;
         height:50px;
-        top: 110px;
+        top: 265px;
         left: 31px;
     }
-    .circle>img {
-        position: relative;
+    .circle_1>img {
+
+        top: 3px;
+        left: 2px;
+        width: 50px;
+        height: 50px;
+    }
+    .circle_2 {
+        width: 50px;
+        height:50px;
+        top: 420px;
+        left: 31px;
+    }
+    .circle_2>img {
         top: 3px;
         left: 2px;
         width: 50px;
