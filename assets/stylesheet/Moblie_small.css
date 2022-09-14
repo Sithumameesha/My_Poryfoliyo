@@ -99,7 +99,52 @@
         top: 40px;
         font-size: 1em;
     }
+    .h2 {
+        position: relative;
+        width: 250px;
+        top: 100px;
+
+
+    }
+    .h2_style {
+
+        margin-left: 90px;
+        margin-top: 130px;
+        font-size: 22px;
+
+
+    }
+    .gif_sec{
+        height: 655px;
+        position: relative;
+    }
+    .gif_sec>img {
+     display: none;
+
+    }
+    .edu_sec {
+        position: absolute;
+        /*height: 300px;*/
+        left: 0px;
+        top: 100px;
+        gap: 10px;
+
+    }
+    .edu_sec>div {
+margin-left: 100px;
+        width: 200px;
+        height: 70px;
+    }
+    .edu_sec>div:first-child>p {
+        font-size: 12px;
+    }
+    .edu_sec>div:first-child>p:last-child {
+
+        font-size: 12px;
+        color: #FEA6;
+    }
 }
+
 
 
 
