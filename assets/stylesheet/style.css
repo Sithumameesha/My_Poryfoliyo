@@ -18,6 +18,10 @@ main>nav>ol>li{
 .nav{
     position: fixed;
     z-index: 4;
+    width: 100%;
+    /*width: 100vw;*/
+    box-shadow: -2px 2px 5px 2px #1c1717e8;
+    margin: 0px;
 
 }
 
@@ -197,11 +201,6 @@ main>hr{
     margin-left: 200px;
     border-radius: 10px;
     font-family: "Arial Narrow";
-}
-.nav{
-    width: 100%;
-    box-shadow: -2px 2px 5px 2px #1c1717e8;
-    margin: 0px;
 }
 
 /*Profile Border Aination*/
