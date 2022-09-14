@@ -1,17 +1,29 @@
 @media all and (max-width: 320px){
     .nav{
         width: 320px;
-        border: 2px solid white;
+        /*border: 2px solid white;*/
     }
     main>nav>ol:first-child{
         display: none;
     }
+    main>nav>ol:last-child>li {
+        padding-left: 80px;
+        font-size: 34px;
+        padding-top: 7px;
+        font-family: "Agency FB";
+        letter-spacing: 3px;
+    }
+    .animation_sec {
+        width: 320px;
+        height: 600px;
+        position: absolute;
+        overflow: hidden;
+    }
+
+
+
+
 
 }
-main>nav>ol:last-child>li {
-    padding-left: 80px;
-    font-size: 34px;
-    padding-top: 7px;
-    font-family: "Agency FB";
-    letter-spacing: 3px;
-}
+
+
