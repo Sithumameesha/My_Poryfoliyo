@@ -23,7 +23,10 @@
     }
     main>section>aside>div {
         top: 100px;
-        left: 20px;
+        /*left: 5vw;*/
+    }
+    main>section>aside>div {
+        left: 10px;
     }
     main>section>aside>div>p:first-child {
         font-size: 22px;
