@@ -1,5 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body{
     margin: 0px;
@@ -9,9 +8,9 @@ body{
 }
 main>nav>ol>li{
     display: inline-block;
-    padding: 16px;
+    padding: 0.9em;
     color: white;
-    font-size: 20px;
+    font-size: 1.25em;
     cursor: pointer;
     font-family: "Arial Narrow";
 
@@ -19,6 +18,7 @@ main>nav>ol>li{
 .nav{
     position: fixed;
     z-index: 4;
+
 }
 
 main>nav>ol:first-child>li:hover{
@@ -38,7 +38,7 @@ main>nav>ol:first-child{
 }
 .name_part{
     color: #FEA609;
-    letter-spacing: 2px;
+    letter-spacing: 0.125em;
 }
 main>nav>ol:last-child>li{
     padding-left: -10px;
@@ -248,7 +248,7 @@ main>hr{
 }
 .box:hover .content img {
     opacity: 0;
-    border: 5px solid #FEA609;
+
 
 }
 .content h2 {
