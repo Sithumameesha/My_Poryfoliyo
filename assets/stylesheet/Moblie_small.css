@@ -88,6 +88,17 @@
     .main3 {
         height: max-content;
     }
+    .btn_1 {
+        position: relative;
+        left: 20px;
+        top: 40px;
+        font-size: 1em;
+    }
+    .btn_2 {
+        left: 50px;
+        top: 40px;
+        font-size: 1em;
+    }
 }
 
 
