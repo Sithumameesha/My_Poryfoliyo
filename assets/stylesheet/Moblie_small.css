@@ -443,6 +443,23 @@ margin-left: 100px;
         font-size: 14px;
         letter-spacing: 2px;
     }
+    .sec_2>div:nth-child(4)>img {
+        margin-left: 110px;
+        margin-top: 10px;
+        width: 70px;
+        height: 70px;
+    }
+    .sec_2>div:nth-child(4)>p:nth-child(2) {
+
+        font-size: 18px;
+        margin-left: 80px;
+        margin-top: 10px;
+    }
+    .sec_2>div:nth-child(4)>p:nth-child(3) {
+        margin-left: 40px;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
 }
 
 
