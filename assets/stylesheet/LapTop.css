@@ -2,7 +2,7 @@
     .nav {
         position: fixed;
         z-index: 4;
-        width: 100%;
+        /*width: 1007px;*/
         /* width: 100vw; */
         box-shadow: -2px 2px 5px 2px #1c1717e8;
         margin: 0px;
@@ -11,9 +11,20 @@
         left: 290px;
     }
     main>nav>ol>li {
-
         padding: 0.7em;
         font-size: 1.25em;
 
+    }
+    .bubles {
+        position: absolute;
+        display: flex;
+        /*margin-right: 700px;*/
+        /*width: 100vw;*/
+    }
+    .box {
+        left: 540px;
+    }
+    main>hr {
+        width: 900px;
     }
 }
