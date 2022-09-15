@@ -587,6 +587,19 @@ margin-left: 100px;
     margin-top: 20px;
     font-weight: bold;
 }
+    .main_5>h1 {
+        display: inline;
+        font-size: 22px;
+        position: relative;
+        top: 10px;
+        left: 110px;
+        font-family: "Agency FB";
+    }
+    .h8_style {
+        position: relative;
+        width: 250px;
+        top: 100px;
+    }
 }
 
 
