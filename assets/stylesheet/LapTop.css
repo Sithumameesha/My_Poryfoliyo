@@ -38,5 +38,52 @@
     .h1 {
         left: 460px;
     }
+    .h2 {
 
+        width: 900px;
+
+    }
+    .h2_style {
+        margin-left: 460px;
+    }
+    .gif_sec>img {
+        width: 550px;
+    }
+
+    .edu_sec {
+
+        width: 350px;
+        height: 450px;
+        left: 621px;
+    }
+    .circle {
+        left: 524px;
+    }
+    .circle_1 {
+        left: 524px;
+    }
+    .circle_2 {
+        left: 524px;
+    }
+    .arrow {
+        left: 581px
+
+    }
+    .arrow_1 {
+        left: 581px
+
+    }
+    .arrow_2 {
+        left: 581px
+
+    }
+    .ver_line {
+        height: 60px;
+        top: 275px;
+        left: 563px;
+    }
+    .ver_line_1 {
+        left: 563px;
+        height: 60px;
+    }
     }
