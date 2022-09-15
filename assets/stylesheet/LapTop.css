@@ -27,4 +27,16 @@
     main>hr {
         width: 900px;
     }
-}
+
+    .photo_frame {
+        width: 330px;
+        height: 330px;
+        left: 600px;
+        bottom: 0px;
+
+    }
+    .h1 {
+        left: 460px;
+    }
+
+    }
