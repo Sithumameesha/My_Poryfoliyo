@@ -86,4 +86,18 @@
         left: 563px;
         height: 60px;
     }
+    .h3 {
+
+        width: 900px;
+
+    }
+    .h3_style {
+        left: 467px;
+    }
+    .sec1 {
+        margin: 0px;
+        gap: 10px;
+    }
+
+
     }
