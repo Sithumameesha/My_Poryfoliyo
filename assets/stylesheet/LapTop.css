@@ -97,7 +97,64 @@
     .sec1 {
         margin: 0px;
         gap: 10px;
+        height: 440px;
     }
 
+    .hr_style {
+        width: 900px;
+    }
+    .sec_2 {
+        left: 5px;
+        height: 1000px;
+width: 1000px;
+    }
+    .sec_2>div:nth-child(1)>img {
+        margin-left: 71px;
+    }
+    .sec_2>div:nth-child(2)>img {
+        margin-left: 110px;
+    }
+    .sec_2>div:nth-child(3)>img {
+        margin-left: 110px;
+    }
+    .sec_2>div:nth-child(4)>img {
+        margin-left: 91px;
+    }
+    .sec_2>div:nth-child(5)>img {
+        margin-left: 111px;
+    }
+    .sec_2>div:nth-child(6)>img {
+        margin-left: 119px;
+    }
+    .sec_2>div:nth-child(1)>p:nth-child(2) {
+        margin-left: 60px;
+    }
+    .sec_2>div:nth-child(2)>p:nth-child(2) {
+        margin-left: 60px;
 
+    }
+    .sec_2>div:nth-child(3)>p:nth-child(2) {
+        margin-left: 90px;
+
+    }
+    .sec_2>div:nth-child(4)>p:nth-child(2) {
+        margin-left: 60px;
+
+    }
+    .sec_2>div:nth-child(4)>p:nth-child(3) {
+       margin-top: 70px;
+
+    }
+    .sec_2>div:nth-child(5)>p:nth-child(2) {
+        margin-left: 100px;
+
+    }
+    .sec_2>div:nth-child(6)>p:nth-child(3) {
+        margin-top: 70px;
+
+    }
+    .sec_2>div:nth-child(6)>p:nth-child(2) {
+        margin-left: 100px;
+
+    }
     }
