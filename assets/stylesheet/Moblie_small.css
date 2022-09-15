@@ -600,6 +600,36 @@ margin-left: 100px;
         width: 250px;
         top: 100px;
     }
+    .sec_5>h1 {
+        margin-left: 110px;
+        font-size: 22px;
+        margin-top: 130px;
+
+    }
+    .sec_5>p {
+        font-size: 15px;
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+    .field {
+        /*width: 1000px;*/
+        margin-left: 0px;
+
+
+    }
+    .field>input:nth-child(1) {
+        left: 0px;
+        width: 290px;
+        height: 50px;
+        margin: 0px;
+    }
+    .field>input:nth-child(2) {
+        left: 0px;
+        width: 290px;
+        top: 30px;
+        height: 50px;
+        margin: 0px;
+    }
 }
 
 

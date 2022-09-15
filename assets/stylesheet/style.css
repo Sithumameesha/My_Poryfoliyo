@@ -1303,7 +1303,7 @@ top: 17px;
 }
 .field{
 border: 2px solid black;
-width: 1000px;
+/*width: 1000px;*/
 margin-left: 0px;
     border-radius: 20px;
     position: relative;
