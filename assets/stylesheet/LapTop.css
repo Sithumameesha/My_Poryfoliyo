@@ -257,5 +257,23 @@ width: 1000px;
         width: 900px;
 
     }
+    .sec_7>p:first-child {
+        left: 370px;
+        width: max-content;
+        display: inline-block;
 
+    }
+    .last_ol>li {
+
+        left: 80px;
+    }
+    .sec_8 {
+        left: 150px;
+        width: max-content;
+        margin: 0px;
+    }
+    .sec_7>p:last-child {
+        left: 370px;
+        display: inline-block;
+    }
     }
