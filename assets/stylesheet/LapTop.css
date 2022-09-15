@@ -202,4 +202,60 @@ width: 1000px;
         margin-top: 20px;
         font-weight: bold;
     }
+    .h8_style {
+        width: 900px;
+    }
+    .sec_5>h1 {
+        margin-left: 450px;
+
+    }
+    .sec_5>p {
+
+        margin-left: 20px;
+
+    }
+    .field>input:nth-child(1) {
+
+        left: 10px;
+        width: 400px;
+    }
+    .field>input:nth-child(2) {
+
+        left: 470px;
+        width: 400px;
+    }
+    .field>input:nth-child(3) {
+
+        left: 10px;
+        width: 860px;
+    }
+    .field>input:nth-child(4) {
+
+        left: 10px;
+        width: 860px;
+    }
+    .field>button {
+
+        margin-left: 60px;
+
+    }
+    .sec_6 {
+        margin-top: 60px;
+        display: flex;
+        margin-left: 0px;
+    }
+    .sec_6>div:nth-child(1) {
+        left: 100px;
+    }
+    .sec_6>div:nth-child(2) {
+        left: 340px;
+    }
+    .sec_6>div:nth-child(3) {
+        left: 600px;
+    }
+    .last_hr {
+        width: 900px;
+
+    }
+
     }
