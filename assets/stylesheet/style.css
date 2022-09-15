@@ -1165,9 +1165,10 @@ position: relative;
 }
 .sec_4{
     position: relative;
-    width: 1200px;
+    /*width: 1200px;*/
     height: 447px;
     margin-left: 70px;
+    margin-right: 70px;
     margin-bottom: 183px;
     margin-top: 191px;
     display: flex;

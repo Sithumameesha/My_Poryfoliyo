@@ -500,7 +500,96 @@ margin-left: 100px;
 
 
     }
+    .main_5 {
+        position: relative;
 }
+
+    .sec_4 {
+        position:relative;
+        margin-left: 10px;
+        margin-bottom: 183px;
+        margin-top: 191px;
+        display: grid;
+        border-radius: 30px;
+        background: black;
+        gap: 15px;
+    }
+    .sec_4>div {
+        position: relative;
+        width: 290px;
+        height: 250px;
+        left: 4px;
+        margin: 0px;
+        top: -133px;
+
+    }
+    .div_11>img {
+
+        width: 270px;
+        height: 150px;
+        left: 10px;
+        top: 15px;
+        border-radius: 20px;
+    }
+    .div_11>a {
+        margin-left: 115px;
+        font-size: 12px;
+
+
+}
+.div_11>p:nth-child(2) {
+    /* color: #FEA609; */
+    font-family: "Agency FB";
+    font-size: 22px;
+    margin-left: 60px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.div_12>img {
+
+    width: 270px;
+    height: 150px;
+    left: 10px;
+    top: 15px;
+    border-radius: 20px;
+}
+.div_12>a {
+    margin-left: 115px;
+    font-size: 12px;
+
+}
+
+.div_12>p:nth-child(2) {
+    font-size: 22px;
+    margin-left: 60px;
+    margin-top: 20px;
+
+}
+    .div_13>img {
+
+        width: 270px;
+        height: 150px;
+        left: 10px;
+        top: 15px;
+        border-radius: 20px;
+    }
+    .div_13>a {
+        margin-left: 115px;
+        font-size: 12px;
+
+
+}
+.div_13>p:nth-child(2) {
+    /* color: #FEA609; */
+    font-family: "Agency FB";
+    font-size: 22px;
+    margin-left: 60px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+}
+
+
 
 
 
