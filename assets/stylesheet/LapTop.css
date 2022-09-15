@@ -157,4 +157,49 @@ width: 1000px;
         margin-left: 100px;
 
     }
+    .h6_style {
+        left: 450px;
+    }
+    .h7_style {
+
+        width: 900px;
+
+    }
+    .main_5>h1 {
+
+        font-size: 33px;
+        position: relative;
+        top:150px;
+        left: 450px;
+
+    }
+    .sec_4 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .sec_4>div {
+        width: 300px;
+        left: 10px;
+        margin: 15px;
+
+
+    }
+    .div_11>img {
+        width: 265px;
+
+    }
+    .div_12>img {
+        width: 265px;
+
+    }
+    .div_13>img {
+        width: 265px;
+
+    }
+    .div_11>p:nth-child(2) {
+        font-size: 27px;
+        margin-left: 30px;
+        margin-top: 20px;
+        font-weight: bold;
+    }
     }
