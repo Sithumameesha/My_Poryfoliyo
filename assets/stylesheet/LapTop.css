@@ -1,0 +1,19 @@
+@media all and (min-width:768px) and (max-width: 1024px){
+    .nav {
+        position: fixed;
+        z-index: 4;
+        width: 100%;
+        /* width: 100vw; */
+        box-shadow: -2px 2px 5px 2px #1c1717e8;
+        margin: 0px;
+    }
+    main>nav>ol:first-child {
+        left: 290px;
+    }
+    main>nav>ol>li {
+
+        padding: 0.7em;
+        font-size: 1.25em;
+
+    }
+}
