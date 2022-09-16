@@ -233,5 +233,51 @@
         margin-left: 69px;
 
     }
+    .h8_style {
+        width: 633px;
+    }
+    .sec_5>h1 {
+        margin-left: 350px;
+        margin-top: 20px;
+        margin-bottom: -54px;
+    }
+    .field>input:nth-child(1) {
+        left: 10px;
+        width: 304px;
+    }
+    .field>input:nth-child(2) {
+        left: 399px;
+        width: 304px;
+    }
+    .field>input:nth-child(3) {
+        width: 690px;
+        display: inline-block;
+    }
+    .field>input {
+        position: relative;
+        display: block;
+         margin: 20px;
+    }
+    .field>input:nth-child(4) {
+        width: 690px;
+    }
+    .sec_6>div:nth-child(1) {
+        left: 41px;
+    }
+    .sec_6>div:nth-child(2) {
+        left: 244px;
+    }
+    .sec_6>div:nth-child(3) {
+        left: 395px;
+    }
+    .last_hr {
+        width: 633px;
+    }
+    .sec_7{
+        display: none;
+    }
+    .sec_8{
+        display: none;
+    }
 
 }
