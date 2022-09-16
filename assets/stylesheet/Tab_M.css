@@ -39,4 +39,13 @@
 
 
     }
+    main>hr {
+        width: 633px;
+    }
+    .photo_frame {
+       display: none;
+    }
+    .h1 {
+        left: 325px;
+    }
 }
