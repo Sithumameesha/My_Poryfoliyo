@@ -1,4 +1,16 @@
 @media all and (min-width: 475px)and (max-width: 768px){
+    .nav {
 
-
+        /* width: 1007px; */
+        /* width: 100vw; */
+        width: 765px;
+    }
+    main>nav>ol:first-child {
+        left: 180px;
+        margin-top: 10px;
+    }
+    main>nav>ol>li {
+        padding: 0.4em;
+        font-size: 1.21em;
+    }
 }
