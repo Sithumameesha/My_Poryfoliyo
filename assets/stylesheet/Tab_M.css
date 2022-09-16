@@ -1,16 +1,42 @@
-@media all and (min-width: 475px)and (max-width: 768px){
+@media all and (min-width: 475px)and (max-width: 768px) {
     .nav {
 
         /* width: 1007px; */
         /* width: 100vw; */
         width: 765px;
     }
-    main>nav>ol:first-child {
+
+    main > nav > ol:first-child {
         left: 180px;
         margin-top: 10px;
     }
-    main>nav>ol>li {
+
+    main > nav > ol > li {
         padding: 0.4em;
         font-size: 1.21em;
+    }
+
+    main > section > aside > div {
+        left: 30px;
+    }
+
+    main > section > aside > div > p:first-child {
+        font-size: 28px;
+    }
+
+    main > section > aside > div > p:nth-child(2) {
+        font-size: 40px;
+         width: 330px;
+    }
+    main>section>aside>div>p:nth-child(3) {
+        font-size: 28px;
+    }
+    .box {
+        left: 381px;
+        bottom: -20px;
+        width: 380px;
+        height: 380px;
+
+
     }
 }
