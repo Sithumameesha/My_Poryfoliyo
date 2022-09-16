@@ -115,4 +115,21 @@
     .h3 {
         width: 633px;
     }
+    .h3_style {
+        left: 326px;
+    }
+    .hr_style {
+        width: 633px;
+    }
+    .h6_style {
+        left: 324px;
+    }
+    .sec_2 {
+        left: 5px;
+        height: 1000px;
+        width: 760px;
+        grid-gap: 40px;
+        right: 2px;
+
+    }
 }
