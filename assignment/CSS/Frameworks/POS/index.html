@@ -61,7 +61,7 @@
             <hr>
         </div>
 
-    <div class="row" style="height: max-content " >
+    <div class="row " style= "width: 1900px" >
 
         <div class="col-10 col-md-5 col-lg-4 p-0 mt-2 rounded-3" style="background-color: white">
             <h4 class="text-center  p-2 text-light rounded-3"  style="background-color: blue" >Search Customer</h4>
@@ -71,12 +71,13 @@
                            placeholder="Input Name Here"
                            type="text">
                 </div>
-                <button class="btn btn-primary ms-3 mb-3 ms-md-3 ms-lg-3 " type="submit" style="background-color: blue" >Search</button>
+                <button class="btn btn-primary ms-4 mb-3   " type="submit" style="background-color: blue" >Search</button>
                 <button class="btn btn-danger ms-3 mb-3 ms-md-3 ms-lg-3" type="reset">Clear</button>
             </form>
         </div>
     </div>
-        <div class="col">
+        <div class="col" style="position:relative;
+left: 650px">
             <button class="btn btn-success " data-bs-target="#registerCustomer"
                     data-bs-toggle="modal" id="btnRegister" type="button">+ New Customer
             </button>
@@ -84,14 +85,58 @@
             <button class="btn btn-warning" data-bs-target="#updateCustomer"
                     data-bs-toggle="modal" type="button">Update Customer
             </button>
+            <br>
+            <br>
 
             <button class="btn btn-danger" data-bs-target="#deleteCustomer"
                     data-bs-toggle="modal" type="button">Delete Customer
             </button>
 
-            <button class="btn btn-warning " type="button">View All Customers</button>
+            <button class="btn btn-warning " type="button">Viewss  Customers</button>
         </div>
-
+        <div class="row mt-1 mt-md-2 mt-lg-5 justify-content-around" style="height: 250px;">
+            <div class="col-10">
+                <div class="customerTableDiv overflow-auto" style="height: 200px;">
+                    <table class="table table-success table-striped table-bordered table-hover">
+                        <thead class="text-light table-dark text-center  table-bordered sticky-top">
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Salary</th>
+                        </tr>
+                        </thead>
+                        <tbody id="customerTable">
+                        <tr>
+                            <td>C00-001</td>
+                            <td>Nimesh</td>
+                            <td>Galle</td>
+                            <td>50,000</td>
+                        </tr>
+                        <tr>
+                            <td>C00-002</td>
+                            <td>Pasan</td>
+                            <td>Galle</td>
+                            <td>50,000</td>
+                        </tr>
+                        <tr>
+                            <td>C00-003</td>
+                            <td>Maneesha</td>
+                            <td>Galle</td>
+                            <td>50,000</td>
+                        </tr>
+                        <tr>
+                            <td>C00-004</td>
+                            <td>Dakshina</td>
+                            <td>Galle</td>
+                            <td>50,000</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 </main>
 
