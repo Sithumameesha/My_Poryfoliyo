@@ -48,23 +48,35 @@
     </nav>
 </header>
 <main class="container-fluid">
+    <div class="container d-flex flex-grow-1 flex-column">
+        <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
+            <h2 id="H1-1" style="font-family: 'Arial Rounded MT Bold',serif"><i
+                    class="fa-sharp fa-solid fa-cart-plus"></i> Place Order
+            </h2>
+        </div>
+    </div>
+
+
+
     <div class="container d-flex flex-grow-1 flex-column" style="background-color: #dfe4ea">
         <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
             <h6 id="H6-1"> Place Order</h6>
             <hr>
         </div>
 
-        <div class="row justify-content-end" style="height: min-content">
 
-            <div class="col-10 col-md-5 col-lg-5 p-3 mt-2 rounded-3 m-2" style="background-color: white">
-                <h5 class="text-center p-2 text-light rounded-3" style="background-color: #0a53be">Invoice </h5>
+
+        <div class="row justify-content-around" style="height: min-content">
+
+            <div class="col-10 col-md-5 col-lg-4 p-3 mt-3 rounded-3" style="background-color: white">
+                <h5 class="text-center  p-2 text-light rounded-3" style="background-color: #0a53be">Invoice Details</h5>
                 <div class="row mt-1">
                     <div class="col-12 col-md-6 col-lg-6">
                         <label class="fw-bold" for="orderId">Order Code :</label>
                         <input class="form-control border-dark" id="orderId" type="text">
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
-                        <label class="fw-bold" for="orderDate">Order Date :</label>
+                        <label class="fw-bold" for="orderDate"> Date :</label>
                         <input class="form-control border-dark" id="orderDate" type="date">
                     </div>
                 </div>
@@ -72,7 +84,6 @@
                     <div class="col-12 col-md-6 col-lg-6">
                         <label class="fw-bold" for="customerId">Customer ID :</label>
                         <select aria-label="Default select example" class="form-select border-dark" id="customerId">
-
                         </select>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
@@ -92,53 +103,85 @@
                 </div>
             </div>
 
-</div>
-
-
-
-
-    <div class="col-10 col-md-5 col-lg-5 p-3 mt-3 rounded-3" style="background-color: white;
-position: relative;
-bottom: 300px">
-        <h5 class="text-center p-2 text-light rounded-3" style="background-color: #0a53be">Item Details</h5>
-        <div class="row mt-1">
-            <div class="col-12 col-md-6 col-lg-6">
-                <label class="fw-bold" for="itemcode">Item Code :</label>
-                <select aria-label="Default select example" class="form-select border-dark" id="itemcode">
-                    <option selected>-Select Item-</option>
-                    <option value="1">I001</option>
-                    <option value="2">I002</option>
-                    <option value="3">I003</option>
-                    <option value="4">I004</option>
-                </select>
+            <div class="col-10 col-md-5 col-lg-4 p-3 mt-3 rounded-3" style="background-color: white">
+                <h5 class="text-center p-2 text-light rounded-3" style="background-color: #0a53be">Item Detail</h5>
+                <div class="row mt-1">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="itemcode">Item Code :</label>
+                        <select aria-label="Default select example" class="form-select border-dark" id="itemcode">
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="itemName">Item Name :</label>
+                        <input class="form-control border-dark" disabled id="itemName" type="text">
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="itemPrice">Unit Price :</label>
+                        <input class="form-control border-dark" disabled id="itemPrice" type="text">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="qtyOnHand">Qty On Hand :</label>
+                        <input class="form-control border-dark" disabled id="qtyOnHand" type="text">
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="buyQty"> Qty :</label>
+                        <input class="form-control border-dark" id="buyQty" type="text">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 mt-4 ">
+                        <button class="btn  rounded-2" type="submit" style="background-color: #0a53be">Add To Cart</button>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-6">
-                <label class="fw-bold" for="itemName">Item Name :</label>
-                <input class="form-control border-dark" disabled id="itemName" type="text">
+
+            <div class="col-10 col-md-5 col-lg-3 p-3 mt-3 rounded-3" style="background-color: white">
+                <h5 class="text-center  p-2 text-light rounded-3" style="background-color: #0a53be">Payment Details</h5>
+                <div class="row mt-1">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="total">Total :</label>
+                        <input class="form-control border-dark" disabled id="total" type="number">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="discount">Discount :</label>
+                        <input class="form-control border-dark" id="discount" role="spinbutton" type="number">
+                    </div>
+                </div>
+
+                <div class="row mt-1">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="subTotal">Sub Total :</label>
+                        <input class="form-control border-dark" disabled id="subTotal" type="number">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="cash">Cash :</label>
+                        <input class="form-control border-dark" id="cash" type="text">
+                    </div>
+                </div>
+
+                <div class="row mt-1">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="balance">Balance :</label>
+                        <input class="form-control border-dark" disabled id="balance" type="number">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 mt-4">
+                        <button class="btn btn-warning rounded-2" type="submit">Purchase</button>
+                    </div>
+                </div>
             </div>
+
+
+            <div class="d-grid col-12 col-md-2 mt-4">
+                <button class="btn btn-danger rounded-2 bold" type="reset">Clear All</button>
+            </div>
+
+
+
+
         </div>
-        <div class="row mt-1">
-            <div class="col-12 col-md-6 col-lg-6">
-                <label class="fw-bold" for="itemPrice">Unit Price :</label>
-                <input class="form-control border-dark" disabled id="itemPrice" type="text">
-            </div>
-            <div class="col-12 col-md-6 col-lg-6">
-                <label class="fw-bold" for="qtyOnHand">Qty On Hand :</label>
-                <input class="form-control border-dark" disabled id="qtyOnHand" type="text">
-            </div>
-        </div>
-        <div class="row mt-1">
-            <div class="col-12 col-md-6 col-lg-6">
-                <label class="fw-bold" for="buyQty">Buy Qty :</label>
-                <input class="form-control border-dark" id="buyQty" type="text">
-            </div>
-            <div class="col-12 col-md-6 col-lg-6 mt-4 ">
-                <button class="btn btn-primary rounded-2" type="submit">Add To Cart</button>
-            </div>
-        </div>
-    </div>
 
-    </div>
     </div>
 </main>
 <script src="./assects/boostrap_lib/js/bootstrap.min.js"></script>
