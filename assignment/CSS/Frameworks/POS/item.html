@@ -94,7 +94,7 @@ top: -150px">
                     data-bs-toggle="modal" type="button">Delete Items
             </button>
 
-<!--            <button class="btn btn-warning " type="button">Viewss  Customers</button>-->
+            <button class="btn btn-warning " type="button">Viewss  Customers</button>
         </div>
 
 
@@ -144,5 +144,85 @@ top: -150px">
     </div>
     </div>
 </main>
+<div saria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="registerCustomer" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #0a53be">
+                <h5 class="modal-title text-light">New Item</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerId">Item Code :</label>
+                        <input class="form-control" id="txtCustomerId"
+                               type="text">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerName">Item Name :</label>
+                        <input class="form-control" id="txtCustomerName"
+                               type="text">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerAddress">Item Price :</label>
+                        <input class="form-control" id="txtCustomerAddress"
+                               type="text">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerSalary">Item Quantity :</label>
+                        <input class="form-control" id="txtCustomerSalary"
+                               type="number">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+                <button class="btn btn-warning" type="reset">Clear</button>
+                <button class="btn btn-primary" type="button">Save Item</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="updateCustomer" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #0a53be">
+                <h5 class="modal-title text-light">Update Item</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="searchCustomerId">Search Item Code :</label>
+                        <input class="form-control" id="searchCustomerId"
+                               type="text">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="name">Item Name :</label>
+                        <input class="form-control" id="name"
+                               type="text">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="address">Item Price :</label>
+                        <input class="form-control" id="address"
+                               type="text">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="salary">Item Quantity :</label>
+                        <input class="form-control" id="salary"
+                               type="number">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+                <button class="btn btn-warning" type="reset">Clear</button>
+                <button class="btn btn-primary" type="button">Update Item</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./assects/boostrap_lib/js/bootstrap.min.js"></script>
 </body>
 </html>
