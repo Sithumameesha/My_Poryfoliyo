@@ -631,7 +631,7 @@ main>hr{
     animation: rotate 20s linear infinite;
 }
 .sec1>div:nth-child(1)::after{
-    content: url("/assets/img/img_12.png");
+    content: url("../img/img_12.png");
     width: 229px;
     height: 206px;
     background: #101010;
