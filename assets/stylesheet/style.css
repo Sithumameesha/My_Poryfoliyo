@@ -670,7 +670,7 @@ main>hr{
     animation: rotate 20s linear infinite;
 }
 .sec1>div:nth-child(2)::after{
-    content: url("/assets/img/img_13.png");
+    content: url("../img/img_13.png");
     width: 229px;
     height: 206px;
     background: #101010;
@@ -707,7 +707,7 @@ main>hr{
     animation: rotate 20s linear infinite;
 }
 .sec1>div:nth-child(3)::after{
-    content: url("/assets/img/pythone.svg");
+    content: url("../img/pythone.svg");
     width: 229px;
     height: 206px;
     background: #101010;
@@ -744,7 +744,7 @@ main>hr{
     animation: rotate 20s linear infinite;
 }
 .sec1>div:nth-child(4)::after{
-    content: url("/assets/img/img_5.png");
+    content: url("../img/img_5.png");
     width: 229px;
     height: 206px;
     background: #101010;
@@ -782,7 +782,7 @@ main>hr{
     animation: rotate 20s linear infinite;
 }
 .sec1>div:nth-child(5)::after{
-    content: url("/assets/img/img_6.png");
+    content: url("../img/img_6.png");
     width: 229px;
     height: 206px;
     background: #101010;
@@ -819,7 +819,7 @@ main>hr{
     animation: rotate 20s linear infinite;
 }
 .sec1>div:nth-child(6)::after{
-    content: url("/assets/img/img_7.png");
+    content: url("../img/img_7.png");
     width: 229px;
     height: 206px;
     background: #101010;
@@ -857,7 +857,7 @@ main>hr{
     animation: rotate 20s linear infinite;
 }
 .sec1>div:nth-child(7)::after{
-    content: url("/assets/img/img_8.png");
+    content: url("../img/img_8.png");
     width: 229px;
     height: 206px;
     background: #101010;
@@ -894,7 +894,7 @@ main>hr{
     animation: rotate 20s linear infinite;
 }
 .sec1>div:nth-child(8)::after{
-    content: url("/assets/img/img_9.png");
+    content: url("../img/img_9.png");
     width: 229px;
     height: 206px;
     background: #101010;
@@ -932,7 +932,7 @@ main>hr{
     animation: rotate 20s linear infinite;
 }
 .sec1>div:nth-child(9)::after{
-    content: url("/assets/img/img_10.png");
+    content: url("../img/img_10.png");
     width: 229px;
     height: 206px;
     background: #101010;
@@ -969,7 +969,7 @@ main>hr{
     animation: rotate 20s linear infinite;
 }
 .sec1>div:nth-child(10)::after{
-    content: url("/assets/img/img_11.png");
+    content: url("../img/img_11.png");
     width: 229px;
     height: 206px;
     background: #101010;
