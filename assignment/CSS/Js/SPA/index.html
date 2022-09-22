@@ -23,46 +23,46 @@
     </style>
 </head>
 <body>
-
-<main class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light shadow-lg posNavi position-relative rounded-bottom mb-4">
-        <div class="container-fluid">
-            <a class="navbar-brand text-dark fw-bold " >
-                <img alt="Logo" class="d-inline-block align-text-center" height="44" src="./assects/img/pngwing.com%20(42).png"
-                     width="50">
-                <span class="text-success"> Welocome </span>  System
-            </a>
-            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-                    class="navbar-toggler" data-bs-target="#navbarSupportedContent"
-                    data-bs-toggle="collapse" type="button">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a aria-current="page" class="nav-link active" href="customer.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" >Customer</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" >Items</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" >Orders</a>
-                    </li>
-                </ul>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button class="btn btn-outline-primary btn-m" type="button">
-                        Sign Up
-                    </button>
-                    <button class="btn btn-outline-secondary" type="button">
-                            Log Out
-                    </button>
-                </div>
+<nav class="navbar navbar-expand-lg navbar-light shadow-lg posNavi position-relative rounded-bottom mb-4 m-lg-2">
+    <div class="container-fluid">
+        <a class="navbar-brand text-dark fw-bold " >
+            <img alt="Logo" class="d-inline-block align-text-center" height="44" src="./assects/img/pngwing.com%20(42).png"
+                 width="50">
+            <span class="text-success"> Welocome </span>  System
+        </a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-bs-target="#navbarSupportedContent"
+                data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" id="home_btn">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  id="customer_btn">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="items_btn" >Items</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="orders_btn" >Orders</a>
+                </li>
+            </ul>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-outline-primary btn-m" type="button">
+                    Sign Up
+                </button>
+                <button class="btn btn-outline-secondary" type="button">
+                    Log Out
+                </button>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
+<main class="container-fluid" id="main_1">
+
     <div class="container d-flex flex-grow-1 flex-column">
         <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
 
@@ -107,7 +107,7 @@
 
 </main>
 <!--/*.......................*/-->
-<main class="container-fluid">
+<main class="container-fluid" id="main_2">
     <div class="container d-flex flex-grow-1 flex-column">
         <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
 
@@ -317,7 +317,7 @@
     </div>
 </main>
 <!--/*.........................*/-->
-<main class="container-fluid">
+<main class="container-fluid" id="main_3">
     <div class="container d-flex flex-grow-1 flex-column">
         <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
 
@@ -528,7 +528,7 @@
     </div>
 </main>
 <!--/*.........................*/-->
-<main class="container-fluid">
+<main class="container-fluid" id="main_4">
     <div class="container d-flex flex-grow-1 flex-column">
         <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
 
@@ -698,5 +698,21 @@
 </main>
 <script src="assects/boostrap_lib/js/bootstrap.min.js"></script>
 <script src="assects/js_lib/jquery-3.6.1.min.js"></script>
+<script>
+  $("#customer_btn").click(function(){
+      $("#main_1").css('display','none');
+      $("#main_2").css('display','inline-block');
+      $("#main_3").css('display','none');
+      $("#main_4").css('display','none');
+  });
+    $("#home_btn").click(function(){
+      $("#main_1").css('display','inline-block');
+      $("#main_2").css('display','none');
+      $("#main_3").css('display','none');
+      $("#main_4").css('display','none');
+
+  });
+
+</script>
 </body>
 </html>
