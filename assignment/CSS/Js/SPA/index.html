@@ -20,6 +20,9 @@
             background: url("assects/img/pngwing.com (45).png");
             background-size: cover;
         }
+        #ul_list{
+            cursor: pointer;
+        }
 
     </style>
 </head>
@@ -37,7 +40,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="ul_list">
                 <li class="nav-item">
                     <a aria-current="page" class="nav-link active" id="home_btn">Home</a>
                 </li>
@@ -137,7 +140,7 @@
                 </form>
             </div>
 
-            <div class="col-10 col-md-5 col-lg-5 mt-5">
+            <div class="col-10 col-md-5 col-lg- mt-5">
                 <button class="btn btn-success " data-bs-target="#registerCustomer"
                         data-bs-toggle="modal" id="btnRegister" type="button">+ New Customer
                 </button>
@@ -146,7 +149,7 @@
                         data-bs-toggle="modal" type="button">Update Customer
                 </button>
 
-                <button class="btn btn-danger" data-bs-target="#deleteCustomer"
+                <button class="btn btn-danger mt-2" data-bs-target="#deleteCustomer"
                         data-bs-toggle="modal" type="button">Delete Customer
                 </button>
 
