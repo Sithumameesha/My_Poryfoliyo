@@ -20,6 +20,7 @@
             background: url("assects/img/pngwing.com (45).png");
             background-size: cover;
         }
+
     </style>
 </head>
 <body>
@@ -699,6 +700,15 @@
 <script src="assects/boostrap_lib/js/bootstrap.min.js"></script>
 <script src="assects/js_lib/jquery-3.6.1.min.js"></script>
 <script>
+
+    $(document).ready(function(){
+        $("#main_1").css('display','inline-block');
+        $("#main_2").css('display','none');
+        $("#main_3").css('display','none');
+        $("#main_4").css('display','none');
+
+    });
+
   $("#customer_btn").click(function(){
       $("#main_1").css('display','none');
       $("#main_2").css('display','inline-block');
@@ -726,6 +736,7 @@
       $("#main_4").css('display','inline-block');
 
   });
+
 
 </script>
 </body>
