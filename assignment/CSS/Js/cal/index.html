@@ -9,14 +9,7 @@
 <style>
     section{
         border: 2px solid black;
-        /*width: 500px;*/
-        /*height: 500px;*/
         position: absolute;
-        /*left: 0;*/
-        /*right: 0;*/
-        /*top: 0;*/
-        /*bottom: 0;*/
-        /*margin: auto;*/
         display: grid;
         grid-template-rows: repeat(4,1fr);
         grid-template-columns: repeat(4,1fr);
@@ -25,8 +18,7 @@
     }
 
     section>div{
-        /*border: 2px solid red;*/
-        /*margin-top: 50px;*/
+
         width: 50px;
         margin: 0px;
         height: 50px;
@@ -37,18 +29,31 @@
         width: 200px;
         height: 60px;
     }
+    body>div>p{
+        font-family: "Agency FB";
+    }
+    body>div>button{
+       border: none;
+        height: 60px;
+    }
     .history{
-        margin-bottom: 10px;
+        position: absolute;
+        top: 0px;
+        left: 90px;
     }
     .result{
-margin-top: -10px;
+position: absolute;
+        top:30px;
+        left: 90px;
     }
 
 </style>
 <body>
 <div>
+    <button id="clear">Clear</button>
     <p class="history">1</p>
     <p class="result">0</p>
+
 </div>
 <section>
 
@@ -74,6 +79,7 @@ margin-top: -10px;
     let result = document.querySelector('.result');
     let history = document.querySelector('.history');
     let equalTo = document.querySelector('#equal');
+    let clear = document.querySelector('#clear');
     let value = "";
 
     buttons.forEach((num, index) => {
@@ -94,7 +100,10 @@ margin-top: -10px;
             alert('please enter any Number');
         }
     });
-
+    clear.addEventListener('click', function () {
+        result.innerHTML = "";
+        value = "";
+    });
 
 
 </script>
