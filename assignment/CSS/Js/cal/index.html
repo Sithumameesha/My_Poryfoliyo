@@ -52,28 +52,62 @@ margin-top: -10px;
 </div>
 <section>
 
-    <div>
-        <button>7</button>
-    </div>
-    <div><button>8</button></div>
-    <div><button>9</button></div>
-    <div><button>+</button></div>
-    <div><button>4</button></div>
-    <div><button>5</button></div>
-    <div><button>6</button></div>
-    <div><button>-</button></div>
-    <div><button>1</button></div>
-    <div><button>2</button></div>
-    <div><button>3</button></div>
-    <div><button>/</button></div>
-    <div><button>0</button></div>
-    <div><button>.</button></div>
-    <div><button>=</button></div>
-    <div><button>*</button></div>
-
-
+    <div><button class="num">7</button></div>
+    <div><button class="num">8</button></div>
+    <div><button class="num">9</button></div>
+    <div><button class="num">+</button></div>
+    <div><button class="num">4</button></div>
+    <div><button class="num">5</button></div>
+    <div><button class="num">6</button></div>
+    <div><button class="num">-</button></div>
+    <div><button class="num">1</button></div>
+    <div><button class="num">2</button></div>
+    <div><button class="num">3</button></div>
+    <div><button class="num">/</button></div>
+    <div><button class="num">0</button></div>
+    <div><button class="num"> .</button></div>
+    <div><button  id="equal">=</button></div>
+    <div><button class="num">*</button></div>
 </section>
+<script>
+    let buttons = document.querySelectorAll('.num');
+    let result = document.querySelector('.result');
+    let history = document.querySelector('.history');
+    let equalTo = document.querySelector('#equal');
+    let value = "";
 
+    buttons.forEach((num, index) => {
+        num.addEventListener('click', function () {
+            let text = this.innerHTML;
+            value += text;
+            result.innerHTML = value;
+        });
+    });
+
+    /*equal to button action*/
+    equalTo.addEventListener('click', function () {
+        if (result.innerHTML !== "") {
+            history.innerHTML = result.innerHTML;
+            result.innerHTML = eval(result.innerHTML);
+            value = eval(result.innerHTML);
+        } else {
+            alert('please enter any Number');
+        }
+    });
+
+    /*clear all number*/
+    // clear.addEventListener('click', function () {
+    //     result.innerHTML = "";
+    //     value = "";
+    // });
+    //
+    // /*delete single number*/
+    // backSpace.addEventListener('click', function () {
+    //     result.innerHTML = result.innerHTML.substring(0, result.innerHTML.length - 1);
+    //     value = result.innerHTML;
+    // });
+
+</script>
 
 
 </body>
