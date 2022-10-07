@@ -238,7 +238,7 @@
 </main>
 <script src="assects/js/jQuery%20v3.6.1.js"></script>
 <script>
-
+    var ItemArray = [];
     $("#btnItem").click(function (){
        let itemCode = $("#txtItemId").val();
         let itemName = $("#txtItemName").val();
@@ -252,6 +252,10 @@ var ItemObject= {
     qty:itemQty
 }
 console.log(ItemObject);
+        ItemArray.push(ItemObject);
+for ( var items of ItemArray){
+    console.log(items.id);
+}
     });
 
 
