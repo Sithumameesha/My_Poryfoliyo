@@ -106,7 +106,7 @@
                             <th>Item Quantity</th>
                         </tr>
                         </thead>
-                        <tbody id="customerTable">
+                        <tbody id="itemsTable">
 
                         </tbody>
                     </table>
@@ -256,6 +256,9 @@ console.log(ItemObject);
 for ( var items of ItemArray){
     console.log(items.id);
 }
+
+        var row = "<tr><td>"+items.id+"</td><td>"+items.name+"</td><td> "+items.price+"</td><td> "+items.qty+" </td></tr>";
+        $("#itemsTable").append(row);
     });
 
 
