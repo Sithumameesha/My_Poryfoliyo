@@ -103,30 +103,7 @@
                         </tr>
                         </thead>
                         <tbody id="customerTable">
-                        <tr>
-                            <td>C00-001</td>
-                            <td>Sithum</td>
-                            <td>Galle</td>
-                            <td>50,000</td>
-                        </tr>
-                        <tr>
-                            <td>C00-002</td>
-                            <td>Nimal</td>
-                            <td>Galle</td>
-                            <td>50,000</td>
-                        </tr>
-                        <tr>
-                            <td>C00-003</td>
-                            <td>Kamal</td>
-                            <td>Galle</td>
-                            <td>50,000</td>
-                        </tr>
-                        <tr>
-                            <td>C00-004</td>
-                            <td>Sunil</td>
-                            <td>Galle</td>
-                            <td>50,000</td>
-                        </tr>
+
                         </tbody>
                     </table>
                 </div>
@@ -169,7 +146,7 @@
                 <div class="modal-footer">
                     <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
                     <button class="btn btn-warning" type="reset">Clear</button>
-                    <button class="btn btn-primary" type="button">Save Customer</button>
+                    <button class="btn btn-primary" type="button" id="btnCustomer">Save Customer</button>
                 </div>
             </div>
         </div>
@@ -258,5 +235,32 @@
 
 <script src="./assects/boostrap_lib/js/bootstrap.min.js"></script>
 <script src="./assects/js/jQuery%20v3.6.1.js"></script>
+<script>
+    var customerArray=[];
+    $("#btnCustomer").click(function (){
+
+        let customerId= $("#txtCustomerId").val();
+        let customerName=$("#txtCustomerName").val();
+        let customerAddress = $("#txtCustomerAddress").val();
+        let customerSalary =$("#txtCustomerSalary").val();
+
+     var customerObject ={
+      id:customerId,
+      name :customerName,
+      salary: customerSalary,
+      address :customerAddress,
+     }
+     // console.log(customerObject);
+
+     customerArray.push(customerObject);
+     console.log(customerArray);
+        for( var customer of customerArray){
+           console.log(customer.id);
+        }
+       var row = "<tr><td>"+customer.id+"</td><td>"+customer.name+"</td><td> "+customer.address+"</td><td> "+customer.salary+" </td></tr>";
+        $("#customerTable").append(row);
+
+    });
+</script>
 </body>
 </html>
