@@ -126,23 +126,23 @@
                 <div class="modal-body">
                     <form>
                         <div class="ms-3 me-3">
-                            <label class="form-label fw-bold mb-0" for="txtCustomerId">Item Code :</label>
-                            <input class="form-control" id="txtCustomerId"
+                            <label class="form-label fw-bold mb-0" for="txtItemId">Item Code :</label>
+                            <input class="form-control" id="txtItemId"
                                    type="text">
                         </div>
                         <div class="ms-3 me-3">
-                            <label class="form-label fw-bold mb-0" for="txtCustomerName">Item Name :</label>
-                            <input class="form-control" id="txtCustomerName"
+                            <label class="form-label fw-bold mb-0" for="txtItemName">Item Name :</label>
+                            <input class="form-control" id="txtItemName"
                                    type="text">
                         </div>
                         <div class="ms-3 me-3">
-                            <label class="form-label fw-bold mb-0" for="txtCustomerAddress">Item Price :</label>
-                            <input class="form-control" id="txtCustomerAddress"
+                            <label class="form-label fw-bold mb-0" for="txtItemPrice">Item Price :</label>
+                            <input class="form-control" id="txtItemPrice"
                                    type="text">
                         </div>
                         <div class="ms-3 me-3">
-                            <label class="form-label fw-bold mb-0" for="txtCustomerSalary">Item Quantity :</label>
-                            <input class="form-control" id="txtCustomerSalary"
+                            <label class="form-label fw-bold mb-0" for="txtItemQty">Item Quantity :</label>
+                            <input class="form-control" id="txtItemQty"
                                    type="number">
                         </div>
                     </form>
@@ -240,7 +240,18 @@
 <script>
 
     $("#btnItem").click(function (){
-        alert("Done")
+       let itemCode = $("#txtItemId").val();
+        let itemName = $("#txtItemName").val();
+        let itemPrice = $("#txtItemPrice").val();
+        let itemQty = $("#txtItemQty").val();
+
+var ItemObject= {
+    id:itemCode,
+    name:itemName,
+    price:itemPrice,
+    qty:itemQty
+}
+console.log(ItemObject);
     });
 
 
