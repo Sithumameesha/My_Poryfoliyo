@@ -226,7 +226,7 @@
                 <div class="modal-footer">
                     <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
                     <button class="btn btn-warning" type="reset">Clear</button>
-                    <button class="btn btn-primary" type="button">Delete Customer</button>
+                    <button class="btn btn-primary" type="button" id="BtnDelete">Delete Customer</button>
                 </div>
             </div>
         </div>
@@ -272,26 +272,8 @@
         let rowData = $(this).text();
         console.log(rowData);
     });
+/*........................Search Customer.......................................*/
 
-
-    // $("#txtCustomerId").on("keydown",function (event){
-    //
-    //
-    //    if (event.key=="Enter"){
-    //        $("#txtCustomerName").focus();
-    //    }
-    // });
-    // $("#txtCustomerName").on("keydown",function (event){
-    //     if (event.key=="Enter"){
-    //         $("#txtCustomerAddress").focus();
-    //     }
-    // });
-    // $("#txtCustomerAddress").on("keydown",function (event){
-    //     if (event.key=="Enter"){
-    //         $("#txtCustomerSalary").focus();
-    //     }
-    // });
-            // Seach Customer
     $("#txtCustomerId").on('keyup', function (event) {
         if (event.code == "Enter") {
             let typedId = $("#txtCustomerId").val();
@@ -316,6 +298,38 @@
         }
         return null;
     }
+
+    /*...................Delete Customer...........................................*/
+    function DeleteCustomer(CustomerId){
+       let customer= searchCustomer(CustomerId)
+        if (CustomerId!=null){
+             let index=customerArray.indexOf(customer);
+             customerArray.splice(index,1);
+
+        }
+    }
+    $("#BtnDelete").click(function (){
+        let DeleteId = ("#searchCId").val;
+       DeleteCustomer(DeleteId);
+
+    });
+
+    $("#searchCId").on('keyup', function (event) {
+        if (event.code == "Enter") {
+            let typedId = $("#searchCId").val();
+            let customer = searchCustomer(typedId);
+            if (customer != null) {
+                $("#searchCId").val(customer.id);
+                $("#disabledName").val(customer.name);
+                $("#disabledAddress").val(customer.address);
+                $("#disabledSalary").val(customer.salary);
+            } else {
+                alert("There is no customer");
+            }
+        }
+    });
+
+
 
 </script>
 </body>
