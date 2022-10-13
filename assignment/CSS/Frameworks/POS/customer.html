@@ -200,8 +200,8 @@
                 <div class="modal-body">
                     <form>
                         <div class="ms-3 me-3">
-                            <label class="form-label fw-bold mb-0" for="searchCId">Search ID :</label>
-                            <input class="form-control" id="searchCId"
+                            <label class="form-label fw-bold mb-0" for="searchCustId">Search ID :</label>
+                            <input class="form-control" id="searchCustId"
                                    type="text">
                         </div>
                         <fieldset disabled>
@@ -250,23 +250,29 @@
       salary: customerSalary,
       address :customerAddress,
      }
-     // console.log(customerObject);
 
      customerArray.push(customerObject);
-     console.log(customerArray);
-        for( var customer of customerArray){
-           console.log(customer.id);
-        }
-       var row = "<tr><td>"+customer.id+"</td><td>"+customer.name+"</td><td> "+customer.address+"</td><td> "+customer.salary+" </td></tr>";
-        $("#customerTable").append(row);
 
+        loadAllCustomers();
     });
+
 
     $("#txtCustomerId,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on("keydown",function (event){
         if (event.key=="Tab"){
             event.preventDefault();
         }
     });
+
+    function loadAllCustomers() {
+        $("#customerTable").empty();
+
+        for (var customer of customerArray) {
+
+            var row = "<tr><td>"+customer.id+"</td><td>"+customer.name+"</td><td> "+customer.address+"</td><td> "+customer.salary+" </td></tr>";
+                $("#customerTable").append(row);
+        }
+    }
+
 
     $("#customerTable>tr").click(function () {
         let rowData = $(this).text();
@@ -300,26 +306,34 @@
     }
 
     /*...................Delete Customer...........................................*/
+
+    // $("#BtnDelete").click(function (){
+    //
+    //     let DeleteId = ("#searchCustId").val();
+    //    DeleteCustomer(DeleteId);
+        $("#BtnDelete").click(function (){
+            let deleteID=$("#searchCustId").val();
+            DeleteCustomer(deleteID);
+
+        });
+
+    // });
     function DeleteCustomer(CustomerId){
-       let customer= searchCustomer(CustomerId)
+        let customer= searchCustomer(CustomerId)
         if (CustomerId!=null){
-             let index=customerArray.indexOf(customer);
-             customerArray.splice(index,1);
+            let index=customerArray.indexOf(customer);
+            customerArray.splice(index,1);
+            loadAllCustomers();
 
         }
     }
-    $("#BtnDelete").click(function (){
-        let DeleteId = ("#searchCId").val;
-       DeleteCustomer(DeleteId);
 
-    });
-
-    $("#searchCId").on('keyup', function (event) {
+    $("#searchCustId").on('keyup', function (event) {
         if (event.code == "Enter") {
-            let typedId = $("#searchCId").val();
+            let typedId = $("#searchCustId").val();
             let customer = searchCustomer(typedId);
             if (customer != null) {
-                $("#searchCId").val(customer.id);
+                $("#searchCustId").val(customer.id);
                 $("#disabledName").val(customer.name);
                 $("#disabledAddress").val(customer.address);
                 $("#disabledSalary").val(customer.salary);
