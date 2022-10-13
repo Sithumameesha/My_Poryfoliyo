@@ -43,6 +43,7 @@ $("#itemcode").on('click', function (event) {
 $("#AddToCart").click(function (){
   // calcTotal($("#itemPrice").val() * $("#qtyOnHand"));
 loadCartTableDetail();
+reduceQty($("#buyQty").val());
 
 
 });
@@ -65,4 +66,10 @@ function loadCartTableDetail() {
 
     $("#OrderTable").append(row);
 
+}
+function reduceQty(orderQty) {
+    var minQty = parseInt(orderQty);
+    var reduceQty = parseInt($("#qtyOnHand").val());
+    reduceQty = reduceQty - minQty;
+    $("#qtyOnHand").val(reduceQty);
 }
