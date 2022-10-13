@@ -2,6 +2,7 @@
 /*.............................Save Item........................................*/
 var ItemArray=[];
 $("#btnItem").click(function (){
+
    let ItemId =$("#txtItemId").val();
      let  ItemName=$("#txtItemName").val();
      let ItemPrice=$("#txtItemPrice").val();
@@ -17,6 +18,7 @@ $("#btnItem").click(function (){
      console.log(ItemObject);
      loadAllItems();
      loadAllItemsForOption();
+    Swal.fire('Item Add Sucessfully');
 })
 function loadAllItems(){
     $("#itemsTable").empty();
@@ -44,6 +46,8 @@ $("#txtItemId").on("keyup",function (event){
             $("#txtItemPrice").val(Item.price);
             $("#txtItemQty").val(Item.qty);
 
+        }else {
+            Swal.fire('There Are No Item Avalible');
         }
     }
 
@@ -60,6 +64,8 @@ $("#searchItemId").on("keyup",function (event){
             $("#ItemFromPrice").val(Item.price);
             $("#ItemQuantity").val(Item.qty);
 
+        }else {
+            Swal.fire('There Are No Item Avalible');
         }
     }
 
@@ -78,7 +84,12 @@ function UpdateItem(ItemID){
 }
 $("#btnUpdatesItem").click(function (){
     let Item = $("searchItemId").val();
-    UpdateItem(Item);
+
+    if (UpdateItem(Item)){
+        Swal.fire('Item Updated');
+    }else {
+        Swal.fire('There Are No Item Avalible');
+    }
 });
 
 
@@ -96,6 +107,9 @@ $("#searchCId").on("keyup",function (event){
             $("#disabledItemQuantity").val(Item.qty);
 
         }
+        else {
+            Swal.fire('There Are No Item Avalible');
+        }
     }
 
 });
@@ -111,6 +125,11 @@ function DeleteItem(ItemId){
 }
 $("#btnDeleteItem").click(function (){
     let deleteID=$("#searchCId").val();
-    DeleteItem(deleteID);
+
+    if (DeleteItem(deleteID)){
+        Swal.fire('Item Deleted');
+    }else {
+        Swal.fire('Item Delete Not Working');
+    }
 
 });

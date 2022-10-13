@@ -38,18 +38,19 @@ $("#itemcode").on('click', function (event) {
 
     }
 });
-/*....................Total Cal...................*/
+
 
 $("#AddToCart").click(function (){
-  // calcTotal($("#itemPrice").val() * $("#qtyOnHand"));
 loadCartTableDetail();
-reduceQty($("#buyQty").val());
+calcQty($("#buyQty").val());
+calcTotal($("#buyQty")*$("#itemPrice"));
 
 
 });
-
+/*....................Total Cal...................*/
 function calcTotal(amount) {
-   var total = amount;
+    var total=0;
+   total += amount;
     $("#total").val(total);
     console.log(total);
 }
@@ -67,7 +68,7 @@ function loadCartTableDetail() {
     $("#OrderTable").append(row);
 
 }
-function reduceQty(orderQty) {
+function calcQty(orderQty) {
     var minQty = parseInt(orderQty);
     var reduceQty = parseInt($("#qtyOnHand").val());
     reduceQty = reduceQty - minQty;

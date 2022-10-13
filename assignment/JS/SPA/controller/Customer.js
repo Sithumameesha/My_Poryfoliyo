@@ -12,11 +12,15 @@ $("#btnCustomer").click(function (){
         salary: customerSalary,
         address :customerAddress,
     }
+if (customerArray.push(customerObject)){
+        Swal.fire('Customer Suceesfully Added');
+}
 
-    customerArray.push(customerObject);
 
     loadAllCustomers();
     loadAllCustomersForOption();
+
+
 });
 
 
@@ -53,7 +57,7 @@ $("#txtCustomerId").on('keyup', function (event) {
             $("#txtCustomerAddress").val(customer.address);
             $("#txtCustomerSalary").val(customer.salary);
         } else {
-            alert("There is no customer");
+            Swal.fire('There Are No Customer Avalible');
         }
     }
 });
@@ -72,7 +76,12 @@ function searchCustomer(cusID) {
 
 $("#BtnDelete").click(function (){
     let deleteID=$("#searchCustId").val();
-    DeleteCustomer(deleteID);
+    if (DeleteCustomer(deleteID)){
+
+        Swal.fire('Customer Deleted');
+    }else {
+        Swal.fire('Any fool can use a computer');
+    }
 
 });
 
@@ -113,7 +122,7 @@ $("#searchCustomerId").on('keyup', function (event) {
             $("#address").val(customer.address);
             $("#salary").val(customer.salary);
         } else {
-            alert("There is no customer");
+            Swal.fire('There Are No Customer Avalible')
         }
     }
 });
@@ -132,6 +141,9 @@ function UpdateCustomer(CustomerId){
 
 $("#btnUpdate").click(function (){
     let ID=$("#searchCustomerId").val();
-    UpdateCustomer(ID);
+
+    if ( UpdateCustomer(ID)){
+        Swal.fire('Customer Updated')
+    }
 
 });
