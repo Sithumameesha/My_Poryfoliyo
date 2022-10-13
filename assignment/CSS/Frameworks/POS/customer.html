@@ -25,7 +25,7 @@
                         <a aria-current="page" class="nav-link active" href="customer.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="customer.html">Customer</a>
+                        <a class="nav-link" href="customer.html" >Customer</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="item.html">Items</a>
@@ -49,14 +49,14 @@
 <main class="container-fluid">
     <div class="container d-flex flex-grow-1 flex-column">
         <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
-            <h2 id="H1-1" style="font-family: 'Arial Rounded MT Bold',serif"><i class="fa-solid fa-users"></i> Customer
+            <h2 id="H1-1" style="font-family: 'Arial Rounded MT Bold',serif"><i class="fa-solid fa-users" ></i> Customer
             </h2>
         </div>
     </div>
 
     <div class="container d-flex flex-grow-1 flex-column" style="background-color: #dfe4ea">
         <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
-            <h6 id="H6-1">Customer</h6>
+            <h6 id="H6-1" >Customer</h6>
             <hr>
         </div>
 
@@ -262,27 +262,61 @@
 
     });
 
-
+    $("#txtCustomerId,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on("keydown",function (event){
+        if (event.key=="Tab"){
+            event.preventDefault();
+        }
+    });
 
     $("#customerTable>tr").click(function () {
         let rowData = $(this).text();
         console.log(rowData);
     });
-    $("#txtCustomerId").on("keydown",function (event){
-       if (event.key=="Enter"){
-           $("#txtCustomerName").focus();
-       }
-    });
-    $("#txtCustomerName").on("keydown",function (event){
-        if (event.key=="Enter"){
-            $("#txtCustomerAddress").focus();
+
+
+    // $("#txtCustomerId").on("keydown",function (event){
+    //
+    //
+    //    if (event.key=="Enter"){
+    //        $("#txtCustomerName").focus();
+    //    }
+    // });
+    // $("#txtCustomerName").on("keydown",function (event){
+    //     if (event.key=="Enter"){
+    //         $("#txtCustomerAddress").focus();
+    //     }
+    // });
+    // $("#txtCustomerAddress").on("keydown",function (event){
+    //     if (event.key=="Enter"){
+    //         $("#txtCustomerSalary").focus();
+    //     }
+    // });
+            // Seach Customer
+    $("#txtCustomerId").on('keyup', function (event) {
+        if (event.code == "Enter") {
+            let typedId = $("#txtCustomerId").val();
+            let customer = searchCustomer(typedId);
+            if (customer != null) {
+                $("#txtCustomerId").val(customer.id);
+                $("#txtCustomerName").val(customer.name);
+                $("#txtCustomerAddress").val(customer.address);
+                $("#txtCustomerSalary").val(customer.salary);
+            } else {
+                alert("There is no customer");
+            }
         }
     });
-    $("#txtCustomerAddress").on("keydown",function (event){
-        if (event.key=="Enter"){
-            $("#txtCustomerSalary").focus();
+
+
+    function searchCustomer(cusID) {
+        for (let customer of customerArray) {
+            if (customer.id == cusID) {
+                return customer;
+            }
         }
-    });
+        return null;
+    }
+
 </script>
 </body>
 </html>
