@@ -75,7 +75,41 @@ function UpdateItem(ItemID){
         loadAllItems();
     }
 }
-$("#btnUpdateItem").click(function (){
+$("#btnUpdatesItem").click(function (){
     let Item = $("searchItemId").val();
     UpdateItem(Item);
-})
+});
+
+
+/*....................Delete Item................................*/
+
+
+$("#searchCId").on("keyup",function (event){
+    if (event.code=="Enter"){
+        let ItemId=$("#searchCId").val();
+        let Item= SearchItem(ItemId);
+        if (Item!=null){
+            $("#searchCId").val(Item.id);
+            $("#disabledItemName").val(Item.name);
+            $("#disabledItemPrice").val(Item.price);
+            $("#disabledItemQuantity").val(Item.qty);
+
+        }
+    }
+
+});
+
+function DeleteItem(ItemId){
+    let item= SearchItem(ItemId)
+    if (ItemId!=null){
+        let index=customerArray.indexOf(item);
+        ItemArray.splice(index,1);
+       loadAllItems();
+
+    }
+}
+$("#btnDeleteItem").click(function (){
+    let deleteID=$("#searchCId").val();
+    DeleteItem(deleteID);
+
+});
