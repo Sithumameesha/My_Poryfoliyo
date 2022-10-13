@@ -16,6 +16,7 @@ $("#btnCustomer").click(function (){
     customerArray.push(customerObject);
 
     loadAllCustomers();
+    loadAllCustomersForOption();
 });
 
 
