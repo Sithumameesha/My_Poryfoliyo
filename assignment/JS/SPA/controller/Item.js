@@ -1,3 +1,5 @@
+
+/*.............................Save Item........................................*/
 var ItemArray=[];
 $("#btnItem").click(function (){
    let ItemId =$("#txtItemId").val();
@@ -21,3 +23,26 @@ function loadAllItems(){
         $("#itemsTable").append(row);
     }
 }
+/*.....................Search Item.....................................*/
+function SearchItem(ItemId){
+    for (var Item of ItemArray){
+        if (Item.id==ItemId){
+            return Item;
+        }
+            }
+    return null;
+}
+$("#txtItemId").on("keyup",function (event){
+    if (event.code=="Enter"){
+        let ItemId=$("#txtItemId").val();
+        let Item= SearchItem(ItemId);
+        if (Item!=null){
+            $("#txtItemId").val(Item.id);
+            $("#txtItemName").val(Item.name);
+            $("#txtItemPrice").val(Item.price);
+            $("#txtItemQty").val(Item.qty);
+
+        }
+    }
+
+});
