@@ -168,30 +168,7 @@
                         </tr>
                         </thead>
                         <tbody id="customerTable">
-                        <tr>
-                            <td>C00-001</td>
-                            <td>Sithum</td>
-                            <td>Galle</td>
-                            <td>50,000</td>
-                        </tr>
-                        <tr>
-                            <td>C00-002</td>
-                            <td>Nimal</td>
-                            <td>Galle</td>
-                            <td>50,000</td>
-                        </tr>
-                        <tr>
-                            <td>C00-003</td>
-                            <td>Kamal</td>
-                            <td>Galle</td>
-                            <td>50,000</td>
-                        </tr>
-                        <tr>
-                            <td>C00-004</td>
-                            <td>Sunil</td>
-                            <td>Galle</td>
-                            <td>50,000</td>
-                        </tr>
+
                         </tbody>
                     </table>
                 </div>
@@ -234,7 +211,7 @@
                 <div class="modal-footer">
                     <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
                     <button class="btn btn-warning" type="reset">Clear</button>
-                    <button class="btn btn-primary" type="button">Save Customer</button>
+                    <button class="btn btn-primary" type="button" id="btnCustomer">Save Customer</button>
                 </div>
             </div>
         </div>
@@ -288,8 +265,8 @@
                 <div class="modal-body">
                     <form>
                         <div class="ms-3 me-3">
-                            <label class="form-label fw-bold mb-0" for="searchCId">Search ID :</label>
-                            <input class="form-control" id="searchCId"
+                            <label class="form-label fw-bold mb-0" for="searchCustId">Search ID :</label>
+                            <input class="form-control" id="searchCustId"
                                    type="text">
                         </div>
                         <fieldset disabled>
@@ -314,7 +291,7 @@
                 <div class="modal-footer">
                     <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
                     <button class="btn btn-warning" type="reset">Clear</button>
-                    <button class="btn btn-primary" type="button">Delete Customer</button>
+                    <button class="btn btn-primary" type="button" id="BtnDelete">Delete Customer</button>
                 </div>
             </div>
         </div>
@@ -379,30 +356,7 @@
                         </tr>
                         </thead>
                         <tbody >
-                        <tr>
-                            <td>I00-001</td>
-                            <td>Singal</td>
-                            <td>1200</td>
-                            <td>50</td>
-                        </tr>
-                        <tr>
-                            <td>I00-001</td>
-                            <td>Singal</td>
-                            <td>1200</td>
-                            <td>50</td>
-                        </tr>
-                        <tr>
-                            <td>I00-001</td>
-                            <td>Singal</td>
-                            <td>1200</td>
-                            <td>50</td>
-                        </tr>
-                        <tr>
-                            <td>I00-001</td>
-                            <td>Singal</td>
-                            <td>1200</td>
-                            <td>50</td>
-                        </tr>
+
                         </tbody>
                     </table>
                 </div>
@@ -465,7 +419,7 @@
                                    type="text">
                         </div>
                         <div class="ms-3 me-3">
-                            <label class="form-label fw-bold mb-0" for="name">Item Name :</label>
+                            <label class="form-label fw-bold mb-0" for="name" >Item Name :</label>
                             <input class="form-control"
                                    type="text">
                         </div>
@@ -484,7 +438,7 @@
                 <div class="modal-footer">
                     <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
                     <button class="btn btn-warning" type="reset">Clear</button>
-                    <button class="btn btn-primary" type="button">Update Item</button>
+                    <button class="btn btn-primary" type="button" id="btnUpdate">Update Item</button>
                 </div>
             </div>
         </div>
@@ -499,7 +453,7 @@
                 <div class="modal-body">
                     <form>
                         <div class="ms-3 me-3">
-                            <label class="form-label fw-bold mb-0" for="searchCId">Search Item Code :</label>
+                            <label class="form-label fw-bold mb-0" for="searchCustId">Search Item Code :</label>
                             <input class="form-control"
                                    type="text">
                         </div>
@@ -675,20 +629,7 @@
                             </tr>
                             </thead>
                             <tbody >
-                            <tr>
-                                <td>I00-001</td>
-                                <td>Singal</td>
-                                <td>220</td>
-                                <td>2</td>
-                                <td>440</td>
-                            </tr>
-                            <tr>
-                                <td>I00-002</td>
-                                <td>Singal</td>
-                                <td>220</td>
-                                <td>2</td>
-                                <td>440</td>
-                            </tr>
+
                             </tbody>
                         </table>
                     </div>
@@ -702,45 +643,7 @@
 </main>
 <script src="assects/boostrap_lib/js/bootstrap.min.js"></script>
 <script src="assects/js_lib/jquery-3.6.1.min.js"></script>
-<script>
-
-    $(document).ready(function(){
-        $("#main_1").css('display','inline-block');
-        $("#main_2").css('display','none');
-        $("#main_3").css('display','none');
-        $("#main_4").css('display','none');
-
-    });
-
-  $("#customer_btn").click(function(){
-      $("#main_1").css('display','none');
-      $("#main_2").css('display','inline-block');
-      $("#main_3").css('display','none');
-      $("#main_4").css('display','none');
-  });
-    $("#home_btn").click(function(){
-      $("#main_1").css('display','inline-block');
-      $("#main_2").css('display','none');
-      $("#main_3").css('display','none');
-      $("#main_4").css('display','none');
-
-  });
-  $("#items_btn").click(function(){
-      $("#main_1").css('display','none');
-      $("#main_2").css('display','none');
-      $("#main_3").css('display','inline-block');
-      $("#main_4").css('display','none');
-
-  });
-  $("#orders_btn").click(function(){
-      $("#main_1").css('display','none');
-      $("#main_2").css('display','none');
-      $("#main_3").css('display','none');
-      $("#main_4").css('display','inline-block');
-
-  });
-
-
-</script>
+<script src="controller/DashBoard.js"></script>
+<script src="controller/Customer.js"></script>
 </body>
 </html>
