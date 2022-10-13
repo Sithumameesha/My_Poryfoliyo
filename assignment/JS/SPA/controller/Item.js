@@ -16,6 +16,7 @@ $("#btnItem").click(function (){
      ItemArray.push(ItemObject);
      console.log(ItemObject);
      loadAllItems();
+     loadAllItemsForOption();
 })
 function loadAllItems(){
     $("#itemsTable").empty();
