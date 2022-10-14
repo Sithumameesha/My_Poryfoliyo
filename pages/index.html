@@ -5,61 +5,74 @@
     <title>Assiment</title>
 </head>
 <style>
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-  background: black;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-.Slider{
-    position: relative;
-    width: 200px;
-    height: 200px;
-    transform-style: preserve-3d;
-    animation: rotate 30s linear infinite;
-}
-@keyframes rotate {
-    0%{
-        transform : perspective(1000px)rotateY(0deg);
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-    100%{
-        transform: perspective(1000px)rotateY(360deg);
+
+    .con{
+        background: black;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
     }
-}
-.Slider>span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-origin: center ;
-    transform-style: preserve-3d;
-    transform : rotateY(calc(var(--i)*60deg)) translateZ(350px);
-}
-.img{
-position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /*border-radius: 100px;*/
-    object-fit: cover;
-    transition: 2s;
+    .Slider{
+        position: relative;
+        width: 200px;
+        height: 200px;
+        transform-style: preserve-3d;
+        animation: rotate 30s linear infinite;
+    }
+    @keyframes rotate {
+        0%{
+            transform : perspective(1000px)rotateY(0deg);
+        }
+        100%{
+            transform: perspective(1000px)rotateY(360deg);
+        }
+    }
+    .Slider>span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: center ;
+        transform-style: preserve-3d;
+        transform : rotateY(calc(var(--i)*60deg)) translateZ(350px);
+    }
+    /*.Slider_2>span{*/
+    /*    position: absolute;*/
+    /*    top: 0;*/
+    /*    left: 0;*/
+    /*    width: 100%;*/
+    /*    height: 100%;*/
+    /*    transform-origin: center ;*/
+    /*    transform-style: preserve-3d;*/
+    /*    transform : rotateY(calc(var(--i)*90deg)) translateZ(350px);*/
+    /*}*/
+    .img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /*border-radius: 100px;*/
+        object-fit: cover;
+        transition: 2s;
 
 
-}
-.Slider>span:hover img{
-    transform: translateY(-50px) scale(1.2);
-}
+    }
+    .Slider>span:hover img{
+        transform: translateY(-50px) scale(1.2);
+    }
 </style>
 <body>
+<main>
+<section class="con">
 <div class="Slider">
     <span style="--i:1;"><a href="../assignment/CSS/Basics/case%201/case%201.html" target="_blank">  <img class="img" src="/assets/img/Title%20-%20Google%20Chrome%2014_10_2022%2023_47_04%20(2).png"></a></span>
     <span style="--i:2;"><a href="../assignment/CSS/Basics/case%202/index.html" target="_blank">  <img  class="img"src="/assets/img/Title%20-%20Google%20Chrome%2014_10_2022%2023_53_51%20(2).png"></a></span>
@@ -68,5 +81,30 @@ position: absolute;
     <span style="--i:5;"><a href="../assignment/CSS/Basics/case%205/index.html">  <img class="img"src="/assets/img/Title%20-%20Google%20Chrome%2015_10_2022%2000_00_59%20(2).png"></a></span>
     <span style="--i:6;"><a href="../assignment/CSS/Basics/case%206/index.html" target="_blank">  <img class="img"src="/assets/img/Title%20-%20Google%20Chrome%2015_10_2022%2000_05_18%20(2).png"></a></span>
 </div>
+    </section>
+</main>
+<!--/*..................................*/-->
+<main>
+    <section class="con">
+        <div class="Slider">
+            <span style="--i:1;"><a href="../assignment/CSS/animation/case%203/index.html" target="_blank">  <img class="img" src="/assets/img/Title%20-%20Google%20Chrome%2015_10_2022%2000_43_10%20(2).png"></a></span>
+            <span style="--i:2;"><a href="../assignment/CSS/animation/case%204/index.html" target="_blank">  <img  class="img"src="/assets/img/Title%20-%20Google%20Chrome%2015_10_2022%2000_43_36%20(2).png"></a></span>
+            <span style="--i:3;"><a href="../assignment/CSS/animation/case%205/index.html" target="_blank">  <img class="img" src="/assets/img/Title%20-%20Google%20Chrome%2015_10_2022%2000_43_47%20(2).png"></a></span>
+            <span style="--i:4;"><a href="../assignment/CSS/animation/case%206/index.html" target="_blank">  <img class="img"src="/assets/img/Title%20-%20Google%20Chrome%2015_10_2022%2000_44_20%20(2).png"></a></span>
+
+        </div>
+    </section>
+</main>
+<!--/*..................................*/-->
+<main>
+    <section class="con">
+        <div class="Slider">
+            <span style="--i:1;"><a href="../assignment/CSS/Basics/case%201/case%201.html" target="_blank">  <img class="img" src="/assets/img/Title%20-%20Google%20Chrome%2014_10_2022%2023_47_04%20(2).png"></a></span>
+            <span style="--i:2;"><a href="../assignment/CSS/Basics/case%202/index.html" target="_blank">  <img  class="img"src="/assets/img/Title%20-%20Google%20Chrome%2014_10_2022%2023_53_51%20(2).png"></a></span>
+            <span style="--i:3;"><a href="../assignment/CSS/Basics/case%203/index.html" target="_blank">  <img class="img" src="/assets/img/Title%20-%20Google%20Chrome%2014_10_2022%2023_59_27%20(2).png"></a></span>
+
+        </div>
+    </section>
+</main>
 </body>
 </html>
