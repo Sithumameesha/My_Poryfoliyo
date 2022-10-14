@@ -41,18 +41,25 @@ $("#itemcode").on('click', function (event) {
 
 
 $("#AddToCart").click(function (){
-loadCartTableDetail();
-calcQty($("#buyQty").val());
-calcTotal();
 
+ var qty =$("#qtyOnHand").val();
+    var buyqty =$("#buyQty").val();
+    if (qty > buyqty){
+        loadCartTableDetail();
+        calcQty($("#buyQty").val());
+        calcTotal();
+        alert("Done");
 
+    }else {
+        alert("Not Workung ");
+    }
 });
 /*....................Total Cal...................*/
 function calcTotal() {
  var tbl = document.getElementById("OrderTable"),sum=0;
  for (var i=0; i<tbl.rows.length; i++){
      sum=sum + parseInt(tbl.rows[i].cells[4].innerHTML);
-    var Ototal= $("#total").val(sum);
+    $("#total").val(sum);
  }
 
 }
