@@ -52,7 +52,7 @@ function calcTotal() {
  var tbl = document.getElementById("OrderTable"),sum=0;
  for (var i=0; i<tbl.rows.length; i++){
      sum=sum + parseInt(tbl.rows[i].cells[4].innerHTML);
-     $("#total").val(sum);
+    var Ototal= $("#total").val(sum);
  }
 
 }
@@ -76,3 +76,14 @@ function calcQty(orderQty) {
     reduceQty = reduceQty - minQty;
     $("#qtyOnHand").val(reduceQty);
 }
+/*.....................Disconunt Function...............*/
+$(document).on("change keyup blur","#discount", function () {
+    var total= $("#total").val();
+    var discount =0 ;
+    var subtotal= 0 ;
+     discount = $("#discount").val();
+     discount = (total / 100) * discount;
+    subtotal = total - discount;
+
+    $("#subTotal").val(subtotal);
+});
