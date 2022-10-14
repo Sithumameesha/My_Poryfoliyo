@@ -1,6 +1,6 @@
 
 /*.............................Save Item........................................*/
-var ItemArray=[];
+
 $("#btnItem").click(function (){
 
    let ItemId =$("#txtItemId").val();

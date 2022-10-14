@@ -1,4 +1,4 @@
-var customerArray=[];
+
 $("#btnCustomer").click(function (){
 
     let customerId= $("#txtCustomerId").val();

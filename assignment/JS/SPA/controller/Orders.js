@@ -1,6 +1,6 @@
 
 /*Set Com Box Customer*/
-var orderArray=[];
+
 function loadAllCustomersForOption() {
     $("#customerId").empty();
     for (let cus of customerArray) {
