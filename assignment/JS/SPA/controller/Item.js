@@ -133,3 +133,19 @@ $("#btnDeleteItem").click(function (){
     }
 
 });
+/*..................................................*/
+$("#btnSearchItem").click(function (){
+    let Id=$("#ItemSearchId").val();
+    let item= SearchItem(Id);
+    if (item!=null){
+        $("#itemsTable").empty();
+        var row = "<tr><td>"+item.id+"</td><td>"+item.name+"</td><td> "+item.price+"</td><td> "+item.qty+" </td></tr>";
+        $("#itemsTable").append(row);
+    }else {
+        Swal.fire('There Are No Item Avalible');
+        loadAllItems();
+    }
+});
+$("#btnItemClear").click(function (){
+    loadAllItems();
+});
