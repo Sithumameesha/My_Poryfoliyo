@@ -87,3 +87,17 @@ $(document).on("change keyup blur","#discount", function () {
 
     $("#subTotal").val(subtotal);
 });
+/*................................................*/
+$(document).on("change keyup blur", "#cash", function () {
+    var cash = $("#cash").val();
+    var subTotal= $("#subTotal").val();
+    var balance = cash - subTotal;
+    $("#balance").val(balance);
+    if (balance < 0) {
+        $("#lblCheckSubtotal").parent().children('span').text(balance+" : plz enter valid Balance");
+        $("#btnPurchase").attr('disabled', true);
+    } else {
+        $("#lblCheckSubtotal").parent().children('span').text("");
+        $("#btnPurchase").attr('disabled', false);
+    }
+});
