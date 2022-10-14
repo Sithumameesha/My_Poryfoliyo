@@ -19,6 +19,7 @@ if (customerArray.push(customerObject)){
 
     loadAllCustomers();
     loadAllCustomersForOption();
+    RawCount();
 
 
 });
@@ -163,3 +164,8 @@ $("#btnSearchCustomer").click(function (){
 $("#btnClear").click(function (){
    loadAllCustomers();
 });
+function RawCount(){
+    var a = document.getElementById("customerTable");
+    var rows = a.rows.length;
+$("#customerCount").text(rows);
+}

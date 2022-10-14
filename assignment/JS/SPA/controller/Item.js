@@ -18,6 +18,7 @@ $("#btnItem").click(function (){
      console.log(ItemObject);
      loadAllItems();
      loadAllItemsForOption();
+     RawCount();
     Swal.fire('Item Add Sucessfully');
 })
 function loadAllItems(){
@@ -149,3 +150,8 @@ $("#btnSearchItem").click(function (){
 $("#btnItemClear").click(function (){
     loadAllItems();
 });
+function RawCount(){
+    var a = document.getElementById("itemsTable");
+    var rows = a.rows.length;
+    $("#ItemCount").text(rows);
+}
