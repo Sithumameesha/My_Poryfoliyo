@@ -48,7 +48,7 @@ $("#AddToCart").click(function (){
         loadCartTableDetail();
         calcQty($("#buyQty").val());
         calcTotal();
-        alert("Done");
+
 
     }else {
         alert("Not Workung ");
@@ -106,5 +106,18 @@ $(document).on("change keyup blur", "#cash", function () {
     } else {
         $("#lblCheckSubtotal").parent().children('span').text("");
         $("#btnPurchase").attr('disabled', false);
+    }
+});
+
+$(document).on("change keyup blur", "#buyQty", function () {
+    var qty =$("#qtyOnHand").val();
+    var buyqty =$("#buyQty").val();
+
+    if (qty<buyqty) {
+        $("#lblCheckQty").parent().children('span').text("  plz enter valid Qty");
+        $("#AddToCart").attr('disabled', true);
+    } else {
+        $("#lblCheckQty").parent().children('span').text("");
+        $("#AddToCart").attr('disabled', false);
     }
 });
