@@ -147,3 +147,19 @@ $("#btnUpdate").click(function (){
     }
 
 });
+/*...........................................*/
+$("#btnSearchCustomer").click(function (){
+        let Id=$("#cusId").val();
+        let cus= searchCustomer(Id);
+        if (cus!=null){
+         $("#customerTable").empty();
+            var row = "<tr><td>"+cus.id+"</td><td>"+cus.name+"</td><td> "+cus.address+"</td><td> "+cus.salary+" </td></tr>";
+            $("#customerTable").append(row);
+        }else {
+            Swal.fire('There Are No Customer Avalible');
+            loadAllCustomers();
+        }
+});
+$("#btnClear").click(function (){
+   loadAllCustomers();
+});

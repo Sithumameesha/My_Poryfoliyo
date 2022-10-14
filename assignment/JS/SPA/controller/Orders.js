@@ -1,5 +1,6 @@
 
 /*Set Com Box Customer*/
+var orderArray=[];
 function loadAllCustomersForOption() {
     $("#customerId").empty();
     for (let cus of customerArray) {
@@ -41,18 +42,10 @@ $("#itemcode").on('click', function (event) {
 
 
 $("#AddToCart").click(function (){
+    loadCartTableDetail();
+    calcQty($("#buyQty").val());
+    calcTotal();
 
- var qty =$("#qtyOnHand").val();
-    var buyqty =$("#buyQty").val();
-    if (qty > buyqty){
-        loadCartTableDetail();
-        calcQty($("#buyQty").val());
-        calcTotal();
-
-
-    }else {
-        alert("Not Workung ");
-    }
 });
 /*....................Total Cal...................*/
 function calcTotal() {
@@ -121,3 +114,18 @@ $(document).on("change keyup blur", "#buyQty", function () {
         $("#AddToCart").attr('disabled', false);
     }
 });
+/*...........................................................*/
+// function pushOrderDetails() {
+//     for (let i = 0; i < $("#OrderTable>tr").length; i++) {
+//         let orderId = $("#orderId").val();
+//         let cusId = $("#customerId").val();
+//         let itemId = $("#OrderTable>tr").children(':nth-child(1)')[i].innerText;
+//         let qty = $("#OrderTable>tr").children(':nth-child(4)')[i].innerText;
+//         let total = $("#OrderTable>tr").children(':nth-child(5)')[i].innerText;
+//
+//         let orderDetailArrayList = new order(orderId, cusId, itemId, qty, total);
+//
+//         orderArray.push(orderDetailArrayList);
+//         console.log(orderDetailArrayList);
+//     }
+// }
