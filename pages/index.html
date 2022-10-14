@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(to right,#2c5364,#0f2027);
+  background: black;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -41,15 +41,15 @@ body{
     height: 100%;
     transform-origin: center ;
     transform-style: preserve-3d;
-    transform : rotateY(calc(var(--i)*45deg)) translateZ(350px);
+    transform : rotateY(calc(var(--i)*60deg)) translateZ(350px);
 }
-.Slider>span>img{
+.img{
 position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 100px;
+    /*border-radius: 100px;*/
     object-fit: cover;
     transition: 2s;
 
@@ -61,14 +61,12 @@ position: absolute;
 </style>
 <body>
 <div class="Slider">
-    <span style="--i:1;"><img src="/assets/img/img_1.png"></span>
-    <span style="--i:2;"><img src="/assets/img/img_2.png"></span>
-    <span style="--i:3;"><img src="/assets/img/img_3.png"></span>
-    <span style="--i:4;"><img src="/assets/img/img_4.png"></span>
-    <span style="--i:5;"><img src="/assets/img/img_5.png"></span>
-    <span style="--i:6;"><img src="/assets/img/img_6.png"></span>
-    <span style="--i:7;"><img src="/assets/img/img_7.png"></span>
-    <span style="--i:8;"><img src="/assets/img/img_8.png"></span>
+    <span style="--i:1;"><a href="../assignment/CSS/Basics/case%201/case%201.html" target="_blank">  <img class="img" src="/assets/img/Title%20-%20Google%20Chrome%2014_10_2022%2023_47_04%20(2).png"></a></span>
+    <span style="--i:2;"><a href="../assignment/CSS/Basics/case%202/index.html" target="_blank">  <img  class="img"src="/assets/img/Title%20-%20Google%20Chrome%2014_10_2022%2023_53_51%20(2).png"></a></span>
+    <span style="--i:3;"><a href="../assignment/CSS/Basics/case%203/index.html" target="_blank">  <img class="img" src="/assets/img/Title%20-%20Google%20Chrome%2014_10_2022%2023_59_27%20(2).png"></a></span>
+    <span style="--i:4;"><a href="../assignment/CSS/Basics/case%204/index.html" target="_blank">  <img class="img"src="/assets/img/Title%20-%20Google%20Chrome%2015_10_2022%2000_00_44%20(2).png"></a></span>
+    <span style="--i:5;"><a href="../assignment/CSS/Basics/case%205/index.html">  <img class="img"src="/assets/img/Title%20-%20Google%20Chrome%2015_10_2022%2000_00_59%20(2).png"></a></span>
+    <span style="--i:6;"><a href="../assignment/CSS/Basics/case%206/index.html" target="_blank">  <img class="img"src="/assets/img/Title%20-%20Google%20Chrome%2015_10_2022%2000_05_18%20(2).png"></a></span>
 </div>
 </body>
 </html>
