@@ -45,6 +45,7 @@ $("#AddToCart").click(function (){
     loadCartTableDetail();
     calcQty($("#buyQty").val());
     calcTotal();
+    clearorder();
 
 });
 /*....................Total Cal...................*/
@@ -129,3 +130,34 @@ $(document).on("change keyup blur", "#buyQty", function () {
 //         console.log(orderDetailArrayList);
 //     }
 // }
+function clearorder(){
+    $("#customerId").val("");
+    $("#customerName").val("");
+    $("#customerAddress").val("");
+    $("#customerSalary").val("");
+
+    $("#itemcode").val("");
+    $("#itemName").val("");
+    $("#itemPrice").val("");
+    $("#qtyOnHand").val("");
+    $("#buyQty").val("");
+}
+function clear(){
+
+    $("#orderId").val("");
+    $("#orderDate").val("");
+    $("#total").val("");
+    $("#discount").val("");
+    $("#subTotal").val("");
+    $("#cash").val("");
+    $("#balance").val("");
+}
+$("#btnPurchase").click(function (){
+    clear();
+
+});
+$("#btnclearAll").click(function (){
+    clearorder();
+    clear();
+    $("#OrderTable").empty();
+})

@@ -14,6 +14,7 @@ $("#btnCustomer").click(function (){
     }
 if (customerArray.push(customerObject)){
         Swal.fire('Customer Suceesfully Added');
+        clearFiled();
 }
 
 
@@ -80,6 +81,7 @@ $("#BtnDelete").click(function (){
     if (DeleteCustomer(deleteID)){
 
         Swal.fire('Customer Deleted');
+        clearFiled();
     }else {
         Swal.fire('Any fool can use a computer');
     }
@@ -144,7 +146,8 @@ $("#btnUpdate").click(function (){
     let ID=$("#searchCustomerId").val();
 
     if ( UpdateCustomer(ID)){
-        Swal.fire('Customer Updated')
+        Swal.fire('Customer Updated');
+        clearFiled();
     }
 
 });
@@ -169,3 +172,23 @@ function RawCount(){
     var rows = a.rows.length;
 $("#customerCount").text(rows);
 }
+/*................................................*/
+function clearFiled(){
+    $("#txtCustomerId").val("");
+    $("#txtCustomerName").val("");
+    $("#txtCustomerAddress").val("");
+    $("#txtCustomerSalary").val("");
+    /*............................*/
+    $("#searchCustomerId").val("");
+    $("#name").val("");
+    $("#address").val("");
+    $("#salary").val("");
+    /*............................*/
+    $("#searchCustId").val("");
+    $("#disabledName").val("");
+    $("#disabledAddress").val("");
+    $("#disabledSalary").val("");
+}
+$("#btnClearFi").click(function (){
+    clearFiled();
+})

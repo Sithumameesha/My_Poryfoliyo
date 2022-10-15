@@ -20,6 +20,7 @@ $("#btnItem").click(function (){
      loadAllItemsForOption();
      RawCount();
     Swal.fire('Item Add Sucessfully');
+    clearItem();
 })
 function loadAllItems(){
     $("#itemsTable").empty();
@@ -88,6 +89,7 @@ $("#btnUpdatesItem").click(function (){
 
     if (UpdateItem(Item)){
         Swal.fire('Item Updated');
+        clearItem();
     }else {
         Swal.fire('There Are No Item Avalible');
     }
@@ -129,6 +131,7 @@ $("#btnDeleteItem").click(function (){
 
     if (DeleteItem(deleteID)){
         Swal.fire('Item Deleted');
+        clearItem();
     }else {
         Swal.fire('Item Delete Not Working');
     }
@@ -155,3 +158,22 @@ function RawCount(){
     var rows = a.rows.length;
     $("#ItemCount").text(rows);
 }
+function clearItem(){
+    $("#txtItemId").val("");
+    $("#txtItemName").val("");
+    $("#txtItemPrice").val("");
+    $("#txtItemQty").val("");
+    /*.................................*/
+    $("#searchItemId").val("");
+    $("#Itemnames").val("");
+    $("#ItemFromPrice").val("");
+    $("#ItemQuantity").val("");
+    /*............................*/
+    $("#searchCId").val("");
+    $("#disabledItemName").val("");
+    $("#disabledItemPrice").val("");
+    $("#disabledItemQuantity").val("");
+}
+$("#btnDeleteI").click(function (){
+    clearItem();
+})
