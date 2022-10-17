@@ -17,6 +17,8 @@ My Personal Web Site Map :https://www.gloomaps.com/AypA9oksQN
 <br>
 My Personal Web Wire Frame : https://wireframe.cc/aj62ub
 <br>
+My Personal Web Mock-up: https://www.figma.com/proto/1FRmLG7zF22Eb5l9vUA5ZL/My-Wed?node-id=7%3A10
+<br>
 My GitHub Page Link :https://github.com/Sithumameesha/My_Poryfoliyo
 <br>
 
