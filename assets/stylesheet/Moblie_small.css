@@ -24,9 +24,9 @@
 
     .box {
         left: 10vw;
-        bottom: -10px;
+        bottom: 4vh;
         width: 250px;
-        height: 250px;
+        height: 50vh;
 
     }
     main>section>aside>div {
