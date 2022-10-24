@@ -64,7 +64,7 @@
 }
 
 .Preloader.fadeOut {
-    animation: fadeOut 1s alternate;
+    animation: fadeOut 4s alternate;
 }
 
 @keyframes fadeOut {
