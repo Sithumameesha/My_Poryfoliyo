@@ -5,13 +5,10 @@
     <title>Assiment</title>
 </head>
 <style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        background: black;
-    }
 
+body{
+    background-color: black;
+}
     .con{
         background: black;
         height: 100vh;
@@ -44,17 +41,9 @@
         transform-origin: center ;
         transform-style: preserve-3d;
         transform : rotateY(calc(var(--i)*60deg)) translateZ(350px);
+        z-index: 2;
     }
-    /*.Slider_2>span{*/
-    /*    position: absolute;*/
-    /*    top: 0;*/
-    /*    left: 0;*/
-    /*    width: 100%;*/
-    /*    height: 100%;*/
-    /*    transform-origin: center ;*/
-    /*    transform-style: preserve-3d;*/
-    /*    transform : rotateY(calc(var(--i)*90deg)) translateZ(350px);*/
-    /*}*/
+
     .img{
         position: absolute;
         top: 0;
@@ -120,7 +109,7 @@
 <main  id="page3">
     <section class="con">
         <div class="Slider">
-            <span style="--i:1;"><a href="../assignment/CSS/Transitions/case%202/index.html" target="_blank">  <img class="img" src="../pages/assects/Sithum%20Ameesha%20-%20Google%20Chrome%2025_10_2022%2023_16_19%20(2).png"></a><p class="p_1">Assignment 1</p></span>
+            <span style="--i:1"><a href="../assignment/CSS/Transitions/case%202/index.html" target="_blank">  <img class="img" src="../pages/assects/Sithum%20Ameesha%20-%20Google%20Chrome%2025_10_2022%2023_16_19%20(2).png"></a><p class="p_1">Assignment 1</p></span>
             <span style="--i:2;"><a href="../assignment/CSS/Transitions/case%201/index.html" target="_blank">  <img  class="img"src="../pages/assects/Sithum%20Ameesha%20-%20Google%20Chrome%2025_10_2022%2023_16_55%20(2).png"></a><p class="p_1">Assignment 2</p></span>
 
 
