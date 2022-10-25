@@ -9,6 +9,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        background: black;
     }
 
     .con{
@@ -75,10 +76,21 @@
         top: 220px;
         left: 50px;
     }
+    .pagebtn{
+        background-color: white;
+    }
 </style>
 <body>
+<nav>
+    <button class="pagebtn" id="pageBtn_1">Basic</button>
+    <button class="pagebtn" id="pageBtn_2">Animation</button>
+    <button class="pagebtn" id="pageBtn_3">Transitions</button>
+</nav>
 <main id="page1">
+
+
 <section class="con">
+
 <div class="Slider">
     <span style="--i:1;"><a href="../assignment/CSS/Basics/case%201/case%201.html" target="_blank">  <img class="img" src="/assets/img/Title%20-%20Google%20Chrome%2014_10_2022%2023_47_04%20(2).png"></a><p class="p_1">Assignment 1</p></span>
     <span style="--i:2;"><a href="../assignment/CSS/Basics/case%202/index.html" target="_blank">  <img  class="img"src="/assets/img/Title%20-%20Google%20Chrome%2014_10_2022%2023_53_51%20(2).png"></a><p class="p_1">Assignment 2</p></span>
@@ -105,9 +117,9 @@
 <main  id="page3">
     <section class="con">
         <div class="Slider">
-            <span style="--i:1;"><a href="../assignment/CSS/Basics/case%201/case%201.html" target="_blank">  <img class="img" src="/assets/img/Title%20-%20Google%20Chrome%2014_10_2022%2023_47_04%20(2).png"></a><p class="p_1">Assignment 1</p></span>
-            <span style="--i:2;"><a href="../assignment/CSS/Basics/case%202/index.html" target="_blank">  <img  class="img"src="/assets/img/Title%20-%20Google%20Chrome%2014_10_2022%2023_53_51%20(2).png"></a><p class="p_1">Assignment </p></span>
-            <span style="--i:3;"><a href="../assignment/CSS/Basics/case%203/index.html" target="_blank">  <img class="img" src="/assets/img/Title%20-%20Google%20Chrome%2014_10_2022%2023_59_27%20(2).png"></a><p class="p_1">Assignment 3</p></span>
+            <span style="--i:1;"><a href="../assignment/CSS/Transitions/case%202/index.html" target="_blank">  <img class="img" src="../pages/assects/Sithum%20Ameesha%20-%20Google%20Chrome%2025_10_2022%2023_16_19%20(2).png"></a><p class="p_1">Assignment 1</p></span>
+            <span style="--i:2;"><a href="../assignment/CSS/Transitions/case%201/index.html" target="_blank">  <img  class="img"src="../pages/assects/Sithum%20Ameesha%20-%20Google%20Chrome%2025_10_2022%2023_16_55%20(2).png"></a><p class="p_1">Assignment 2</p></span>
+
 
         </div>
     </section>
@@ -119,6 +131,21 @@
         $("#page2").css('display','none');
         $("#page3").css('display','none');
 
+    });
+    $("#pageBtn_1").click(function(){
+        $("#page1").css('display','block');
+        $("#page2").css('display','none');
+        $("#page3").css('display','none');
+    });
+    $("#pageBtn_2").click(function(){
+        $("#page1").css('display','none');
+        $("#page2").css('display','block');
+        $("#page3").css('display','none');
+    });
+    $("#pageBtn_3").click(function(){
+        $("#page1").css('display','none');
+        $("#page2").css('display','none');
+        $("#page3").css('display','block');
     });
 </script>
 
