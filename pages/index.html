@@ -85,6 +85,9 @@
     <button class="pagebtn" id="pageBtn_1">Basic</button>
     <button class="pagebtn" id="pageBtn_2">Animation</button>
     <button class="pagebtn" id="pageBtn_3">Transitions</button>
+    <button class="pagebtn" id="pageBtn_4">Frameworks</button>
+    <button class="pagebtn" id="pageBtn_5">Java Script</button>
+
 </nav>
 <main id="page1">
 
@@ -124,28 +127,67 @@
         </div>
     </section>
 </main>
+<!--/*..................................*/-->
+<main  id="page4">
+    <section class="con">
+        <div class="Slider">
+            <span style="--i:1;"><a href="../assignment/CSS/Frameworks/POS/customer.html" target="_blank">  <img class="img" src="../pages/assects/Title%20-%20Google%20Chrome%2023_09_2022%2011_38_13%20(2).png"></a><p class="p_1">POS System</p></span>
+
+
+
+        </div>
+    </section>
+</main>
+<!--/*..................................*/-->
+<main  id="page5">
+    <section class="con">
+        <div class="Slider">
+            <span style="--i:1;"><a href="../assignment/JS/cal/index.html" target="_blank">  <img class="img" src="../pages/assects/Cal%20-%20Google%20Chrome%2025_10_2022%2023_52_14%20(2).png"></a><p class="p_1">Cal</p></span>
+            <span style="--i:2;"><a href="../assignment/JS/SPA/index.html" target="_blank">  <img  class="img"src="../pages/assects/Title%20-%20Google%20Chrome%2023_09_2022%2011_38_13%20(2).png"></a><p class="p_1">SPA</p></span>
+
+
+        </div>
+    </section>
+</main>
 <script src="assects/lib/jquery-3.6.1.min.js"></script>
 <script>
     $(document).ready(function(){
         $("#page1").css('display','block');
         $("#page2").css('display','none');
         $("#page3").css('display','none');
+        $("#page4").css('display','none');
 
     });
     $("#pageBtn_1").click(function(){
         $("#page1").css('display','block');
         $("#page2").css('display','none');
         $("#page3").css('display','none');
+        $("#page4").css('display','none');
     });
     $("#pageBtn_2").click(function(){
         $("#page1").css('display','none');
         $("#page2").css('display','block');
         $("#page3").css('display','none');
+        $("#page4").css('display','none');
     });
     $("#pageBtn_3").click(function(){
         $("#page1").css('display','none');
         $("#page2").css('display','none');
         $("#page3").css('display','block');
+        $("#page4").css('display','none');
+    });
+    $("#pageBtn_4").click(function(){
+        $("#page1").css('display','none');
+        $("#page2").css('display','none');
+        $("#page3").css('display','none');
+        $("#page4").css('display','block');
+    });
+    $("#pageBtn_5").click(function(){
+        $("#page1").css('display','none');
+        $("#page2").css('display','none');
+        $("#page3").css('display','none');
+        $("#page4").css('display','none');
+        $("#page5").css('display','block');
     });
 </script>
 
