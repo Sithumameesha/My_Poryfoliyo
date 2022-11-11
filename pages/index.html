@@ -180,6 +180,42 @@ body{
         $("#page5").css('display','block');
     });
 </script>
+<script>
 
+
+    function Customer(cusId, cusName, cusAddress, cusSalary) {
+        let id = cusId;
+        let name = cusName;
+        let address = cusAddress;
+        let salary = cusSalary;
+
+        this.getId = function () {
+            return id;
+        }
+        this.setId = function (cusId) {
+            id = cusId;
+        }
+        this.getName = function () {
+            return name;
+        }
+        this.setName = function (cusName) {
+            name = cusName;
+        }
+        this.getAddress = function () {
+            return address;
+        }
+        this.setAddress = function (cusAddress) {
+            address = cusAddress;
+        }
+        this.getSalary = function () {
+            return salary;
+        }
+        this.setSalary = function (cusSalary) {
+            salary = cusSalary;
+        }
+    }
+
+    var c = new Customer("S001", "Gune", "Galle", "5555");
+</script>
 </body>
 </html>
