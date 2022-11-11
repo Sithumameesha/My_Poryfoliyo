@@ -4,4 +4,18 @@
 .background_img{
     width: 100%;
     height: 100vh;
+    background-size: cover;
+}
+
+.img_div{
+    position: absolute;
+    top: 0px;
+    bottom: 700px;
+}
+.char{
+    height: 200px;
+    position: absolute;
+    top: 417px;
+    left: 50px;
+
 }
