@@ -5,6 +5,7 @@
     width: 100%;
     height: 100vh;
     background-size: cover;
+    background-repeat: repeat-x;
 }
 
 .img_div{
@@ -17,5 +18,6 @@
     position: absolute;
     top: 417px;
     left: 50px;
+
 
 }
