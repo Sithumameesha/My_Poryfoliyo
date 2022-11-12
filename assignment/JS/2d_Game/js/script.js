@@ -46,3 +46,4 @@ function moveBackground(){
 
     $(".background_img").css("background-position-x",""+poistion+"px")
 }
+// setInterval(AnimateRun,100);
