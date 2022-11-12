@@ -28,22 +28,19 @@ let animateId;
 function AnimateRun(){
     clearInterval(animateId);
     setInterval(RunAnimate,100);
-    if ( background_id == 0 ){
-        background_id =setInterval(moveBackground,100);
-    }
 
 
 }
 function AnimateIdial(){
-    animateId =setInterval(charaAnimate,80);
+    animateId =setInterval(charaAnimate,100);
 
 
 }
 var poistion =0;
-var  background_id =0;
 function moveBackground(){
     poistion = poistion - 20;
 
-    $(".background_img").css("background-position-x",""+poistion+"px")
+    $(".background").css("background-position-x",""+poistion+"px")
 }
-// setInterval(AnimateRun,100);
+// setInterval(AnimateRun,1000);
+// setInterval(moveBackground,1000);

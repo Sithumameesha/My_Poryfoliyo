@@ -1,17 +1,12 @@
 *{
     margin: 0px;
 }
-.background_img{
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
 
-}
 
 .img_div{
-    position: absolute;
-    top: 0px;
-    bottom: 700px;
+    /*position: absolute;*/
+    /*top: 0px;*/
+    /*bottom: 700px;*/
 }
 .char{
     height: 200px;
@@ -20,5 +15,10 @@
     left: 50px;
 }
 .background{
-    background-position-x: 20px;
+    width: 100vw;
+    height: 100vh;
+    /*background: url("../assects/vecteezy_night-city-landscape-with-a-large-planet-on-the-horizon-and_4371966.jpg");*/
+    background-image: url("../assects/vecteezy_night-city-landscape-with-a-large-planet-on-the-horizon-and_4371966.jpg");
+    background-size: cover;
+    background-repeat: repeat-x;
 }
