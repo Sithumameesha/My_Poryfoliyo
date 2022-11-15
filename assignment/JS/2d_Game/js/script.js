@@ -62,7 +62,9 @@ function jumpAnimation(){
     jumpAnimationNum = setInterval(jumpAction,100);
 
 }
-$( ".background" ).on( "click", function( event ) {
-   jumpAnimation();
-});
 
+$(document).on('keydown', function (event) {
+    if (event.key == "Enter") {
+        jumpAnimation();
+    }
+});
