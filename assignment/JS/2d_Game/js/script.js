@@ -46,10 +46,19 @@ function moveBackground(){
     $(".background").css("background-position-x",""+poistion+"px")
 }
 var jumpCount =1;
+var topChar=417;
 function jumpAction(){
 
     $(".char").attr("src", "assects/png/Jump%20("+jumpCount+").png");
     jumpCount++;
+    if (jumpCount<=6){
+        topChar = topChar -40 ;
+        $(".char").css("top",""+topChar+"px");
+    }
+    if (jumpCount>=7){
+        topChar = topChar + 40 ;
+        $(".char").css("top",""+topChar+"px");
+    }
     if (jumpCount==11){
         jumpCount = 1;
       clearInterval(jumpAnimationNum);
