@@ -50,16 +50,17 @@ function jumpAction(){
     jumpCount++;
     if (jumpCount==11){
         jumpCount = 1;
-        clearInterval(jumpAnimationNum);
-        animateRunId =0;
+      clearInterval(jumpAnimationNum);
+
         AnimateRun();
     }
+
 }
 let jumpAnimationNum;
 function jumpAnimation(){
-    // animateRunId= 0;
     clearInterval(animateRunId);
     jumpAnimationNum = setInterval(jumpAction,100);
+
 
 }
 
