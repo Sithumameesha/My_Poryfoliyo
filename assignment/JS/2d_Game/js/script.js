@@ -25,16 +25,18 @@ function RunAnimate() {
 
 }
 let animateId;
-let animateRunId;
+let animateRunId =0;
 function AnimateRun(){
     clearInterval(animateId);
      animateRunId =setInterval(RunAnimate,100);
+
 }
 function AnimateIdial(){
     animateId =setInterval(charaAnimate,100);
 }
+let AnimateBackGroundNum =0;
 function AnimateBackground(){
-    setInterval(moveBackground,1000);
+    AnimateBackGroundNum=setInterval(moveBackground,100 );
 }
 
 
@@ -51,12 +53,13 @@ function jumpAction(){
     if (jumpCount==11){
         jumpCount = 1;
       clearInterval(jumpAnimationNum);
-
+      jumpAnimationNum =0;
+animateRunId =0;
         AnimateRun();
     }
 
 }
-let jumpAnimationNum;
+let jumpAnimationNum = 0;
 function jumpAnimation(){
     clearInterval(animateRunId);
     jumpAnimationNum = setInterval(jumpAction,100);
@@ -66,6 +69,21 @@ function jumpAnimation(){
 
 $(document).on('keydown', function (event) {
     if (event.key == "Enter") {
-        jumpAnimation();
+
+        if (jumpAnimationNum==0){
+            jumpAnimation();
+        }
+
+    }
+});
+AnimateIdial();
+$(document).on('keydown', function (event) {
+    if (event.key == "Tab") {
+        if (animateRunId==0){
+            AnimateRun();
+        }
+        if(AnimateBackGroundNum==0){
+            AnimateBackground();
+        }
     }
 });
