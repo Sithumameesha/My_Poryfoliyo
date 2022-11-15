@@ -63,7 +63,7 @@ function jumpAction(){
         jumpCount = 1;
       clearInterval(jumpAnimationNum);
       jumpAnimationNum =0;
-animateRunId =0;
+      animateRunId =0;
         AnimateRun();
     }
 
