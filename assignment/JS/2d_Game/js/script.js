@@ -25,22 +25,44 @@ function RunAnimate() {
 
 }
 let animateId;
+let animateRunId;
 function AnimateRun(){
     clearInterval(animateId);
-    setInterval(RunAnimate,100);
-
-
+     animateRunId =setInterval(RunAnimate,100);
 }
 function AnimateIdial(){
     animateId =setInterval(charaAnimate,100);
-
-
 }
+function AnimateBackground(){
+    setInterval(moveBackground,1000);
+}
+
+
 var poistion =0;
 function moveBackground(){
     poistion = poistion - 20;
-
     $(".background").css("background-position-x",""+poistion+"px")
 }
-// setInterval(AnimateRun,1000);
-// setInterval(moveBackground,1000);
+var jumpCount =1;
+function jumpAction(){
+
+    $(".char").attr("src", "assects/png/Jump%20("+jumpCount+").png");
+    jumpCount++;
+    if (jumpCount==11){
+        jumpCount = 1;
+        clearInterval(jumpAnimationNum);
+        animateRunId =0;
+        AnimateRun();
+    }
+}
+let jumpAnimationNum;
+function jumpAnimation(){
+    // animateRunId= 0;
+    clearInterval(animateRunId);
+    jumpAnimationNum = setInterval(jumpAction,100);
+
+}
+$( ".background" ).on( "click", function( event ) {
+   jumpAnimation();
+});
+
