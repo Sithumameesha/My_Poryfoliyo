@@ -1,7 +1,7 @@
 
 
 var chars =["Idle%20(1)","Idle%20(2)","Idle%20(3)","Idle%20(4)","Idle%20(5)","Idle%20(6)","Idle%20(7)","Idle%20(8)","Idle%20(9)","Idle%20(10)"];
-var run =["Walk%20(1)","Walk%20(2)","Walk%20(3)","Walk%20(4)","Walk%20(5)","Walk%20(6)","Walk%20(7)","Walk%20(8)","Walk%20(9)","Walk%20(10)"];
+var run =["Run%20(1)","Run%20(2)","Run%20(3)","Run%20(4)","Run%20(5)","Run%20(6)","Run%20(7)","Run%20(8)"   ];
 count=0;
 function charaAnimate() {
     $(".char").attr("src", "assects/png/" + chars[count] + ".png");
