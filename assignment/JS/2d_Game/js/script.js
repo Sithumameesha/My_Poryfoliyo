@@ -97,11 +97,12 @@ $(document).on('keydown', function (event) {
     }
 });
 barriesMargin= 500;
+myboxId=1;
 function Createbarries(){
-    for (var i=1;i<12; i++){
-        $(".background").append("<div style='margin-left:"+barriesMargin+"px '></div>");//.css( "margin-left",""+barriesMargin+"px");
+    for (var i=0;i<12; i++){
+        $(".background").append("<div style='margin-left:"+barriesMargin+"px  ' id='box"+i+"'></div>");//.css( "margin-left",""+barriesMargin+"px");
         // console.log(i);
-        // $(".background>div").attr("id","mybox"+i);
+
         barriesMargin =barriesMargin + 500;
 
         // if (i<2){
@@ -117,22 +118,20 @@ function Createbarries(){
         //     barriesMargin =barriesMargin + 250;
         // }
         // if (i<10){
-        //     barriesMargin =barriesMargin + 290;
-        // }
-
-
+        //     barriesMarg
+        // var box = document.createElement("div");
+        // box.className ="box";
+        // document.getElementsByClassName("background").appendChild(box);
+        // box.style.marginLeft = barriesMargin +"px";
     }
-
-
 }
 // var bariesAnimationId=0;
 function bariesAnimationId(){
-//     for (var i=0;i<12;i++){
-//         var box = document.getElementById("mybox"+i);
-        var oldmargin = $(".background>div").css(" margin-left");
-        console.log(oldmargin);
-        var newMarin = parseInt(oldmargin)-30;
+    for (var i=0;i<12;i++){
+        var box = document.getElementById("box"+i+"");
+        var currentmargin = getComputedStyle(box).marginLeft;
+        var newMarin = parseInt(currentmargin)-30;
         box.style.marginLeft = newMarin+"px";
 //
-  //  }
+   }
 }
