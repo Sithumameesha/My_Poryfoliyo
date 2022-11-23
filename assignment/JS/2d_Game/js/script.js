@@ -90,6 +90,7 @@ $(document).on('keydown', function (event) {
     if (event.key == "Tab") {
         if (animateRunId==0){
             AnimateRun();
+            setInterval(bariesAnimationId,100);
         }
         if(AnimateBackGroundNum==0){
             AnimateBackground();
