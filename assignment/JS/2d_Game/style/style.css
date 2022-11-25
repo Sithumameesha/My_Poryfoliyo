@@ -10,7 +10,7 @@
 
 }
 .char{
-    height: 200px;
+    height: 190px;
     position: absolute;
     top: 417px;
     left: 50px;
@@ -26,11 +26,13 @@
     overflow: hidden;
 }
 .background>div{
-    width: 100px;
+    width: 150px;
     height: 100px;
-    background-color: red;
+    /*background-color: red;*/
     position: absolute;
     bottom: 10px;
+    background-image: url("../assects/ComplexRegalGelding-max-1mb.gif");
+    background-size: cover;
 
 
 

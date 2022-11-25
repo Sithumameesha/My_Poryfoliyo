@@ -52,11 +52,11 @@ function jumpAction(){
     $(".char").attr("src", "assects/png/Jump%20("+jumpCount+").png");
     jumpCount++;
     if (jumpCount<=6){
-        topChar = topChar -40 ;
+        topChar = topChar -50 ;
         $(".char").css("top",""+topChar+"px");
     }
     if (jumpCount>=7){
-        topChar = topChar + 40 ;
+        topChar = topChar + 50 ;
         $(".char").css("top",""+topChar+"px");
     }
     if (jumpCount==11){
@@ -86,18 +86,19 @@ $(document).on('keydown', function (event) {
     }
 });
 AnimateIdial();
+var barieId;
 $(document).on('keydown', function (event) {
     if (event.key == "Tab") {
         if (animateRunId==0){
             AnimateRun();
-            setInterval(bariesAnimationId,100);
+         barieId=setInterval(bariesAnimationId,100  );
         }
         if(AnimateBackGroundNum==0){
             AnimateBackground();
         }
     }
 });
-barriesMargin= 500;
+barriesMargin= 1000;
 myboxId=1;
 function Createbarries(){
     for (var i=0;i<12; i++){
@@ -131,8 +132,23 @@ function bariesAnimationId(){
     for (var i=0;i<12;i++){
         var box = document.getElementById("box"+i+"");
         var currentmargin = getComputedStyle(box).marginLeft;
-        var newMarin = parseInt(currentmargin)-30;
+        var newMarin = parseInt(currentmargin)-35;
         box.style.marginLeft = newMarin+"px";
-//
+
+
+
+        if(newMarin>=-110 && newMarin<=100){
+            if (topChar>400){
+                clearInterval(animateRunId);
+                animateRunId =-1;
+                clearInterval(jumpAnimationNum);
+                jumpAnimationNum=-1;
+                clearInterval(AnimateBackGroundNum);
+                AnimateBackGroundNum=-1;
+                clearInterval(barieId);
+                barieId=-1;
+            }
+        }
+
    }
 }
