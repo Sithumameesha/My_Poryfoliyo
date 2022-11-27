@@ -21,6 +21,12 @@
       margin-left: 18%;
       color: red;
   }
+  .cha{
+ height: 300px;
+      position: relative;
+      left: 35%;
+      top: 10%;
+  }
 
 </style>
 <body>
@@ -29,9 +35,21 @@
     <div class="div_1">
 <h1 class="headline">Welcome To Red Man Run</h1>
     </div>
+   <img  class="cha" src="assects/png2/Idle__000.png">
 </div>
 </main>
 <script src="lib/jquery-3.6.1.min.js"></script>
 <script src="js/script.js"></script>
+<script>
+    var count=1;
+    function Idle() {
+        $(".cha").attr("src", "assects/png2/Idle__00"+count+".png");
+        count++;
+        if (count==9){
+            count=1;
+        }
+    }
+    setInterval(Idle,300);
+</script>
 </body>
 </html>
