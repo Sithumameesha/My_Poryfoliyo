@@ -27,6 +27,19 @@
       left: 35%;
       top: 10%;
   }
+  .btn{
+      width: 100px;
+      height: 50px;
+      background-color: red;
+      font-family: "Arial Black";
+      font-size: 30px;
+      position: absolute;
+      top: 484px;
+      left: 415px;
+      border-radius: 20px;
+
+
+  }
 
 </style>
 <body>
@@ -35,19 +48,22 @@
     <div class="div_1">
 <h1 class="headline">Welcome To Red Man Run</h1>
     </div>
-   <img  class="cha" src="assects/png2/Idle__000.png">
+   <img  class="cha">
 </div>
+    <button class="btn">Play</button>
+    <div class="itroducation"></div>
 </main>
 <script src="lib/jquery-3.6.1.min.js"></script>
 <script src="js/script.js"></script>
 <script>
-    var count=1;
+    var img ={}
+    var count=0;
     function Idle() {
         $(".cha").attr("src", "assects/png2/Idle__00"+count+".png");
         count++;
-        if (count==9){
-            count=1;
-        }
+       if (count==10){
+           count=0;
+       }
     }
     setInterval(Idle,300);
 </script>
