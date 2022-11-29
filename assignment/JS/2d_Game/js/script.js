@@ -146,8 +146,24 @@ function bariesAnimationId(){
                 AnimateBackGroundNum=-1;
                 clearInterval(barieId);
                 barieId=-1;
+                DeadEffect();
+                document.getElementById("box"+i+"").style.display= "none";
+
             }
         }
 
    }
+}
+var Dead =0;
+function deanAnimation(){
+        $(".char").attr("src","assects/png2/Dead__00"+Dead+".png");
+        Dead++;
+        if (Dead==10){
+            clearInterval(deadani);
+        }
+}
+let deadani;
+function DeadEffect(){
+    clearInterval(animateId);
+    deadani = setInterval(deanAnimation,100);
 }
