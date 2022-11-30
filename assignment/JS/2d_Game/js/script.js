@@ -93,7 +93,7 @@ $(document).on('keydown', function (event) {
     if (event.key == "Tab") {
         if (animateRunId==0){
             AnimateRun();
-            Createbarries();
+            // Createbarries();
          barieId=setInterval(bariesAnimationId,150  );
         }
         if(AnimateBackGroundNum==0){
