@@ -1,4 +1,6 @@
 
+let audio1= new Audio();
+audio1.src= "assects/audio/AUD-20221130-WA0012.mp3";
 
 var run =["Run__000.png","Run__001.png","Run__002.png","Run__003.png","Run__004.png","Run__005.png","Run__006.png","Run__008.png","Run__009.png"   ];
 count=0;
@@ -71,13 +73,14 @@ let jumpAnimationNum = 0;
 function jumpAnimation(){
     clearInterval(animateRunId);
     jumpAnimationNum = setInterval(jumpAction,150);
+    // audio1.play();
 
 
 }
 
 $(document).on('keydown', function (event) {
     if (event.key == "Enter") {
-
+audio1.play();
         if (jumpAnimationNum==0){
             jumpAnimation();
         }
@@ -90,6 +93,7 @@ $(document).on('keydown', function (event) {
     if (event.key == "Tab") {
         if (animateRunId==0){
             AnimateRun();
+            Createbarries();
          barieId=setInterval(bariesAnimationId,150  );
         }
         if(AnimateBackGroundNum==0){
