@@ -42,9 +42,15 @@ function AnimateBackground(){
 
 
 var poistion =0;
+let score =0;
 function moveBackground(){
     poistion = poistion - 20;
-    $(".background").css("background-position-x",""+poistion+"px")
+    $(".background").css("background-position-x",""+poistion+"px");
+    score = score +1;
+    $("#score").text(score);
+    if (score==350){
+        alert("Hello");
+    }
 }
 var jumpCount =1;
 var topChar=417;

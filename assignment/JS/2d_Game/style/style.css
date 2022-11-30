@@ -37,3 +37,15 @@
 
 
 }
+.scoreBoard{
+    position:absolute;
+    bottom: 570px;
+}
+.scorelabel{
+    display: inline-block;
+}
+#score{
+    position: absolute;
+    top: 0px;
+    left: 60px;
+}
