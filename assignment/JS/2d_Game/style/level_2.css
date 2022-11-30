@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+}
+
+
+.img_div{
+    /*position: absolute;*/
+    /*top: 0px;*/
+    /*bottom: 700px;*/
+
+}
+.char{
+    height: 190px;
+    position: absolute;
+    top: 417px;
+    left: 50px;
+}
+.background{
+
+    height: 100vh;
+    /*background: url("../assects/vecteezy_night-city-landscape-with-a-large-planet-on-the-horizon-and_4371966.jpg");*/
+    background-image: url("../assects/game-parallax-background-vector.jpg");
+    background-size: cover;
+    background-repeat: repeat-x;
+    position: relative;
+    overflow: hidden;
+}
+.background>div{
+    width: 100px;
+    height: 100px;
+    /*background-color: red;*/
+    position: absolute;
+    bottom: 10px;
+    background-image: url("../assects/392102760_FIRE_EMOJI_400px.gif");
+    background-size: cover;
+
+
+
+}
