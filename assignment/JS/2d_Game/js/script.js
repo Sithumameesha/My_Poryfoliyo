@@ -70,7 +70,7 @@ function jumpAction(){
 let jumpAnimationNum = 0;
 function jumpAnimation(){
     clearInterval(animateRunId);
-    jumpAnimationNum = setInterval(jumpAction,100);
+    jumpAnimationNum = setInterval(jumpAction,150);
 
 
 }
@@ -90,7 +90,7 @@ $(document).on('keydown', function (event) {
     if (event.key == "Tab") {
         if (animateRunId==0){
             AnimateRun();
-         barieId=setInterval(bariesAnimationId,100  );
+         barieId=setInterval(bariesAnimationId,150  );
         }
         if(AnimateBackGroundNum==0){
             AnimateBackground();
@@ -104,7 +104,7 @@ function Createbarries(){
         $(".background").append("<div style='margin-left:"+barriesMargin+"px  ' id='box"+i+"'></div>");//.css( "margin-left",""+barriesMargin+"px");
         // console.log(i);
 
-        barriesMargin =barriesMargin + 500;
+        barriesMargin =barriesMargin + 700;
 
         // if (i<2){
         //     barriesMargin =barriesMargin + 200;

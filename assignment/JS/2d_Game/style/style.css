@@ -19,19 +19,19 @@
 
     height: 100vh;
     /*background: url("../assects/vecteezy_night-city-landscape-with-a-large-planet-on-the-horizon-and_4371966.jpg");*/
-    background-image: url("../assects/vecteezy_night-city-landscape-with-a-large-planet-on-the-horizon-and_4371966.jpg");
+    background-image: url("../assects/cartoon-game-background-260nw-303257369.webp");
     background-size: cover;
     background-repeat: repeat-x;
     position: relative;
     overflow: hidden;
 }
 .background>div{
-    width: 150px;
+    width: 100px;
     height: 100px;
     /*background-color: red;*/
     position: absolute;
     bottom: 10px;
-    background-image: url("../assects/ComplexRegalGelding-max-1mb.gif");
+    background-image: url("../assects/392102760_FIRE_EMOJI_400px.gif");
     background-size: cover;
 
 
